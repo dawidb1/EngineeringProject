@@ -1,5 +1,5 @@
 This is my engineering work.
-Topic: A patient-specific treatment model for hyperthyroidism treatment 
+Topic: A patient-specific treatment model for hyperthyroidism treatment.
 More information in Polish language. 
 
 # Spersonalizowany model leczenia nadczynności tarczycy
