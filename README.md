@@ -25,7 +25,7 @@ Celem pośrednim jest stworzenie aplikacji, najpewniej będzie to GUI Matlab.
     2. Opis biologiczny
 1. Analiza stabilności
     1. Punkty stacjonarne
-    2. granica stabilności
+    2. Granica stabilności
 1. Analiza modelu
 2. Obliczenia
     1. Wzory punktu stacjonarnego
