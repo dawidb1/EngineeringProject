@@ -21,8 +21,8 @@ Celem pośrednim jest stworzenie aplikacji, najpewniej będzie to GUI Matlab.
 # Spis treści
 1. Wprowadzenie teoretyczne
 1. Metodologia
-..* Modele
-..* Opis biologiczny
+* Modele
+* Opis biologiczny
 1. Analiza stabilności
 ..* Punkty stacjonarne
 ..* granica stabilności
