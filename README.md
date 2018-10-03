@@ -33,3 +33,6 @@ Celem pośrednim jest stworzenie aplikacji, najpewniej będzie to GUI Matlab.
     3. Wektory i wartości własne
     4. Przewidywanie granicy funkcji modelu
     5. Symbol Newtona
+
+# Trello
+Postępy pracy są widoczne w [a link](https://trello.com/b/cM2dTOvN/projectepsilon)
