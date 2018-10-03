@@ -21,15 +21,15 @@ Celem pośrednim jest stworzenie aplikacji, najpewniej będzie to GUI Matlab.
 # Spis treści
 1. Wprowadzenie teoretyczne
 1. Metodologia
-    a. Modele
-    b. Opis biologiczny
+    ..* Modele
+    ..* Opis biologiczny
 1. Analiza stabilności
-    a. Punkty stacjonarne
-    b. granica stabilności
+    ..* Punkty stacjonarne
+    ..* granica stabilności
 1. Analiza modelu
 2. Obliczenia
-    a. Wzory punktu stacjonarnego
-    b. Ręczne obliczenie macierzy Jacobiego (pochodne cząstkowe)
-    c. Wektory i wartości własne
-    d. Przewidywanie granicy funkcji modelu
-    e. Symbol Newtona
+    ..* Wzory punktu stacjonarnego
+    ..* Ręczne obliczenie macierzy Jacobiego (pochodne cząstkowe)
+    ..* Wektory i wartości własne
+    ..* Przewidywanie granicy funkcji modelu
+    ..* Symbol Newtona
