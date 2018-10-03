@@ -24,12 +24,12 @@ Celem pośrednim jest stworzenie aplikacji, najpewniej będzie to GUI Matlab.
     1. Modele
     2. Opis biologiczny
 1. Analiza stabilności
-..* Punkty stacjonarne
-..* granica stabilności
+    1. Punkty stacjonarne
+    2. granica stabilności
 1. Analiza modelu
 2. Obliczenia
-..* Wzory punktu stacjonarnego
-..* Ręczne obliczenie macierzy Jacobiego (pochodne cząstkowe)
-..* Wektory i wartości własne
-..* Przewidywanie granicy funkcji modelu
-..* Symbol Newtona
+    1. Wzory punktu stacjonarnego
+    2. Ręczne obliczenie macierzy Jacobiego (pochodne cząstkowe)
+    3. Wektory i wartości własne
+    4. Przewidywanie granicy funkcji modelu
+    5. Symbol Newtona
