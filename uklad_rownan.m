@@ -1,12 +1,12 @@
-function rownania = uklad_rownan(t, data)
+function rownania = uklad_rownan(t, stateVector)
     
-    stateVector = data(1:5,1);
+    % stateVector = data(1:5,1);
     stateVector = transpose(stateVector);
     
-    patientVector = data(6:17,1);
-    patientVector = transpose(patientVector);
+    % load patient
+    patientList = PatientList();
+    patient = patientList.list(1);
     
-    patient = Patient(patientVector);
     state = State(stateVector);
 
     T_MIN = 0;
@@ -50,13 +50,13 @@ function rownania = uklad_rownan(t, data)
     dw_dt = k7 - k7*x/(kb+x) - k8*w;
     
     %return
-    trzynascieZer = [0;0;0;0;0;0;0;0;0;0;0;0;0];
+%     trzynascieZer = [0;0;0;0;0;0;0;0;0;0;0;0;0];
     rownania = [
         dx_dt; 
         dy_dt;
         dz_dt;
         dw_dt;
-        trzynascieZer
+%         trzynascieZer
     ];
 end
 

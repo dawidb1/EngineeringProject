@@ -3,20 +3,16 @@ clear all
 close all
 
 % load state
-state = State(30,36,30,25,0, "Untreated hypothetical patient");
-
-% load patient
-patientList = PatientList();
-patient = patientList.list(1);
+state = State(0,36,30,25, "Untreated hypothetical patient");
 
 % Czas symulacji [days?] 
 t0 = 0;
 tend = 25;
 
-x = [ state.getVector() patient.getVector()];
+stateVector = state.getVector();
 
 % Symulacja dla osoby zdrowej po spożyciu posiłku 
-[T,X] = ode45(@uklad_rownan,[t0 tend], x);
+[T,X] = ode45(@uklad_rownan,[t0 tend], stateVector);
 % Wykresy 
 
 plot(T,X(:,1),'r');

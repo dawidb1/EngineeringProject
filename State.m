@@ -8,31 +8,32 @@ classdef State
         % MMI_Orally    %the amount of MMI orally taken per day per liter of body volume (mg/L/day)
     end
     methods
-    function obj = State(MMI, FT4, Thyroid_Size, TRAb, MMI_Orally, label)
+    function obj = State(MMI, FT4, Thyroid_Size, TRAb, label)
         if nargin == 1
             obj.MMI = MMI(1);
             obj.FT4 = MMI(2);
             obj.Thyroid_Size = MMI(3);
             obj.TRAb = MMI(4);
-            obj.MMI_Orally = MMI(5);
+%             obj.MMI_Orally = MMI(5);
         elseif nargin == 2
             obj.MMI = MMI(1);
             obj.FT4 = MMI(2);
             obj.Thyroid_Size = MMI(3);
             obj.TRAb = MMI(4);
-            obj.MMI_Orally = MMI(5);
+%             obj.MMI_Orally = MMI(5);
             obj.label = label;
         else
             obj.MMI = MMI;
             obj.FT4 = FT4;
             obj.Thyroid_Size = Thyroid_Size;
             obj.TRAb = TRAb;
-            obj.MMI_Orally = MMI_Orally;
+%             obj.MMI_Orally = MMI_Orally;
             obj.label = label;
         end
     end
     function vector = getVector(obj)
-        vector = [ obj.MMI, obj.FT4, obj.Thyroid_Size, obj.TRAb, obj.MMI_Orally ];
+        vector = [ obj.MMI, obj.FT4, obj.Thyroid_Size, obj.TRAb];
+%  vector = [ obj.MMI, obj.FT4, obj.Thyroid_Size, obj.TRAb, obj.MMI_Orally ];
     end
 end
 end
