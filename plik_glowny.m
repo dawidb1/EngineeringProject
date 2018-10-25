@@ -3,15 +3,14 @@ clear all
 close all
 
 % load state
-state = State(0,36,30,25, "Untreated hypothetical patient");
+state = State(10,36,30,25, "Untreated hypothetical patient");
 
 % Czas symulacji [days?] 
 t0 = 0;
-tend = 25;
+tend = 10;
 
 stateVector = state.getVector();
 
-% Symulacja dla osoby zdrowej po spożyciu posiłku 
 [T,X] = ode45(@uklad_rownan,[t0 tend], stateVector);
 % Wykresy 
 
@@ -27,3 +26,6 @@ legend('MMI','FT4','Thyroid Size','TRAb')
 
 xlabel('Time (in days)');
 grid;
+
+load handel.mat;
+sound(y);

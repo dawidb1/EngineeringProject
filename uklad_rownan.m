@@ -4,19 +4,16 @@ function rownania = uklad_rownan(t, stateVector)
     stateVector = transpose(stateVector);
     
     % load patient
-    patientList = PatientList();
-    patient = patientList.list(1);
-    
-    state = State(stateVector);
+    patient = Patient(8.374*10^(-3), 3.3271, 0.358068, 0.119, 0.05, 0.099021, 10^6, 0.833,  0.001,  0.875,  1.5,  0.035, "Table 2 Patient");
 
     T_MIN = 0;
     T_MAKS = 10;
 
     %Pobranie z wektora x parametrów i warunków początkowych
-    x = state.MMI;   %ammount of MMI mg/L of blood serum at time t
-    y = state.FT4;   %amount of FT4 pg/mL of blood serum at time t
-    z = state.Thyroid_Size;   %functional size of thyroid gland (mL) or the volume of proportion of active cells at time t
-    w = state.TRAb;   %the amount of TRAb (U) per milliliter of blood serum at time t
+    x = stateVector(1);   %ammount of MMI mg/L of blood serum at time t
+    y = stateVector(2);   %amount of FT4 pg/mL of blood serum at time t
+    z = stateVector(3);   %functional size of thyroid gland (mL) or the volume of proportion of active cells at time t
+    w = stateVector(4);   %the amount of TRAb (U) per milliliter of blood serum at time t
 %     s = state.MMI_Orally;   %the amount of MMI orally taken per day per liter of body volume (mg/L/day)
 
     k1 = patient.k1;
@@ -34,11 +31,13 @@ function rownania = uklad_rownan(t, stateVector)
 
     % make s(t)
     MMI_BIO_AVAILABILITY = 0.93;
-    DAYS = 45;
+    DAYS = 10;
     AVG_MAN_VOLUME = 59.71;
+    DOSE = 30;
 
-    if (T_MIN <= t) && (t >= T_MAKS)
-        s = MMI_BIO_AVAILABILITY * x * DAYS / AVG_MAN_VOLUME;
+    if (T_MIN <= t) && (t <= DAYS)
+        s = MMI_BIO_AVAILABILITY * DOSE * DAYS / AVG_MAN_VOLUME;
+%         s = 0;
     else
         s = 0;
     end
