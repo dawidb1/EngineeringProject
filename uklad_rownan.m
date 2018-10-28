@@ -7,7 +7,6 @@ function rownania = uklad_rownan(t, stateVector)
     patient = Patient(8.374*10^(-3), 3.3271, 0.358068, 0.119, 0.05, 0.099021, 10^6, 0.833,  0.001,  0.875,  1.5,  0.035, "Table 2 Patient");
 
     T_MIN = 0;
-    T_MAKS = 10;
 
     %Pobranie z wektora x parametrów i warunków początkowych
     x = stateVector(1);   %ammount of MMI mg/L of blood serum at time t
@@ -31,7 +30,7 @@ function rownania = uklad_rownan(t, stateVector)
 
     % make s(t)
     MMI_BIO_AVAILABILITY = 0.93;
-    DAYS = 10;
+    DAYS = 5;
     AVG_MAN_VOLUME = 59.71;
     DOSE = 30;
 
