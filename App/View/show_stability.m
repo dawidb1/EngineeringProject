@@ -7,6 +7,7 @@ function show_stability(UIAxes, x, y)
     % hold on;
     
     plot(UIAxes, x, y, 'b');
+
 %     hold(UIAxes,'on')
 %     plot(UIAxes, eigenX, eigenY, 'r*');
 end

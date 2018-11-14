@@ -6,9 +6,9 @@ function show_simulation( UIAxes,T,X )
 
 plot(UIAxes, T,X(:,1), 'r');
 hold(UIAxes,'on')
-plot(UIAxes, T,X(:,2), 'g');
+plot(UIAxes, T,X(:,2), 'b');
 hold(UIAxes,'on')
-plot(UIAxes, T,X(:,3), 'b');
+plot(UIAxes, T,X(:,3), 'g');
 hold(UIAxes,'on')
 plot(UIAxes, T,X(:,4), 'm');
 
