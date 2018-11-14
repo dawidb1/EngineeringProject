@@ -1,25 +1,43 @@
-function data = Simulate(ISimulation)
-clc
-clear all
-close all
+function [T,X] = Simulate(ISimulation)
 
-% load state
-state = State(10,36,30,25, "Undefined patient");
-
-% Czas symulacji [days?] 
 t0 = 0;
-tend = 20;
+tend = ISimulation.Dose.days;
 
-stateVector = state.getVector();
-patient = Patient(8.374*10^(-3), 3.3271, 0.358068, 0.119, 0.05, 0.099021, 10^6, 0.833,  0.001,  0.875,  1.5,  0.035, "Table 2 Patient");
+InitialValuesVector = [ ISimulation.InitialValues.x ISimulation.InitialValues.y ISimulation.InitialValues.z ISimulation.InitialValues.w];
+PatientVector = ISimulation.Patient.getVector();
+DoseVector = [ISimulation.Dose.grams ISimulation.Dose.days];
+% theorem1_state = theorem1(patient);
+matrix = createJacobainMatrix(ISimulation.Patient);
 
-theorem1_state = theorem1(patient);
-matrix = createJacobainMatrix(patient, theorem1_state);
-eigen = eig(matrix)
+xFunc = matrix(1,:);
+yFunc = matrix(2,:);
+zFunc = matrix(3,:);
+wFunc = matrix(4,:);
 
-[T,X] = ode45(@uklad_rownan,[t0 tend], stateVector);
+syms x y z w
+xPoint = xFunc == 0;
+yPoint = yFunc == 0;
+zPoint = zFunc == 0;
+wPoint = wFunc == 0;
 
-% Sygna³ dŸwiekowy koñca obliczeñ
+xSol = solve(xPoint)
+ySol = solve(yPoint)
+zSol = solve(zPoint)
+wSol = solve(wPoint)
+
+zeros = [0;0;0;0];
+
+X = linsolve(matrix,B)
+% syms x y w z
+
+
+% eigen = eig(matrix)
+
+
+ukladVector = [InitialValuesVector PatientVector DoseVector];
+[T,X] = ode45(@uklad_rownan,[t0 tend], ukladVector);
+
+% Sygnaï¿½ dï¿½wiekowy koï¿½ca obliczeï¿½
 % load handel.mat;
 % sound(y);
 

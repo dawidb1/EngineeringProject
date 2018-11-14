@@ -1,4 +1,4 @@
-function matrix = createJacobainMatrix( patient, state )
+function matrix = createJacobainMatrix( patient, InitialValues )
 %createJacobainMatrix Summary of this function goes here
 %   Detailed explanation goes here
     state.x = state.MMI;
@@ -29,7 +29,7 @@ function matrix = createJacobainMatrix( patient, state )
     matrix = [a1 a2 a3 a4;
         b1 b2 b3 b4;
         c1 c2 c3 c4;
-        d1 d2 d3 d4]
-
+        d1 d2 d3 d4];
+    pretty(matrix);
 end
 

@@ -2,6 +2,7 @@ classdef ISimulation
     properties
         InitialValues,
         Patient,
-        Dose
+        Dose,
+        SimulationTime
     end
 end

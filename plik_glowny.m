@@ -7,7 +7,7 @@ state = State(0,36,30,25, "Undefined patient");
 
 % Czas symulacji [days?] 
 t0 = 0;
-tend = 90;
+tend = 25;
 
 stateVector = state.getVector();
 
