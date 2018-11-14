@@ -12,8 +12,8 @@ function rownania = uklad_rownan(t, ukladVector)
 %     s = state.MMI_Orally;   %the amount of MMI orally taken per day per liter of body volume (mg/L/day)
 
     k1 = PatientVector(1);
-    ka = PatientVector(2);
-    k2 = PatientVector(3);
+    k2 = PatientVector(2);
+    ka = PatientVector(3);
     k3 = PatientVector(4);
     kd = PatientVector(5);
     k4 = PatientVector(6);
@@ -51,7 +51,7 @@ function rownania = uklad_rownan(t, ukladVector)
         dy_dt;
         dz_dt;
         dw_dt;
-        fewZeroes
+        fewZeroes;
     ];
 end
 
