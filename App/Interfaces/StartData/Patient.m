@@ -34,6 +34,9 @@ classdef Patient
                 'k8', obj.k8; 
                  };
         end
+        function vector = getVector(obj)
+            vector = [ obj.k1 obj.k2 obj.ka obj.k3 obj.kd obj.k4 obj.k5 obj.N obj.k6 obj.k7 obj.kb obj.k8 ];
+        end
     end
 end
 
