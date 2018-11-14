@@ -30,9 +30,9 @@ function rownania = uklad_rownan(t, stateVector)
 
     % make s(t)
     MMI_BIO_AVAILABILITY = 0.93;
-    DAYS = 5;
+    DAYS = 20;
     AVG_MAN_VOLUME = 59.71;
-    DOSE = 30;
+    DOSE = 0;
 
     if (T_MIN <= t) && (t <= DAYS)
         s = MMI_BIO_AVAILABILITY * DOSE * DAYS / AVG_MAN_VOLUME;

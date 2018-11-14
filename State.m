@@ -1,6 +1,7 @@
 classdef State
     properties
-        MMI, FT4, Thyroid_Size, TRAb, MMI_Orally, label
+        MMI, FT4, Thyroid_Size, TRAb, MMI_Orally, label,
+        x, y, z, w
         % MMI   %ammount of MMI mg/L of blood serum at time t
         % FT4   %amount of FT4 pg/mL of blood serum at time t
         % Thyroid_Size    %functional size of thyroid gland (mL) or the volume of proportion of active cells at time t
@@ -22,7 +23,14 @@ classdef State
             obj.TRAb = MMI(4);
 %             obj.MMI_Orally = MMI(5);
             obj.label = label;
-        else
+        elseif nargin == 4
+            obj.MMI = MMI;
+            obj.FT4 = FT4;
+            obj.Thyroid_Size = Thyroid_Size;
+            obj.TRAb = TRAb;
+%             obj.MMI_Orally = MMI_Orally;
+%             obj.label = label;
+        elseif nargin == 5
             obj.MMI = MMI;
             obj.FT4 = FT4;
             obj.Thyroid_Size = Thyroid_Size;

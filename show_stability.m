@@ -1,4 +1,4 @@
-function show_stability(UIAxes, x, y)
+function show_stability(UIAxes, x, y, eigenX, eigenY)
     % Wyœwietlenie portretów fazowych
 
     % plot(X(:,1),X(:,2),'r');
@@ -7,5 +7,7 @@ function show_stability(UIAxes, x, y)
     % hold on;
     
     plot(UIAxes, x, y, 'b');
+    hold(UIAxes,'on')
+    plot(UIAxes, eigenX, eigenY, 'r*');
 end
 
