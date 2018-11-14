@@ -32,7 +32,7 @@ classdef Patient
                 'k7', obj.k7;
                 'kb', obj.kb;
                 'k8', obj.k8; 
-                 }
+                 };
         end
     end
 end
