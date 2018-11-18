@@ -1,8 +1,0 @@
-function [outputArg1,outputArg2] = plot_phase(MMI_FT4,MMI, y, xlabel, )
-
-    plot(MMI_FT4, MMI, FT4, 'LineWidth',2);
-    axis(MMI_FT4, [0 40 0 40]);
-    xlabel(MMI_FT4, 'MMI');
-    ylabel(MMI_FT4, 'FT4');
-end
-
