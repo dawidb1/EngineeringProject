@@ -1,5 +1,5 @@
 function SimulationResult = Simulate(ISimulation)
-%% get data
+%% data unpack
 SimulationResult = ISimulationResult;
 t0 = 0;
 tend = ISimulation.SimulationTime;
@@ -12,7 +12,7 @@ ukladVector = [InitialValuesVector PatientVector DoseVector];
 [T,X] = ode45(@uklad_rownan,[t0 tend], ukladVector);
 
 %% stability analysis
-matrix = JacobainMatrix(ISimulation.Patient, ISimulation.InitialValues);
+matrix = JacobainMatrix(ISimulation.Patient);
 eigenValues = eig(matrix);
 
 %% stability points
@@ -20,14 +20,9 @@ eigenValues = eig(matrix);
 % points = stability_points(ISimulation.Patient, s);
 points = 0;
 
-%% send data
-SimulationResult.T = T;
-SimulationResult.X = X;
-SimulationResult.points = points;
-SimulationResult.eigen = eigenValues;
-
 %% sygna³ dŸwiêkowy koñca obliczeñ
 % load handel.mat;
 % sound(y);
 
 end
+

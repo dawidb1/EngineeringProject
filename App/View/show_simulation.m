@@ -12,6 +12,7 @@ plot(UIAxes, T,X(:,3), 'g');
 hold(UIAxes,'on')
 plot(UIAxes, T,X(:,4), 'm');
 
+
 title(UIAxes,"Undefined state");
 legend(UIAxes,'MMI','FT4','Thyroid Size','TRAb')
 
