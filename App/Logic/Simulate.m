@@ -11,6 +11,8 @@ DoseVector = [ISimulation.Dose.grams ISimulation.Dose.days];
 ukladVector = [InitialValuesVector PatientVector DoseVector];
 [T,X] = ode45(@uklad_rownan,[t0 tend], ukladVector);
 
+X = X(:,1:4);
+
 %% stability analysis
 matrix = JacobainMatrix(ISimulation.Patient, ISimulation.InitialValues);
 eigenValues = eig(matrix);
