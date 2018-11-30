@@ -19,8 +19,8 @@ eigenValues = eig(matrix);
 
 %% stability points
 % s = X(:,5);
-% points = stability_points(ISimulation.Patient, s);
-points = 0;
+points = stability_points(ISimulation.Patient);
+% points = 0;
 
 %% send data
 SimulationResult.T = T;
