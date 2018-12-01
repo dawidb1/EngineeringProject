@@ -15,10 +15,21 @@ eqns = [s - (patient.k1*z*x)/(patient.ka+x) - patient.k2*x == 0, (patient.k3*z)*
 
 points = solve(eqns, [x y z w]);
 
-px = vpa(points.x(5),4);
-py = vpa(points.y(5),4);
-pz = vpa(points.z(5),4);
-pw = vpa(points.w(5),4);
+if s == 0    
+    px = vpa(points.x(5),4);
+    py = vpa(points.y(5),4);
+    pz = vpa(points.z(5),4);
+    pw = vpa(points.w(5),4);
+else 
+    px = vpa(points.x,4)
+    py = vpa(points.y,4)
+    pz = vpa(points.z,4)
+    pw = vpa(points.w,4)
+    px
+    py
+    pz
+    pw
+end
 points = Points(px, py, pz, pw);
 
 end
