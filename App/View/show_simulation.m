@@ -20,11 +20,13 @@ T = T(1):1:T(end);
 plot(UIAxes, T, FT4_high_limit * ones(size(T)), '--k');
 plot(UIAxes, T, FT4_low_limit * ones(size(T)), '--k');
 
-title(UIAxes, pLabel + " treatment vaweforms");
-legend(UIAxes,'MMI','FT4','Thyroid Size','TRAb','Normal FT4 limits')
+iPlot = plotConst();
 
-xlabel(UIAxes,'Time (in days)');
-ylabel(UIAxes,'Patient vaweforms');
+title(UIAxes, pLabel + iPlot.title);
+legend(UIAxes, iPlot.legend);
+
+xlabel(UIAxes, iPlot.xlabel);
+ylabel(UIAxes, iPlot.ylabel);
 
 UIAxes.YLim = [0 40];
 % grid;
