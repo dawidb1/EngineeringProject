@@ -2,7 +2,7 @@ function rownania = uklad_rownan(t, ukladVector)
 
     InitialValuesVector =  ukladVector(1:4);
     PatientVector =  ukladVector(5:16);
-    DoseVector = ukladVector(17:18);
+    DoseVector = ukladVector(17:26);
    
     %Pobranie z wektora x parametrów i warunków początkowych
     x = InitialValuesVector(1);  %ammount of MMI mg/L of blood serum at time t
@@ -26,18 +26,30 @@ function rownania = uklad_rownan(t, ukladVector)
 
     % make s(t)
     T_MIN = 0;
-    DOSE = DoseVector(1);
-    DAYS = DoseVector(2);
+    DOSE = DoseVector(1:5);
+    DAYS = DoseVector(6:10);
     
     MMI_BIO_AVAILABILITY = 0.93;
     AVG_MAN_VOLUME = 59.71;
-
-    if (T_MIN <= t) && (t <= DAYS)
-        s = MMI_BIO_AVAILABILITY * DOSE * DAYS / AVG_MAN_VOLUME;
-    else
-        s = 0;
-    end
     
+%     for i=1:length(DOSE)
+%         oneDoses = DOSE(i);
+%         oneDays = DAYS(i);
+%         
+%         sumDose = DOSE(1:i);
+%         sumDose = sum(sumDose)
+%         
+%         sumDays = DAYS(1:i);
+%         sumDays = sum(sumDays)
+% 
+%         if (T_MIN <= t) && (t <= oneDays)
+%             s = MMI_BIO_AVAILABILITY * oneDoses * oneDays / AVG_MAN_VOLUME;
+%         else
+%             s = 0;
+%         end
+%     end
+    s = treatmentDose(DOSE,DAYS, t);
+ 
     % rownania rozniczkowe
     dx_dt = s - (k1*z*x)/(ka+x) - k2*x;
     dy_dt = (k3*z)*w/(kd+w) - k4*y;
@@ -45,13 +57,15 @@ function rownania = uklad_rownan(t, ukladVector)
     dw_dt = k7 - k7*x/(kb+x) - k8*w;
     
     %return
-    fewZeroes = [0;0;0;0;0;0;0;0;0;0;0;0;0;0];
+    fewZeroes = [0;0;0;0;0;0;0;0;0;0;0;0];
+    doseArrayZeroes = [0;0;0;0;0;0;0;0;0;0];
     rownania = [
         dx_dt; 
         dy_dt;
         dz_dt;
         dw_dt;
         fewZeroes;
+        doseArrayZeroes;
     ];
 end
 

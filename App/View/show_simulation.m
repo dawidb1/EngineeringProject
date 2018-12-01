@@ -2,8 +2,6 @@ function show_simulation( UIAxes,T,X, pLabel )
 %show_simulation Summary of this function goes here
 %   Detailed explanation goes here
 
-% UIAxes.YLim = [0 80];
-
 plot(UIAxes, T,X(:,1), 'r');
 hold(UIAxes,'on')
 plot(UIAxes, T,X(:,2), 'b');
@@ -27,6 +25,8 @@ legend(UIAxes,'MMI','FT4','Thyroid Size','TRAb','Normal FT4 limits')
 
 xlabel(UIAxes,'Time (in days)');
 ylabel(UIAxes,'Patient vaweforms');
+
+UIAxes.YLim = [0 40];
 % grid;
 
 end
