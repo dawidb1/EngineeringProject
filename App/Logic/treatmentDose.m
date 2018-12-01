@@ -10,14 +10,10 @@ function s = treatmentDose(DOSE, DAYS, t)
         currendDays = DAYS(i);
         
         if i == 1
-            dose_down_limit = 0;
+
             days_down_limit = 0;
             days_up_limit = DAYS(i);
         else
-            dose_up_limit = DOSE(1:i);
-            dose_up_limit = sum(dose_up_limit);
-            
-            dose_down_limit = dose_up_limit - DOSE(i);
 
             days_up_limit = DAYS(1:i);
             days_up_limit = sum(days_up_limit);

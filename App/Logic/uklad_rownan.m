@@ -25,29 +25,8 @@ function rownania = uklad_rownan(t, ukladVector)
     k8 = PatientVector(12);
 
     % make s(t)
-    T_MIN = 0;
     DOSE = DoseVector(1:5);
     DAYS = DoseVector(6:10);
-    
-    MMI_BIO_AVAILABILITY = 0.93;
-    AVG_MAN_VOLUME = 59.71;
-    
-%     for i=1:length(DOSE)
-%         oneDoses = DOSE(i);
-%         oneDays = DAYS(i);
-%         
-%         sumDose = DOSE(1:i);
-%         sumDose = sum(sumDose)
-%         
-%         sumDays = DAYS(1:i);
-%         sumDays = sum(sumDays)
-% 
-%         if (T_MIN <= t) && (t <= oneDays)
-%             s = MMI_BIO_AVAILABILITY * oneDoses * oneDays / AVG_MAN_VOLUME;
-%         else
-%             s = 0;
-%         end
-%     end
     s = treatmentDose(DOSE,DAYS, t);
  
     % rownania rozniczkowe

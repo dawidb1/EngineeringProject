@@ -3,6 +3,7 @@ function SimulationResult = Simulate(ISimulation)
 SimulationResult = ISimulationResult;
 t0 = 0;
 tend = ISimulation.SimulationTime;
+% tutaj muszê daæ simulation time wynikaj¹ce z vectora
 
 InitialValuesVector = [ ISimulation.InitialValues.x ISimulation.InitialValues.y ISimulation.InitialValues.z ISimulation.InitialValues.w];
 PatientVector = ISimulation.Patient.getVector();
