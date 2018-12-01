@@ -837,6 +837,7 @@ Matlab - Exclude coder temporary folders" class="message" href="/github/gitignor
       <tr>
         <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
         <td id="LC2" class="blob-code blob-code-inner js-file-line">*.asv</td>
+		*.mat
       </tr>
       <tr>
         <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
