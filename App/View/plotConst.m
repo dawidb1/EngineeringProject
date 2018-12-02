@@ -10,7 +10,7 @@ classdef plotConst
         function obj = plotConst()
             %plotConst Construct constant variable for plot assignment
             obj.title = " treatment vaweforms";
-            obj.legend = { 'MMI','FT4','Thyroid Size','TRAb','Normal FT4 limits' };
+            obj.legend = { 'MMI(mg/L)','FT4(pg/mL)','Thyroid Size(mL)','TRAb(U/mL)','Normal FT4 limits(pg/mL)' };
             obj.xlabel = 'Time (in days)';
             obj.ylabel = 'Patient vaweforms';
         end
