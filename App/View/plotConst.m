@@ -12,7 +12,7 @@ classdef plotConst
             obj.title = " treatment vaweforms";
             obj.legend = { 'MMI(mg/L)','FT4(pg/mL)','Thyroid Size(mL)','TRAb(U/mL)','Normal FT4 limits(pg/mL)' };
             obj.xlabel = 'Time (in days)';
-            obj.ylabel = 'Patient vaweforms';
+            obj.ylabel = 'State Variables';
         end
     end
 end
