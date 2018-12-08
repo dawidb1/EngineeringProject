@@ -23,8 +23,10 @@ function rownania = uklad_rownan2(t, InitialValuesVector, PatientVector, DoseVec
     k8 = PatientVector(12);
 
     % make s(t)
-    DOSE = DoseVector(1:5);
-    DAYS = DoseVector(6:10);
+    mid = length(DoseVector)/2;
+    DOSE = DoseVector(1:mid);
+    DAYS = DoseVector(mid+1:end);
+    
     s = treatmentDose(DOSE,DAYS, t);
  
     % rownania rozniczkowe
