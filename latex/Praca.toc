@@ -9,7 +9,7 @@
 \contentsline {chapter}{\numberline {5.}Rezultaty}{5}{chapter.5}
 \contentsline {chapter}{\numberline {6.}Podsumowanie}{6}{chapter.6}
 \contentsline {part}{Dodatek}{7}{part*.4}
-\contentsline {chapter}{\numberline {A.}Dodatek A}{8}{appendix.A}
+\contentsline {chapter}{\numberline {A.}Obliczenia}{8}{appendix.A}
 \contentsline {chapter}{\numberline {B.}Dodatek B}{9}{appendix.B}
 \contentsline {section}{\numberline {B.1}Wstawianie rysunk\'ow}{9}{section.B.1}
 \contentsline {section}{\numberline {B.2}Wstawianie tabelek}{9}{section.B.2}
