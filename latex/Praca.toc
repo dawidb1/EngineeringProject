@@ -2,15 +2,18 @@
 \contentsline {section}{\numberline {1.1}Rozwi\k azania alternatywne}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Cel pracy}{1}{section.1.2}
 \contentsline {section}{\numberline {1.3}Uk\IeC {\l }ad pracy}{1}{section.1.3}
-\contentsline {chapter}{\numberline {2.}Metodologia}{2}{chapter.2}
-\contentsline {chapter}{\numberline {3.}Cz\k e\'s\'c konstrukcyjna/Specyfikacja wewn\k etrzna}{3}{chapter.3}
-\contentsline {section}{\numberline {3.1}Specyfikacja interfejsu programistycznego}{3}{section.3.1}
-\contentsline {chapter}{\numberline {4.}Instrukcja obs\IeC {\l }ugi/Specyfikacja zewn\k etrzna}{4}{chapter.4}
-\contentsline {chapter}{\numberline {5.}Rezultaty}{5}{chapter.5}
-\contentsline {chapter}{\numberline {6.}Podsumowanie}{6}{chapter.6}
-\contentsline {part}{Dodatek}{7}{part*.4}
-\contentsline {chapter}{\numberline {A.}Obliczenia}{8}{appendix.A}
-\contentsline {chapter}{\numberline {B.}Dodatek B}{9}{appendix.B}
-\contentsline {section}{\numberline {B.1}Wstawianie rysunk\'ow}{9}{section.B.1}
-\contentsline {section}{\numberline {B.2}Wstawianie tabelek}{9}{section.B.2}
-\contentsline {chapter}{\numberline {C.}Kwestie edytorskie}{11}{appendix.C}
+\contentsline {chapter}{\numberline {2.}Wprowadzenie teoretyczne}{2}{chapter.2}
+\contentsline {chapter}{\numberline {3.}Metodologia}{3}{chapter.3}
+\contentsline {section}{\numberline {3.1}Model matematyczny}{3}{section.3.1}
+\contentsline {section}{\numberline {3.2}Stan pocz\k atkowy}{3}{section.3.2}
+\contentsline {chapter}{\numberline {4.}Cz\k e\'s\'c konstrukcyjna/Specyfikacja wewn\k etrzna}{5}{chapter.4}
+\contentsline {section}{\numberline {4.1}Specyfikacja interfejsu programistycznego}{5}{section.4.1}
+\contentsline {chapter}{\numberline {5.}Instrukcja obs\IeC {\l }ugi/Specyfikacja zewn\k etrzna}{6}{chapter.5}
+\contentsline {chapter}{\numberline {6.}Rezultaty}{7}{chapter.6}
+\contentsline {chapter}{\numberline {7.}Podsumowanie}{8}{chapter.7}
+\contentsline {part}{Dodatek}{9}{part*.4}
+\contentsline {chapter}{\numberline {A.}Obliczenia}{10}{appendix.A}
+\contentsline {chapter}{\numberline {B.}Dodatek B}{11}{appendix.B}
+\contentsline {section}{\numberline {B.1}Wstawianie rysunk\'ow}{11}{section.B.1}
+\contentsline {section}{\numberline {B.2}Wstawianie tabelek}{11}{section.B.2}
+\contentsline {chapter}{\numberline {C.}Kwestie edytorskie}{13}{appendix.C}

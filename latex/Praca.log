@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.29)  4 DEC 2018 08:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.29)  15 DEC 2018 12:33
 entering extended mode
 **./Praca.tex
 (Praca.tex
@@ -563,8 +563,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.56 \chapter
-             {Metodologia}\label{Chapter_Metodologia} [1
+l.57 \chapter
+             {Wprowadzenie teoretyczne} [1
 
 
 ]
@@ -573,21 +573,31 @@ Rozdzia\PlPrIeC {\l } 2.
 
 ]
 Rozdzia\PlPrIeC {\l } 3.
+
+Overfull \hbox (12.21794pt too wide) in paragraph at lines 109--110
+[]\OT4/cmr/m/n/12 s(t) = the amo-unt of MMI oral-ly ta-ken per day per li-ter o
+f bo-dy vo-lu-me (mg/L/day). 
+ []
+
 [3
 
-]
+] [4]
 Rozdzia\PlPrIeC {\l } 4.
-[4
-
-]
-Rozdzia\PlPrIeC {\l } 5.
 [5
 
 ]
-Rozdzia\PlPrIeC {\l } 6.
-) [6
+Rozdzia\PlPrIeC {\l } 5.
+[6
 
-] [7
+]
+Rozdzia\PlPrIeC {\l } 6.
+[7
+
+]
+Rozdzia\PlPrIeC {\l } 7.
+) [8
+
+] [9
 
 ] (Dodatek_A.tex
 Rozdzia\PlPrIeC {\l } A.
@@ -596,20 +606,20 @@ LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 2.
 File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 
-LaTeX Warning: Citation `Tadeusiewicz' on page 8 undefined on input line 2.
+LaTeX Warning: Citation `Tadeusiewicz' on page 10 undefined on input line 2.
 
 
-LaTeX Warning: Citation `Malina' on page 8 undefined on input line 2.
+LaTeX Warning: Citation `Malina' on page 10 undefined on input line 2.
 
 
-LaTeX Warning: Citation `Nieniewski_Morfologia' on page 8 undefined on input li
-ne 2.
+LaTeX Warning: Citation `Nieniewski_Morfologia' on page 10 undefined on input l
+ine 2.
 
-[8
+[10
 
 ]
 Rozdzia\PlPrIeC {\l } B.
-<./rysunki/logoRIB.png, id=150, 352.4367pt x 352.4367pt>
+<./rysunki/logoRIB.png, id=177, 352.4367pt x 352.4367pt>
 File: ./rysunki/logoRIB.png Graphic file (type png)
 <use ./rysunki/logoRIB.png>
 Package pdftex.def Info: ./rysunki/logoRIB.png  used on input line 36. on input
@@ -623,14 +633,14 @@ T4/cmr/m/n/12 , cen-tru-j¡c je w po-zio-mie ko-men-d¡ \OT4/cmtt/m/n/12 centerin
 g\OT4/cmr/m/n/12 .
  []
 
-[9
+[11
 
-] [10 <./rysunki/logoRIB.png>]
+] [12 <./rysunki/logoRIB.png>]
 Rozdzia\PlPrIeC {\l } C.
 
-LaTeX Warning: Citation `Chwalowski' on page 11 undefined on input line 59.
+LaTeX Warning: Citation `Chwalowski' on page 13 undefined on input line 59.
 
-) [11
+) [13
 
 ]
 No file Praca.bbl.
@@ -644,7 +654,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 41.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 41.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 41.
 Package rerunfilecheck Info: File `Praca.out' has not changed.
-(rerunfilecheck)             Checksum: 1810C582D990535BAF6972D675CD77FB;971.
+(rerunfilecheck)             Checksum: 8A3DCDBE87097A80147D808891AF2342;1161.
 
 
 LaTeX Warning: There were undefined references.
@@ -652,17 +662,17 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 41.
  ) 
 Here is how much of TeX's memory you used:
- 9211 strings out of 493312
- 137098 string characters out of 3138899
+ 9219 strings out of 493312
+ 137180 string characters out of 3138899
  249626 words of memory out of 3000000
- 12552 multiletter control sequences out of 15000+200000
+ 12555 multiletter control sequences out of 15000+200000
  14559 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,12n,42p,627b,355s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,12n,42p,627b,337s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.enc}{C:/Program Files/Mi
 KTeX 2.9/fonts/enc/dvips/pl/plms.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvi
-ps/pl/plmi.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plme.enc}{C:/Pro
-gram Files/MiKTeX 2.9/fonts/enc/dvips/pl/pltt.enc}{C:/Program Files/MiKTeX 2.9/
+ps/pl/plme.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/pltt.enc}{C:/Pro
+gram Files/MiKTeX 2.9/fonts/enc/dvips/pl/plmi.enc}{C:/Program Files/MiKTeX 2.9/
 fonts/enc/dvips/pl/plit.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/
 plbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plex10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/pl/plmi12.pfb><C:/Program Files/MiKTe
@@ -675,9 +685,9 @@ lsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plsy10.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/pl/plsy8.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/public/pl/plti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/pl/pltt12.pfb>
-Output written on Praca.pdf (15 pages, 385602 bytes).
+Output written on Praca.pdf (17 pages, 397836 bytes).
 PDF statistics:
- 244 PDF objects out of 1000 (max. 8388607)
- 45 named destinations out of 1000 (max. 500000)
- 134 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 268 PDF objects out of 1000 (max. 8388607)
+ 50 named destinations out of 1000 (max. 500000)
+ 158 words of extra memory for PDF output out of 10000 (max. 10000000)
 

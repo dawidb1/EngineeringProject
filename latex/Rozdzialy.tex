@@ -73,6 +73,57 @@ Model
 Stabilnoœæ uk³adu
 Algorytm okreœlania stabilnoœci
 
+\section{Model matematyczny}
+
+Wykorzystano model symuluj¹cy leczenie pacjenta po przyjêciu metimazolu (MMI). 
+
+\[\dfrac{dx}{dt} = s(t) - \dfrac{(k1z)x}{ka + x} - k2x 
+x(t0) = x0, (1) \]
+
+\[
+\dfrac{dy}{dt} = \dfrac{(k3z)w}{kd + w } - k4y 
+y(t0) = y0, (2)
+\]
+\[
+\dfrac{dz}{dt} = k5 (\dfrac{w}{z} - N)
+- k6zx 
+z(t0) = z0, (3)
+\]
+\[
+\dfrac{dw}{dt} = k7 - \dfrac{k7x}{kb + x} - k8w 
+w(t0) = w0 (4)
+\]
+
+
+
+\section{Stan pocz¹tkowy}
+
+Model sk³ada siê z 4 parametrów, okreœlaj¹cych stan pocz¹tkowy. 
+
+State Variables:
+\begin{itemize}
+\item x(t) = the amount of MMI (mg) per liter of blood serum at time t.
+\item y(t) = the amount of FT4 (pg) per milliliter of blood serum at time t.
+\item z(t) = the functional size of thyroid gland (mL) or the volume of proportion of active cells at time t.
+\item w(t) = the amount of TRAb (U) per milliliter of blood serum at time t.
+\item s(t) = the amount of MMI orally taken per day per liter of body volume (mg/L/day).
+
+\end{itemize}
+
+Obliczenie wartoœci pocz¹tkowej MMI w krwioobiegu ($x_{0}$):
+
+\[x_{0} = \dfrac{\text{Dawka leku}}{\text{Objêtoœæ dystrybucji leku w organiŸmie}}\]
+
+przy czym, objêtoœæ dystrybucji metimazolu w organiŸmie wynosi 3L. 
+
+Rozmiar funkcjonalny tarczycy, mo¿na obliczyæ przekszta³caj¹c pierwsze równanie ró¿niczkowe modelu, do postaci:
+
+
+\[z_{0} = \dfrac{(s(t) - k_{2}x_{0})(k_{a} + x_{0})}{k_{1}x_{0}}\]
+
+
+
+
 %\emph{Przeprowadzenie symulacji wi¹¿e siê z kilkoma etapami. }
 %
 %\section{Problem 1}
@@ -155,6 +206,7 @@ Instrukcja obs³ugi zbudowanego urz¹dzenia/programu komputerowego. Dok³adne wyjaœ
 \chapter{Rezultaty}
 %Zobrazowanie i omówienie wyników otrzymywanych wskutek zastosowania danego urz¹dzenia b¹dŸ aplikacji. Badanie ewentualnych parametrów (takich jak dok³adnoœæ, czu³oœæ...), czy te¿ zachowania w szczególnych sytuacjach. O ile to mo¿liwe tabelaryzacja rezultatów oraz ich statystyczna interpretacja. Ocena zachowania zaproponowanego rozwi¹zania. Analiza mo¿liwych przyczyn wyst¹pienia b³êdów. 
 
+\begin{quotation}
 Co tutaj? Symulacje? Tych 4 pacjentów? Mo¿e wykresy powinny byæ w dodatku?
 
 Tabela z pacjentami i ich parametrami
@@ -162,6 +214,25 @@ Symulacje i walidacja wykresów
 Analiza porównawcza?
 
 Wnioski (scenariusze pacjentów)
+\end{quotation}
+
+Do analizy modelu u¿yto danych 4 pacjentów. Pacjenci zostali opisani przez 13 parametrów.  
+
+Do analizy modelu u¿yto danych 4 pacjentów zmagaj¹cych siê z nadczynnoœci¹ tarczycy Gravesa—Basedowa. Dane uzyskano… W tej czêœci pracy zosta³y przedstawione symulacje leczenia chorych. 
+
+Pacjent numer 20
+Na pocz¹tku analizowano stan pacjenta, bez podania leku. Poziom FT4 pacjenta wynosi 25.63pg/ml. Jest to znacznie powy¿ej normy (7-18pg/ml). Œwiadczy to o nadczynnoœci tarczycy. Przy symulacji trwaj¹cej 10 dni, ¿adne przebiegi czasowe nie ulegaj¹ zmianie. Dla nieskoñczenie d³ugiego okresu, rezultaty s¹ takie same. Wynika to z faktu, ¿e przy braku leczenia, model jest asymptotycznie stabilny.
+ 
+Po jednorazowym podaniu 30 mg MMI, lek zostaje ca³kowicie wydalony przez organizm w czasie jednego dnia. Ta dawka nie ma znacz¹cego wp³ywu na funkcje tarczycy. 
+ 
+Przy podawaniu 30mg leku przez 120 dni, stan gospodarki hormonalnej tarczycy pacjenta, znacz¹co siê zmieni³. Po oko³o 30 dniach, poziom FT4 pacjenta osi¹gn¹³ graniczny poziom dla osoby zdrowej. Kontynuowanie terapii przy tej samej dawce, skutkuje ci¹g³ym obni¿aniem siê hormonu. Na skutek tego, po 90 dniach osi¹ga poziom œwiadcz¹cy o niedoczynnoœci tarczycy.
+  
+Jak pokazano na wykresie (fig?) przy podawaniu dawki 30 mg przez 75 dni i odstawieniu leku, pacjent powróci³ do stanu nadczynnoœci tarczycy. Trwa³o to oko³o 35 dni. Pacjent wymaga nastêpnej serii leczenia. 
+ 
+
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Podsumowanie}
