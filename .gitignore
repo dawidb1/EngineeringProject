@@ -1,6 +1,7 @@
 *.mat
 *.png
 *.asv
+*.fig
 
 *.aux
 *.lof
