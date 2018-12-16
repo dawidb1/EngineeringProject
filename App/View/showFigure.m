@@ -1,4 +1,4 @@
-function showFigure(plotFigure)
+function showFigure(plotFigure, fig)
 %PRINTFIGURE Summary of this function goes here
 % Detailed explanation goes here
 

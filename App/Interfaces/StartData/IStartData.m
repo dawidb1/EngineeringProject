@@ -2,6 +2,7 @@ classdef IStartData
     properties 
         PatientList, 
         InitialValues,
-        Doses
+        Doses,
+        CompareData
     end
 end

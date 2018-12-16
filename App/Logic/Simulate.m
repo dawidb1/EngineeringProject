@@ -33,6 +33,9 @@ SimulationResult.X = X;
 SimulationResult.points = points;
 SimulationResult.eigen = eigenValues;
 
+%% find ft4 range
+findFT4NormalRange(T,X);
+
 %% sygna³ dŸwiêkowy koñca obliczeñ
 % load handel.mat;
 % sound(y);
