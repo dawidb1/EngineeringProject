@@ -1,23 +1,31 @@
+\newcommand\size{0.8}
+\renewcommand{\arraystretch}{1.5}
+
 \chapter{Wstêp}
                
-Wstêp do zagadnienia (pó³ strony - jedna strona)               
+%Wstêp do zagadnienia (pó³ strony - jedna strona)               
                
 %Wprowadzenie do zagadnieñ poruszanych w pracy w ogólnym, zwiêz³ym ujêciu\footnote{Projekt in¿ynierski: $\pm$kilka paragrafów.}. Osadzenie ich w realiach codziennoœci, ewentualna klasyfikacja wœród problemów szerszej grupy do której nale¿¹ itp. Zdefiniowanie problemu do rozwi¹zania.
 %
 %\emph{Automatyczna analiza obrazów (AAO)\footnote{Tak wprowadzamy skróty.} jest niezwykle istotn¹ i szybko rozwijaj¹c¹ siê dziedzin¹ nauki. Bez narzêdzi (\ang{tools}) AAO trudno dziœ sobie wyobraziæ ksi¹¿ki o~przetwarzaniu obrazów \cite{Gonzalez} i~inne. Jednym z~popularniejszych narzêdzi analizy s¹ no¿yczki.}
 
+Choroba Gravesa jest najczêstsz¹, idiopatyczn¹ form¹ nadczynnoœci tarczycy. To choroba autoimmunologiczna, powodowana nadaktywnoœci¹ przeciwcia³ przeciwtarczycowych (TRAb). Imituj¹ one dzia³anie hormonu TSH, stymuluj¹c receptory TSH (TSHR). Efektem jest nadprodukcja hormonów tarczycy: trójjodotyroniny (T3) i tyroksyny (T4). (wiki) Prowadzi to bezpoœrednio do nadczynnoœci tarczycy. 
 
-\begin{itemize}
- \item Jak dzia³a tarczyca i jej uk³ad hormonalny.
- \item Co to jest choroba Gravesa. 
- \item Jakie s¹ jej objawy.
- \item U kogo wystêpuje.
- \item Jakie jest na ni¹ lekarstwo. 
-\end{itemize}
+Standardowe leczenie to terapia lekami przeciwtarczycowymi \textit{(antithyroid drugs - ATD)}. Jednym z nich jest metimazol. Chamuje dzia³anie enzymu, odpowiadaj¹cego za syntezê hormonów tarczycy. Terapia skutkuje obni¿eniem T3 i T4, jednak bardzo czêsto wystêpuj¹ reemisje. 
+
+Dotychczas stosowane terapie, s¹ uniwersalne, pozbawione indywidualnego podejœcia. W pracy przedstawiono program do symulacji terapii. Na podstawie danych z badañ pacjenta, pozwala przewidzieæ odpowiedŸ jego organizmu. Pozwala to skuteczniej zaplanowaæ terapiê i przewidzieæ reemisje. 
+
+%\begin{itemize}
+% \item Jak dzia³a tarczyca i jej uk³ad hormonalny.
+% \item Co to jest choroba Gravesa. 
+% \item Jakie s¹ jej objawy.
+% \item U kogo wystêpuje.
+% \item Jakie jest na ni¹ lekarstwo. 
+%\end{itemize}
 
 
-\section{Rozwi¹zania alternatywne}
-Inne metody leczenia? Symulacji?
+%\section{Rozwi¹zania alternatywne}
+%Inne metody leczenia? Symulacji?
 %Opis ewentualnych znanych sposobów rozwi¹zania problemu wraz z ich ocen¹ najlepiej z wyraŸnym podzia³em na zalety i wady, przy czym najlepiej by z wymienionych wad po czêœci wynika³ cel i przyjête za³o¿enia.\footnote{$\pm$ pó³ strony}
 %
 %\emph{No¿yczki s¹ czêstym tematem prac badawczych. W~\cite{Malina} nie zosta³y wymienione ¿adne no¿yczki. No¿yczki, które nie zosta³y wymienione w~\cite{Gonzalez}, cechuj¹ siê pe³nym automatyzmem, niestety relatywnie szybko ulegaj¹ stêpieniu.}
@@ -32,13 +40,15 @@ Inne metody leczenia? Symulacji?
 % \item opracowania architektury no¿yczek,
 % \item testowania no¿yczek w~warunkach zmiennej wilgotnoœci.
 %\end{itemize}
-%}
+%}	
 %}
 \begin{itemize}
 \item Cel bezpoœredni - dostosowanie dawki leku, dla konkretnego pacjenta, dla osi¹gniêcia równowagi uk³adu hormonalnego tarczycy.
 
 \item Cel poœredni - stworzenie oprogramowania, etc. 
 \end{itemize}
+
+Niedokoñczone
 
 %\emph{Celem pracy jest \textbf{dostosowanie dawki leku do pacjenta.} Wymaga to realizacji nastêpuj¹cych etapów:
 %\begin{itemize}
@@ -51,64 +61,115 @@ Inne metody leczenia? Symulacji?
 
 \section{Uk³ad pracy}
 
+NIEDOKOÑCZONE
+
 \textit{Czasem rozdzia³ koñczy siê omówieniem zawartoœci pracy, t³umacz¹cym co czytelnik znajdzie w kolejnych jej rozdzia³ach.
 Ka¿dy rozdzia³ warto jest równie¿ poprzedziæ krótkim wstêpem.}
 
 \chapter{Wprowadzenie teoretyczne}
-to co we wstêpie
+\begin{itemize}
+ \item Jak dzia³a tarczyca i jej uk³ad hormonalny. \textit{rysunek poprawnego dzia³ania pêtli sprzê¿enia zwrotnego uk³adu hormonalnego tarczycy}
+ \item Co to jest choroba Gravesa. \textit{Tutaj rysunek, jak TRAb emituje dzia³anie TSH.}
+ \item Jakie s¹ jej objawy. \textit{Te 3 podpunkty razem.}
+ \item U kogo wystêpuje.
+ \item Jakie jest na ni¹ lekarstwo. Dzia³anie, skutki uboczne.
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Metodologia}\label{Chapter_Metodologia}
 
-Dobór odpowiedniej dawki leku jest mo¿liwy, poprzez symulacjê organizmu pacjenta oraz jego odpowiedzi na terapiê. D¹¿y siê do stanu, w którym wartoœci FT4(?) zmieni¹ siê do wartoœci cz³owieka zdrowego. 
+Dobór odpowiedniej dawki leku jest mo¿liwy, poprzez symulacjê organizmu pacjenta oraz jego odpowiedzi na terapiê. D¹¿y siê do stanu, w którym ca³kowita iloœæ hormonu T4, oznaczana jako FT4 (todo ref), zmieni siê do wartoœci okreœlaj¹cej cz³owieka zdrowego. 
 
-Za³o¿enia i przybli¿enia.
 
-Opisanie 13 parametrów pacjenta i 4 stanów pocz¹tkowych.
 
-Baza pacjentów (referencja)
+W utworzonym programie wykorzystano model matematyczny, przedstawiony w pracy Balamurugan Pandiyan1 i Stephen J. Merrill. Wszelkie za³o¿enia i dane, pochodz¹ z ich pracy. 
 
-Model 
+REF
+\textit{http://zdrowie.gazeta.pl/Zdrowie/7,101459,23027741,badanie-ft4-co-pozwala-okreslic.html}
+ref1
 
-Stabilnoœæ uk³adu
-Algorytm okreœlania stabilnoœci
+\section{Za³o¿enia modelu}
+
+\begin{enumerate}
+\item TRAb imituje dzia³anie TSH i stymuluje komórki tarczycowe do wzrostu, produkcji i wydzielania hormonów tarczycy.
+\item Po za¿yciu leku doustnie, metimazol (MMI) jest szybko i kompletnie absorbowany do surowicy krwi i jego przyswajalnoœæ, jest estymowana i wynosi œrednio 93%.
+\item Tarczyca przyjmuje MMI z krwi, co dezaktywuje funkcjonalny wzrost gruczo³u. 
+\item Dawka leku zostaje poch³oniêta z krwi po spo¿yciu.
+\item Rozmiar gruczo³u tarczycy jest UKRYTYM PRZEDZIA£EM???? w modelu.
+\item Po doustnym podaniu leku, stê¿enie metimazolu w surowicy krwi wykazuje podobny dynamiczny wzór, jak stê¿enie wewn¹trz tarczycy.
+\end{enumerate}
+
+\section{Zmienne stanu??? Funkcje ró¿niczkowe}
+
+%klucze: (warunki pocz¹tkowe, parametry, zmienne stanu??)
+
+Równania ró¿niczkowe dotycz¹ 4 funkcji. Opisuj¹ one stan organizmu w czasie. S¹ to kluczowe elementy opisuj¹ce terapiê pacjenta.
+\begin{itemize}
+\item x(t) - iloœæ metimazolu (mg) na litr surowicy krwi w czasie t.
+\item y(t) - iloœæ FT4 (pg) na mililitr surowicy krwi w czasie t.
+\item z(t) - rozmiar funkcjonalny gruczo³u tarczycy (ml) lub objêtoœæ aktywnych komórek w czasie t.
+\item w(t) - iloœæ przeciwcia³ TRAb (U) na mililitr krwii w czasie t.
+\item s(t) - zawartoœæ MMI przyjêtego doustnie co dzieñ na litr objêtoœci cia³a.
+
+\end{itemize}
+
+\section{Parametry modelu}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Parametr} & \textbf{Opis}                                                                                                    & \textbf{Wartoœæ}              & \textbf{Jednostka}            \\ \hline
+k1                & \begin{tabular}[c]{@{}l@{}}Wzglêdne maksimum wykorzystania \\ MMI.\end{tabular}                                  & $8,374 * 10^{3}$ & mg/(ml*l\text{dzieñ})                  \\ \hline
+k2                & WskaŸnik eliminacji MMI.                                                                                         & 3,3271                        & 1/\text{dzieñ}                         \\ \hline
+ka                & \begin{tabular}[c]{@{}l@{}}Sta³a Michealisa-Mentena po³owicznego \\ maksymalnego wykorzystania MMI.\end{tabular} & 0,358068                      & mg/L                          \\ \hline
+k3                & Wzglêdne maksimum sekrecji FT4.                                                                                  & 0,119                         & $pg/(ml^{2}*\text{dzieñ})$                   \\ \hline
+kd                & \begin{tabular}[c]{@{}l@{}}Sta³a Michealisa-Mentena\\ po³owicznej maksymalnej  sekrecji FT4.\end{tabular}        & 0,05                          & U/ml                          \\ \hline
+k4                & WskaŸnik eliminacji FT4.                                                                                         & 0,099021                      & 1/\text{dzieñ}                         \\ \hline
+k5                & \begin{tabular}[c]{@{}l@{}}Wzglêdny wspó³czynnik wzrostu \\ gruczo³u tarczycy.\end{tabular}                      & $1 * 10^{6}$       & $ml^{3}/(U*\text{dzieñ})$ \\ \hline
+N                 & \begin{tabular}[c]{@{}l@{}}Maksymalny wspó³czynnik wzrostu \\ tarczycy.\end{tabular}                             & 0,833                         & U/(ml\textasciicircum{}2)     \\ \hline
+k6                & \begin{tabular}[c]{@{}l@{}}Wspó³czynnik nieaktywnych komórek \\ tarczycy.\end{tabular}                           & 0,001                         & ml/(mg*\text{dzieñ})                   \\ \hline
+k7                & \begin{tabular}[c]{@{}l@{}}Maksymalny wspó³czynnik produkcji\\ przeciwcia³ TRAb.\end{tabular}                    & 0,875                         & U/(ml*\text{dzieñ})                    \\ \hline
+kb                & \begin{tabular}[c]{@{}l@{}}Wspó³czynnik hamowania produkcji \\ przeciwcia³.\end{tabular}                         & 1,5                           & mg/L                          \\ \hline
+k8                & WskaŸnik eliminacji TRAb.                                                                                        & 0,035                         & 1/\text{dzieñ}                         \\ \hline
+\end{tabular}
+\end{table}
+
+Wartoœæ k1 zosta³a zaczerpniêta z literatury (todo ref). Parametry k2, k4, k8 s¹ estymowane. Ka k3, kd, k4, k5, N, k6, k7, kb s¹ symulowane. K3, N, k7 - wyliczone.
+
+Aby model maksymalnie pasowa³ do pacjenta, niektóre wartoœci s¹ estymowane. Polega to na porównaniu wyników terapii danego pacjenta z symulacj¹, obliczenie b³êdu œredniokwadratowego i dostosowanie parametrów, w celu zmniejszenia b³êdu.
+
+Parametry, które mo¿na obliczyæ, s¹ przekszta³conymi równaniami ró¿niczkowymi modelu. Obliczenia dokonuje siê g³ównie za pomoc¹ wartoœci pocz¹tkowych modelu. S¹ to wyniki badañ, podczas pierwszej wizyty pacjenta. Parametr k3 obliczono jako:
+\[
+k3 = \dfrac{k4y0(kd+w0)}{z0w0}
+\]
+
+\[
+N = \dfrac{w0}{z0}
+\]
 
 \section{Model matematyczny}
 
-Wykorzystano model symuluj¹cy leczenie pacjenta po przyjêciu metimazolu (MMI). 
+Wykorzystano model symuluj¹cy leczenie pacjenta, po przyjêciu metimazolu (MMI). 
 
-\[\dfrac{dx}{dt} = s(t) - \dfrac{(k1z)x}{ka + x} - k2x 
-x(t0) = x0, (1) \]
+\begin{equation} \label{eq1}
+\dfrac{dx}{dt} = s(t) - \dfrac{(k1z)x}{ka + x} - k2x, \quad x(t0) = x0
+\end{equation}
 
-\[
-\dfrac{dy}{dt} = \dfrac{(k3z)w}{kd + w } - k4y 
-y(t0) = y0, (2)
-\]
-\[
-\dfrac{dz}{dt} = k5 (\dfrac{w}{z} - N)
-- k6zx 
-z(t0) = z0, (3)
-\]
-\[
-\dfrac{dw}{dt} = k7 - \dfrac{k7x}{kb + x} - k8w 
-w(t0) = w0 (4)
-\]
+\begin{equation} \label{eq2}
+\dfrac{dy}{dt} = \dfrac{(k3z)w}{kd + w } - k4y, \quad y(t0) = y0
+\end{equation}
 
+\begin{equation} \label{eq3}
+\dfrac{dz}{dt} = k5 (\dfrac{w}{z} - N) - k6zx, \quad z(t0) = z0
+\end{equation}
 
+\begin{equation} \label{eq4}
+\dfrac{dw}{dt} = k7 - \dfrac{k7x}{kb + x} - k8w, \quad w(t0) = w0 \end{equation}
 
 \section{Stan pocz¹tkowy}
 
 Model sk³ada siê z 4 parametrów, okreœlaj¹cych stan pocz¹tkowy. 
 
-State Variables:
-\begin{itemize}
-\item x(t) = the amount of MMI (mg) per liter of blood serum at time t.
-\item y(t) = the amount of FT4 (pg) per milliliter of blood serum at time t.
-\item z(t) = the functional size of thyroid gland (mL) or the volume of proportion of active cells at time t.
-\item w(t) = the amount of TRAb (U) per milliliter of blood serum at time t.
-\item s(t) = the amount of MMI orally taken per day per liter of body volume (mg/L/day).
-
-\end{itemize}
 
 Obliczenie wartoœci pocz¹tkowej MMI w krwioobiegu ($x_{0}$):
 
@@ -116,13 +177,27 @@ Obliczenie wartoœci pocz¹tkowej MMI w krwioobiegu ($x_{0}$):
 
 przy czym, objêtoœæ dystrybucji metimazolu w organiŸmie wynosi 3L. 
 
-Rozmiar funkcjonalny tarczycy, mo¿na obliczyæ przekszta³caj¹c pierwsze równanie ró¿niczkowe modelu, do postaci:
+Rozmiar funkcjonalny tarczycy, obliczono przekszta³caj¹c pierwsze równanie ró¿niczkowe modelu, do postaci:
 
 
 \[z_{0} = \dfrac{(s(t) - k_{2}x_{0})(k_{a} + x_{0})}{k_{1}x_{0}}\]
 
+Stê¿enie pocz¹tkowe FT4 oraz przeciwcia³ TRAb pochodzi z badañ podczas pierwszej wizyty pacjenta.
 
 
+\section{Dane}
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=1\textwidth]{fake/table_patients}
+	\caption{Fake table.}\label{p20_no_dose_img}
+\end{figure}
+Baza pacjentów (referencja)
+
+
+\section{Stabilnoœæ uk³adu}
+Stabilnoœæ uk³adu
+Algorytm okreœlania stabilnoœci
 
 %\emph{Przeprowadzenie symulacji wi¹¿e siê z kilkoma etapami. }
 %
@@ -149,13 +224,17 @@ Diagram przep³ywu danych
 
 \section{Specyfikacja interfejsu programistycznego}
 
-
-Równania ró¿niczkowe tutaj
-Testy
-Przyk³ady ciekawszych funkcji
-Obliczenie wielkoœci macierzy wynikowej
-
-jakiekolwiek problemy programistyczne etc, wszystko co z implementacj¹
+\begin{itemize}
+\item struktura MVC 
+\item Wszystkie klasy i interfejsy z omówieniem
+\item Implementacja s(t)
+\item Testy
+\item Przyk³ady ciekawszych funkcji
+\item Obliczenie wielkoœci macierzy wynikowej i maksymalnej iloœci dni
+\item Optymalizacja, przez zmianê parametrów ode45
+\item jakiekolwiek problemy programistyczne etc, wszystko co z implementacj¹
+\item Funkcje dodatkowe, nie wchodz¹ce w sk³ad programu
+\end{itemize}
 
 %Jeœli projekt, praca dotyczy systemu informatycznego, w dokumentacji umieszcza siê z~regu³y jedynie interfejs programistyczny (b¹dŸ jego fragmenty). Pe³ny kod mo¿na do³¹czyæ w za³¹czniku.
 
@@ -207,7 +286,7 @@ Instrukcja obs³ugi zbudowanego urz¹dzenia/programu komputerowego. Dok³adne wyjaœ
 %Zobrazowanie i omówienie wyników otrzymywanych wskutek zastosowania danego urz¹dzenia b¹dŸ aplikacji. Badanie ewentualnych parametrów (takich jak dok³adnoœæ, czu³oœæ...), czy te¿ zachowania w szczególnych sytuacjach. O ile to mo¿liwe tabelaryzacja rezultatów oraz ich statystyczna interpretacja. Ocena zachowania zaproponowanego rozwi¹zania. Analiza mo¿liwych przyczyn wyst¹pienia b³êdów. 
 
 \begin{quotation}
-Co tutaj? Symulacje? Tych 4 pacjentów? Mo¿e wykresy powinny byæ w dodatku?
+
 
 Tabela z pacjentami i ich parametrami
 Symulacje i walidacja wykresów
@@ -216,26 +295,68 @@ Analiza porównawcza?
 Wnioski (scenariusze pacjentów)
 \end{quotation}
 
-Do analizy modelu u¿yto danych 4 pacjentów. Pacjenci zostali opisani przez 13 parametrów.  
+\begin{itemize}
+\item Sugerowane leczenie ka¿dego z 4 pacjentów przez 180 dni. (matlab)
+\item Poziom pocz¹tkowy FT4 wszystkich pacjentów
+\end{itemize}
 
 Do analizy modelu u¿yto danych 4 pacjentów zmagaj¹cych siê z nadczynnoœci¹ tarczycy Gravesa—Basedowa. Dane uzyskano… W tej czêœci pracy zosta³y przedstawione symulacje leczenia chorych. 
 
-Pacjent numer 20
-Na pocz¹tku analizowano stan pacjenta, bez podania leku. Poziom FT4 pacjenta wynosi 25.63pg/ml. Jest to znacznie powy¿ej normy (7-18pg/ml). Œwiadczy to o nadczynnoœci tarczycy. Przy symulacji trwaj¹cej 10 dni, ¿adne przebiegi czasowe nie ulegaj¹ zmianie. Dla nieskoñczenie d³ugiego okresu, rezultaty s¹ takie same. Wynika to z faktu, ¿e przy braku leczenia, model jest asymptotycznie stabilny.
+\section{Pacjent numer 20}
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=\size\textwidth]{wyniki/p20_no_dose_d10}
+	\caption{Pacjent nr 20, nie leczony.}\label{p20_no_dose_img}
+\end{figure}
+
+Na pocz¹tku analizowano stan pacjenta, bez podania leku. Poziom FT4 pacjenta wynosi 25,63 pg/ml. Jest to znacznie powy¿ej normy (7-18 pg/ml). Œwiadczy to o nadczynnoœci tarczycy. Przy symulacji trwaj¹cej 10 dni, ¿adne przebiegi czasowe nie ulegaj¹ zmianie. Mo¿na to zaobserwowaæ na rysunku (Rys.~\ref{p20_no_dose_img}). Dla nieskoñczenie d³ugiego okresu, rezultaty s¹ takie same. Wynika to z faktu, ¿e przy braku leczenia, model jest asymptotycznie stabilny.
+
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=\size\textwidth]{wyniki/p20_dose30_d1}
+	\caption{Pacjent nr 20, leczony 30 mg leku.}\label{p20_dose30_d1_img}
+\end{figure}
+
  
-Po jednorazowym podaniu 30 mg MMI, lek zostaje ca³kowicie wydalony przez organizm w czasie jednego dnia. Ta dawka nie ma znacz¹cego wp³ywu na funkcje tarczycy. 
+Po jednorazowym podaniu 30 mg MMI (Rys.~\ref{p20_dose30_d1_img}), lek zostaje ca³kowicie wydalony przez organizm w czasie jednego dnia. Ta dawka nie ma znacz¹cego wp³ywu na funkcje tarczycy. 
  
-Przy podawaniu 30mg leku przez 120 dni, stan gospodarki hormonalnej tarczycy pacjenta, znacz¹co siê zmieni³. Po oko³o 30 dniach, poziom FT4 pacjenta osi¹gn¹³ graniczny poziom dla osoby zdrowej. Kontynuowanie terapii przy tej samej dawce, skutkuje ci¹g³ym obni¿aniem siê hormonu. Na skutek tego, po 90 dniach osi¹ga poziom œwiadcz¹cy o niedoczynnoœci tarczycy.
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=\size\textwidth]{wyniki/p20_dose30_d120}
+	\caption{Pacjent nr 20, leczony dawk¹ 30 mg leku przez 120 dni.}\label{p20_dose30_d120_img}
+\end{figure}
+
+Przy podawaniu 30mg leku przez 120 dni, stan gospodarki hormonalnej tarczycy pacjenta, znacz¹co siê zmieni³ (Rys.~\ref{p20_dose30_d120_img}). Po oko³o 30 dniach, poziom FT4 pacjenta osi¹gn¹³ graniczny poziom dla osoby zdrowej. Kontynuowanie terapii przy tej samej dawce, skutkuje ci¹g³ym obni¿aniem siê hormonu. Na skutek tego, po 90 dniach osi¹ga poziom œwiadcz¹cy o niedoczynnoœci tarczycy.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=\size\textwidth]{wyniki/p20_dose30_d75_dose0_d45}
+	\caption{Pacjent nr 20, leczenie i obserwacja.}\label{p20_dose30_d75_dose0_d45_img}
+\end{figure}
   
-Jak pokazano na wykresie (fig?) przy podawaniu dawki 30 mg przez 75 dni i odstawieniu leku, pacjent powróci³ do stanu nadczynnoœci tarczycy. Trwa³o to oko³o 35 dni. Pacjent wymaga nastêpnej serii leczenia. 
- 
+Jak pokazano na wykresie (Rys.~\ref{p20_dose30_d75_dose0_d45_img}) przy podawaniu dawki 30 mg przez 75 dni i odstawieniu leku, pacjent powróci³ do stanu nadczynnoœci tarczycy. Trwa³o to oko³o 35 dni. Pacjent wymaga nastêpnej serii leczenia. 	
 
 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=\size\textwidth]{wyniki/p20_treatment}
+	\caption{Pacjent nr 20, sugerowane leczenie.}\label{p20_treatment_img}
+\end{figure}
 
-
+Na rysunku (Rys.~\ref{p20_treatment_img}), zasugerowano leczenie pacjenta numer 20. Przy leczeniu dawk¹ 30 mg przez 2 miesi¹ce, stê¿enie FT4 pacjenta osi¹gnê³o górn¹ graniczn¹ wartoœæ po 27 dniach. Po 60 dniach wynosi³o 12,3 pg/ml. Postanowiono zwiêkszyæ dawkê metizamolu do 40 mg dziennie. Graniczna wartoœæ zosta³a osi¹gniêta po 25 dniach, a stê¿enie pod koniec etapu wynios³o 10,97 pg/ml. Nastêpnie zmniejszono dawkê do 20 pg/ml i 10 pg/ml. Po tym okresie nale¿y zaobserwowaæ czy choroba jest w stadium reemisji. Jeœli tak, nale¿y zacz¹æ seriê leczenia od pocz¹tku.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Podsumowanie}
+
+\section{Wnioski}
+\begin{itemize}
+\item Czas leczenia mo¿e, ale nie musi wp³ywaæ na prawdopodobieñstwo reemisji. 
+\item Zwiêkszenie dawki leku przyœpiesza obni¿enie poziomu hormonów tarczycy.
+\item Model pozwala przewidzieæ, kiedy mo¿e nast¹piæ reemisja choroby.
+\item Model nie pozwala przewidzieæ czy nast¹pi reemisja choroby.
+\end{itemize}
 %Nawi¹zanie do celu pracy oraz postawionych za³o¿eñ. Próba oceny realizacji celu, poprzez weryfikacjê otrzymanych rezultatów. Analiza dostrze¿onych problemów, b³êdnego, nieoczekiwanego dzia³ania, ewentualnych problemów napotkanych podczas realizacji. W przypadku niewyczerpania tematu, a tak¿e wspomnianego niepo¿¹danego zachowania urz¹dzenia/aplikacji sugestie ich eliminacji wymienione jako plany na przysz³oœæ.\footnote{Krótkie! 1-2 strony.}
 %
 %Wstêp wraz z podsumowaniem winny stanowiæ swego rodzaju klamrê, a nawet ca³oœæ w takim rozumieniu, ¿e przeczytanie wy³¹cznie tych dwóch rozdzia³ów t³umaczyæ powinno rozwa¿any problem wraz z efektami otrzymanymi w efekcie prac, stanowi¹cymi jego rozwi¹zanie, bez wnikania w sposób ich otrzymania (to zawiera czêœæ œrodkowa).
