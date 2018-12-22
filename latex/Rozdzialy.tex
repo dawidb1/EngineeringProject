@@ -9,7 +9,7 @@
 %
 %\emph{Automatyczna analiza obrazów (AAO)\footnote{Tak wprowadzamy skróty.} jest niezwykle istotn¹ i szybko rozwijaj¹c¹ siê dziedzin¹ nauki. Bez narzêdzi (\ang{tools}) AAO trudno dziœ sobie wyobraziæ ksi¹¿ki o~przetwarzaniu obrazów \cite{Gonzalez} i~inne. Jednym z~popularniejszych narzêdzi analizy s¹ no¿yczki.}
 
-Choroba Gravesa jest najczêstsz¹, idiopatyczn¹ form¹ nadczynnoœci tarczycy. To choroba autoimmunologiczna, powodowana nadaktywnoœci¹ przeciwcia³ przeciwtarczycowych (TRAb). Imituj¹ one dzia³anie hormonu TSH, stymuluj¹c receptory TSH (TSHR). Efektem jest nadprodukcja hormonów tarczycy: trójjodotyroniny (T3) i tyroksyny (T4). (wiki) Prowadzi to bezpoœrednio do nadczynnoœci tarczycy. 
+Choroba Gravesa jest najczêstsz¹, idiopatyczn¹ form¹ nadczynnoœci tarczycy. To choroba autoimmunologiczna, powodowana nadaktywnoœci¹ przeciwcia³ przeciwtarczycowych (TRAb). Imituj¹ one dzia³anie hormonu TSH, stymuluj¹c receptory TSH (TSHR). Efektem jest nadprodukcja hormonów tarczycy: trójjodotyroniny (T3) i tyroksyny (T4) \cite{wiki}. Prowadzi to bezpoœrednio do nadczynnoœci tarczycy. 
 
 Standardowe leczenie to terapia lekami przeciwtarczycowymi \textit{(antithyroid drugs - ATD)}. Jednym z nich jest metimazol. Chamuje dzia³anie enzymu, odpowiadaj¹cego za syntezê hormonów tarczycy. Terapia skutkuje obni¿eniem T3 i T4, jednak bardzo czêsto wystêpuj¹ reemisje. 
 
@@ -78,37 +78,31 @@ Ka¿dy rozdzia³ warto jest równie¿ poprzedziæ krótkim wstêpem.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Metodologia}\label{Chapter_Metodologia}
 
-Dobór odpowiedniej dawki leku jest mo¿liwy, poprzez symulacjê organizmu pacjenta oraz jego odpowiedzi na terapiê. D¹¿y siê do stanu, w którym ca³kowita iloœæ hormonu T4, oznaczana jako FT4 (todo ref), zmieni siê do wartoœci okreœlaj¹cej cz³owieka zdrowego. 
+Dobór odpowiedniej dawki leku jest mo¿liwy, poprzez symulacjê organizmu pacjenta oraz jego odpowiedzi na terapiê. D¹¿y siê do stanu, w którym iloœæ hormonu T4 w formie wolnej, oznaczana jako fT4 \cite{ft4}, zmieni siê do wartoœci okreœlaj¹cej cz³owieka zdrowego. 
 
-
-
-W utworzonym programie wykorzystano model matematyczny, przedstawiony w pracy Balamurugan Pandiyan1 i Stephen J. Merrill. Wszelkie za³o¿enia i dane, pochodz¹ z ich pracy. 
-
-REF
-\textit{http://zdrowie.gazeta.pl/Zdrowie/7,101459,23027741,badanie-ft4-co-pozwala-okreslic.html}
-ref1
+W utworzonym programie wykorzystano model matematyczny, przedstawiony w pracy Balamurugan Pandiyan1 i Stephen J. Merrill. Wszelkie za³o¿enia i dane, pochodz¹ z ich pracy.\cite{graves1}
 
 \section{Za³o¿enia modelu}
-
 \begin{enumerate}
 \item TRAb imituje dzia³anie TSH i stymuluje komórki tarczycowe do wzrostu, produkcji i wydzielania hormonów tarczycy.
 \item Po za¿yciu leku doustnie, metimazol (MMI) jest szybko i kompletnie absorbowany do surowicy krwi i jego przyswajalnoœæ, jest estymowana i wynosi œrednio 93%.
 \item Tarczyca przyjmuje MMI z krwi, co dezaktywuje funkcjonalny wzrost gruczo³u. 
 \item Dawka leku zostaje poch³oniêta z krwi po spo¿yciu.
-\item Rozmiar gruczo³u tarczycy jest UKRYTYM PRZEDZIA£EM???? w modelu.
+\item Rozmiar gruczo³u tarczycy jest ukrytym kompartmentem w modelu.
 \item Po doustnym podaniu leku, stê¿enie metimazolu w surowicy krwi wykazuje podobny dynamiczny wzór, jak stê¿enie wewn¹trz tarczycy.
 \end{enumerate}
 
-\section{Zmienne stanu??? Funkcje ró¿niczkowe}
+\section{Funkcje stanu}
 
 %klucze: (warunki pocz¹tkowe, parametry, zmienne stanu??)
 
-Równania ró¿niczkowe dotycz¹ 4 funkcji. Opisuj¹ one stan organizmu w czasie. S¹ to kluczowe elementy opisuj¹ce terapiê pacjenta.
+Rozwa¿any model jest uk³adem równañ ró¿niczkowych w którym:
+
 \begin{itemize}
-\item x(t) - iloœæ metimazolu (mg) na litr surowicy krwi w czasie t.
-\item y(t) - iloœæ FT4 (pg) na mililitr surowicy krwi w czasie t.
-\item z(t) - rozmiar funkcjonalny gruczo³u tarczycy (ml) lub objêtoœæ aktywnych komórek w czasie t.
-\item w(t) - iloœæ przeciwcia³ TRAb (U) na mililitr krwii w czasie t.
+\item x(t) - iloœæ metimazolu (mg) na litr surowicy krwi w chwili czasowej t.
+\item y(t) - iloœæ FT4 (pg) na mililitr surowicy krwi w chwili czasowej t.
+\item z(t) - rozmiar funkcjonalny gruczo³u tarczycy (ml) lub objêtoœæ aktywnych komórek w chwili czasowej t.
+\item w(t) - iloœæ przeciwcia³ TRAb (U) na mililitr krwii w chwili czasowej t.
 \item s(t) - zawartoœæ MMI przyjêtego doustnie co dzieñ na litr objêtoœci cia³a.
 
 \end{itemize}
@@ -119,56 +113,110 @@ Równania ró¿niczkowe dotycz¹ 4 funkcji. Opisuj¹ one stan organizmu w czasie. S¹ 
 \begin{tabular}{|l|l|l|l|}
 \hline
 \textbf{Parametr} & \textbf{Opis}                                                                                                    & \textbf{Wartoœæ}              & \textbf{Jednostka}            \\ \hline
-k1                & \begin{tabular}[c]{@{}l@{}}Wzglêdne maksimum wykorzystania \\ MMI.\end{tabular}                                  & $8,374 * 10^{3}$ & mg/(ml*l\text{dzieñ})                  \\ \hline
-k2                & WskaŸnik eliminacji MMI.                                                                                         & 3,3271                        & 1/\text{dzieñ}                         \\ \hline
+$k_{1}$                & \begin{tabular}[c]{@{}l@{}}Wzglêdne maksimum wykorzystania \\ MMI.\end{tabular}                                  & $8,374\cdot 10^{3}$ & mg/($ml\cdot l\text{dzieñ}$)                  \\ \hline
+$k_{2}$              & WskaŸnik eliminacji MMI.                                                                                         & 3,3271                        & 1/\text{dzieñ}                         \\ \hline
 ka                & \begin{tabular}[c]{@{}l@{}}Sta³a Michealisa-Mentena po³owicznego \\ maksymalnego wykorzystania MMI.\end{tabular} & 0,358068                      & mg/L                          \\ \hline
-k3                & Wzglêdne maksimum sekrecji FT4.                                                                                  & 0,119                         & $pg/(ml^{2}*\text{dzieñ})$                   \\ \hline
-kd                & \begin{tabular}[c]{@{}l@{}}Sta³a Michealisa-Mentena\\ po³owicznej maksymalnej  sekrecji FT4.\end{tabular}        & 0,05                          & U/ml                          \\ \hline
-k4                & WskaŸnik eliminacji FT4.                                                                                         & 0,099021                      & 1/\text{dzieñ}                         \\ \hline
-k5                & \begin{tabular}[c]{@{}l@{}}Wzglêdny wspó³czynnik wzrostu \\ gruczo³u tarczycy.\end{tabular}                      & $1 * 10^{6}$       & $ml^{3}/(U*\text{dzieñ})$ \\ \hline
-N                 & \begin{tabular}[c]{@{}l@{}}Maksymalny wspó³czynnik wzrostu \\ tarczycy.\end{tabular}                             & 0,833                         & U/(ml\textasciicircum{}2)     \\ \hline
-k6                & \begin{tabular}[c]{@{}l@{}}Wspó³czynnik nieaktywnych komórek \\ tarczycy.\end{tabular}                           & 0,001                         & ml/(mg*\text{dzieñ})                   \\ \hline
-k7                & \begin{tabular}[c]{@{}l@{}}Maksymalny wspó³czynnik produkcji\\ przeciwcia³ TRAb.\end{tabular}                    & 0,875                         & U/(ml*\text{dzieñ})                    \\ \hline
-kb                & \begin{tabular}[c]{@{}l@{}}Wspó³czynnik hamowania produkcji \\ przeciwcia³.\end{tabular}                         & 1,5                           & mg/L                          \\ \hline
-k8                & WskaŸnik eliminacji TRAb.                                                                                        & 0,035                         & 1/\text{dzieñ}                         \\ \hline
+$k_{3}$                & Wzglêdne maksimum sekrecji FT4.                                                                                  & 0,119                         & $pg/(ml^{2}\cdot\text{dzieñ})$                   \\ \hline
+$k_{d}$                & \begin{tabular}[c]{@{}l@{}}Sta³a Michealisa-Mentena\\ po³owicznej maksymalnej  sekrecji FT4.\end{tabular}        & 0,05                          & U/ml                          \\ \hline
+$k_{4}$                & WskaŸnik eliminacji FT4.                                                                                         & 0,099021                      & 1/\text{dzieñ}                         \\ \hline
+$k_{5}$                & \begin{tabular}[c]{@{}l@{}}Wzglêdny wspó³czynnik wzrostu \\ gruczo³u tarczycy.\end{tabular}                      & $1 \cdot 10^{6}$       & $ml^{3}/(U\cdot\text{dzieñ})$ \\ \hline
+N                 & \begin{tabular}[c]{@{}l@{}}Maksymalny wspó³czynnik wzrostu \\ tarczycy.\end{tabular}                             & 0,833                         & $U/(ml^{2})$     \\ \hline
+$k_{6}$                & \begin{tabular}[c]{@{}l@{}}Wspó³czynnik nieaktywnych komórek \\ tarczycy.\end{tabular}                           & 0,001                         & $ml/(mg\cdot\text{dzieñ})$                   \\ \hline
+$k_{7}$                & \begin{tabular}[c]{@{}l@{}}Maksymalny wspó³czynnik produkcji\\ przeciwcia³ TRAb.\end{tabular}                    & 0,875                         & $U/(ml\cdot\text{dzieñ})$                    \\ \hline
+$k_{b}$                & \begin{tabular}[c]{@{}l@{}}Wspó³czynnik hamowania produkcji \\ przeciwcia³.\end{tabular}                         & 1,5                           & mg/L                          \\ \hline
+$k_{8}$                & WskaŸnik eliminacji TRAb.                                                                                        & 0,035                         & 1/\text{dzieñ}                         \\ \hline
 \end{tabular}
 \end{table}
 
-Wartoœæ k1 zosta³a zaczerpniêta z literatury (todo ref). Parametry k2, k4, k8 s¹ estymowane. Ka k3, kd, k4, k5, N, k6, k7, kb s¹ symulowane. K3, N, k7 - wyliczone.
+Wartoœæ $k_{1}$ zosta³a zaczerpniêta z literatury (todo ref). Parametry $k_{2}$, $k_{4}$, $k_{8}$ s¹ estymowane. $k_{a}$, $k_{d}$, $k_{5}$, $k_{6}$, $k_{b}$ s¹ symulowane. $k_{3}$, $N$, $k_{7}$ - wyliczone.
 
 Aby model maksymalnie pasowa³ do pacjenta, niektóre wartoœci s¹ estymowane. Polega to na porównaniu wyników terapii danego pacjenta z symulacj¹, obliczenie b³êdu œredniokwadratowego i dostosowanie parametrów, w celu zmniejszenia b³êdu.
 
-Parametry, które mo¿na obliczyæ, s¹ przekszta³conymi równaniami ró¿niczkowymi modelu. Obliczenia dokonuje siê g³ównie za pomoc¹ wartoœci pocz¹tkowych modelu. S¹ to wyniki badañ, podczas pierwszej wizyty pacjenta. Parametr k3 obliczono jako:
+Parametry, które mo¿na obliczyæ, s¹ przekszta³conymi równaniami ró¿niczkowymi modelu. Obliczenia dokonuje siê g³ównie za pomoc¹ wartoœci pocz¹tkowych modelu. S¹ to wyniki badañ, podczas pierwszej wizyty pacjenta. Parametr $k_{3}$ obliczono jako:
 \[
-k3 = \dfrac{k4y0(kd+w0)}{z0w0}
+k_{3} = \dfrac{k_{4}y0(k_{d}+w0)}{z0w0}
 \]
 
 \[
 N = \dfrac{w0}{z0}
 \]
 
+\[
+k_{7} jak wyliczyæ?
+\]
+
 \section{Model matematyczny}
 
-Wykorzystano model symuluj¹cy leczenie pacjenta, po przyjêciu metimazolu (MMI). 
+Wykorzystano model symuluj¹cy leczenie pacjenta, po przyjêciu metimazolu (MMI). \ref{eq:uklad} 
 
-\begin{equation} \label{eq1}
-\dfrac{dx}{dt} = s(t) - \dfrac{(k1z)x}{ka + x} - k2x, \quad x(t0) = x0
+\begin{equation} \label{eq:uklad}
+\left\lbrace 
+\arraycolsep=1.5pt\def\arraystretch{2.2}
+\begin{array}{ll}
+
+\dfrac{dx}{dt} = s(t) - \dfrac{(k_{1}z)x}{k_{a} + x} - k_{2}x, \quad x(t_{0}) = x_{0} \\
+
+\dfrac{dy}{dt} = \dfrac{(k_{3}z)w}{k_{d} + w } - k_{4}y, \quad y(t_{0}) = y_{0} \\
+
+\dfrac{dz}{dt} = k_{5} (\dfrac{w}{z} - N) - k_{6}zx, \quad z(t_{0}) = z_{0} \\
+
+\dfrac{dw}{dt} = k_{7} - \dfrac{k_{7}x}{k_{b} + x} - k_{8}w, \quad w(t_{0}) = w_{0}
+
+\end{array}
+\right.
 \end{equation}
 
-\begin{equation} \label{eq2}
-\dfrac{dy}{dt} = \dfrac{(k3z)w}{kd + w } - k4y, \quad y(t0) = y0
-\end{equation}
+Ka¿de rozwi¹zanie modelu musi spe³niaæ odpowiedni warunek
+$x(t) \geq 0, y(t) \geq 0, z(t) > 0, w(t) \geq 0$. 
+Warunki pocz¹tkowe s¹ opisane przez $E_{0} = (x_{0}, y_{0}, z_{0}, w_{0})$. Szczegó³owy opis uk³adu znajduje siê w dalszej czêœci sekcji.
 
-\begin{equation} \label{eq3}
-\dfrac{dz}{dt} = k5 (\dfrac{w}{z} - N) - k6zx, \quad z(t0) = z0
-\end{equation}
+\begin{align}
+\label{eq:dxdt}
+\dfrac{dx}{dt} = s(t) - \dfrac{(k_{1}z)x}{k_{a} + x} - k_{2}x\\
+\label{eq:dydt}
+\dfrac{dy}{dt} = \dfrac{(k_{3}z)w}{k_{d} + w } - k_{4}y \\
+\label{eq:dzdt}
+\dfrac{dz}{dt} = k_{5} (\dfrac{w}{z} - N) - k_{6}zx \\
+\label{eq:dwdt}
+\dfrac{dw}{dt} = k_{7} - \dfrac{k_{7}x}{k_{b} + x} - k_{8}w
+\end{align}
 
-\begin{equation} \label{eq4}
-\dfrac{dw}{dt} = k7 - \dfrac{k7x}{kb + x} - k8w, \quad w(t0) = w0 \end{equation}
+Równanie \ref{eq:dxdt} zawiera dawkê, przyjmowan¹ przez pacjenta $s(t)$, pomniejszon¹ o 2 sk³adniki. Pierwszy to $\dfrac{(k_{1}z)x}{k_{a} + x}$. Zawiera wch³anianie metimazolu (MMI) przez gruczo³ tarczycy, wed³ug jego rozmiaru ($z$), zak³adaj¹c jego maksymalny wychwyt ($k_{1}$). Jest ono podzielone, wed³ug równania kinetycznego Michaela-Mentena, przez sta³¹ ($k_{a}$). Drugim sk³adnikiem jest $k_{2}x$, który odzwierciedla wydalanie lub wskaŸnik eliminacji leku, przez mechanizm niespecyficzny. 
 
-\section{Stan pocz¹tkowy}
+Pierwsze wyra¿enie w nastêpnym równaniu \ref{eq:dydt} $\dfrac{(k_{3}z)w}{k_{d} + w}$, opisuje znany z poprzedniego \ref{eq:dxdt} \textit{?równania?(powtórzenie)} mechanizm Michaela-Mentena, wykorzystany do obliczenia wskaŸnika wydzielania tyroksyny w formie wolnej (fT4). Jest on pomniejszony, o wskaŸnik eliminacji fT4 z krwi $k_{4}y$. 
 
-Model sk³ada siê z 4 parametrów, okreœlaj¹cych stan pocz¹tkowy. 
+Trzecie równanie \ref{eq:dzdt} opisuje wspó³czynnik powiêkszenia funkcjonalnego rozmiaru gruczo³u tarczycy, bazuj¹c na maksymalnym wspó³czynniku wzrostu ($N$) i wzglêdnym wspó³czynniku wzrostu ($k_{5}$), w obecnoœci przeciwcia³ przeciwtarczycowych ($w$) \cite{trab} $k_{5}(\dfrac{w}{z} - N)$. Pomniejszone o wspó³czynnik funckjonalnego rozmiaru tarczycy dla komórek nieaktywowanych przez leczenie MMI. 
+
+W równaniu \ref{eq:dwdt}, parametr $k_{7}$ przedstawiaj¹cy maksymaln¹ produkcjê przeciwcia³ TRAb, spowodowan¹ odpowiedzi¹ autoimmunologiczn¹. Œrodkowe wyra¿enie $\dfrac{k_{7}x}{k_{b} + x}$, przedstawia mechanizm hamowania odpowiedzi immunologicznej, spowodowany podaniem metimazolu. Ostatnie wyra¿enie $k_{8}w$, odnosi siê do opóŸnienia, jakie dotyczy eliminacji TRAb spowodowanego leczeniem.
+\\
+
+Comments:
+\textit{[Czy mogê powiedzieæ "pomniejszon¹", skoro wiem, ¿e wszystkie sk³adowe s¹ nieujemne?]}
+
+\textit{[Zdanie ca³kowicie przet³umaczone \ref{eq:dxdt} - 'The last
+term,
+$k_{2}x$,
+represents the excretion or elimination rate of the drug through non-specific
+mechanism.' - Czy to jest plagiat, skoro wszêdzie bêd¹ odnoœniki do tego artyku³u?]}
+
+%\begin{equation} 
+%\end{equation}
+%
+%\begin{equation} \label{eq2}
+%\dfrac{dy}{dt} = \dfrac{(k_{3}z)w}{k_{d} + w } - k_{4}y, \quad y(t0) = y0
+%\end{equation}
+%
+%\begin{equation} \label{eq3}
+%\dfrac{dz}{dt} = k_{5} (\dfrac{w}{z} - N) - k_{6}zx, \quad z(t0) = z0
+%\end{equation}
+%
+%\begin{equation} \label{eq4}
+%\dfrac{dw}{dt} = k_{7} - \dfrac{k_{7}x}{k_{b} + x} - k_{8}w, \quad w(t0) = w0 
+%\end{equation}
+
+\section{Warunki pocz¹tkowe modelu}
+
+Model sk³ada siê z 4 parametrów, okreœlaj¹cych warunki pocz¹tkowe. 
 
 
 Obliczenie wartoœci pocz¹tkowej MMI w krwioobiegu ($x_{0}$):
@@ -182,22 +230,176 @@ Rozmiar funkcjonalny tarczycy, obliczono przekszta³caj¹c pierwsze równanie ró¿ni
 
 \[z_{0} = \dfrac{(s(t) - k_{2}x_{0})(k_{a} + x_{0})}{k_{1}x_{0}}\]
 
-Stê¿enie pocz¹tkowe FT4 oraz przeciwcia³ TRAb pochodzi z badañ podczas pierwszej wizyty pacjenta.
+Stê¿enie pocz¹tkowe FT4 $(y_{0})$ oraz przeciwcia³ TRAb $(w_{0})$ pochodzi z badañ podczas pierwszej wizyty pacjenta.
 
 
 \section{Dane}
 
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[width=1\textwidth]{fake/table_patients}
-	\caption{Fake table.}\label{p20_no_dose_img}
-\end{figure}
-Baza pacjentów (referencja)
+\begin{table}[]
+\caption{Parametry wybranych pacjentów.}
+\label{tab:pacjenci}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\textbf{Parametr} & \textbf{Pacjent nr 20} & \textbf{Pacjent nr 31} & \textbf{Pacjent nr 55} & \textbf{Pacjant nr 70} \\ \hline
+$k_{1}$                & $8,374 \cdot 10^{3}$   & $8,374 \cdot 10^{3}$   & $8,374 \cdot 10^{3}$   & $8,374 \cdot 10^{3}$   \\ \hline
+$k_{2}$                & 3,3271                 & 3,3272                 & 3,3273                 & 3,3274                 \\ \hline
+$k_{a}$                & 0,358068               & 0,358068               & 0,358068               & 0,358068               \\ \hline
+$k_{3}$                & 0,085                  & 0,08975                & 0,08992                & 0,11784                \\ \hline
+$k_{d}$                & 0,067                  & 0,07                   & 0,081                  & 0,075                  \\ \hline
+$k_{4}$                & 0,099021               & 0,099021               & 0,099021               & 0,099021               \\ \hline
+$k_{5}$                & $10^{6}$               & $10^{6}$               & $10^{6}$               & $10^{6}$               \\ \hline
+N                 & 0,25                   & 0,058                  & 0,207                  & 0,293                  \\ \hline
+$k_{6}$                & 0,001                  & 0,001                  & 0,001                  & 0,001                  \\ \hline
+$k_{7}$                & 0,26                   & 0,061                  & 0,22                   & 0,308                  \\ \hline
+$k_{b}$                & 4,95                   & 11,8                   & 4,09                   & 3,15                   \\ \hline
+$k_{8}$                & 0,035                  & 0,035                  & 0,035                  & 0,035                  \\ \hline
+\end{tabular}
+\end{table}
 
+Do artyku³u \cite{graves1} zosta³y do³¹czone dane z leczenia 23 pacjentów, chorych na nadczynnoœæ tarczycy Gravesa. Zawieraj¹ one informacje o poziomie fT4, TRAb oraz dniu terapii, w którym badanie zosta³o przeprowadzone.
+
+Autorzy pos³ugiwali siê danymi leczenia ponad 70 chorych, wybieraj¹c te, które by³y kompletne. U wielu pacjentów wystêpuj¹ braki z badania TRAb. Dzieje siê tak, poniewa¿ przy wizycie kontrolnej, pomiar fT4 jest wystarczaj¹cy. 
+
+Do przeprowadzenia symulacji, s¹ potrzebne jedynie pomiary przy pierwszej wizycie. Pomiary w trakcie leczenia zosta³y u¿yte do sprawdzenia poprawnoœci dzia³ania modelu.
+
+Do analizy na potrzeby tej pracy, przedstawionej w dalszej czêœci, u¿yto danych 4 pacjentów. Zosta³y one przedstawione w tabeli (Tab. \ref{tab:pacjenci}). S¹ to pacjenci numer 20, 31, 55 i 70. 
 
 \section{Stabilnoœæ uk³adu}
-Stabilnoœæ uk³adu
-Algorytm okreœlania stabilnoœci
+
+Przeanalizowano stabilnoœæ uk³adu dla nieleczonej nadczynnoœci tarczycy, spowodowanej chorob¹ Gravesa. Pos³u¿ono siê omówionym wczeœniej modelem. Do analizy u¿yto twierdzenia o stabilnoœci uk³adów, bazuj¹cego na wartoœciach w³asnych. 
+
+\subsection{Twierdzenie} 
+Niech funkcje $f_{i}(y_{1}, y_{2}, ..., y_{n})$ maj¹ ci¹g³e pochodne cz¹stkowe pierwszego rzêdu $(\dfrac{\partial f_{i}}{\partial y_{1}})$, gdzie $1\leq i,j\leq n$, w otoczeniu punkt równowagi $P=(a_{1},a_{2}, ..., a_{n})$ uk³adu. Dodatkowo niech 
+\[
+J(a_{1},a_{2}, ..., a_{n})
+=
+\begin{bmatrix}
+(\dfrac{\partial f_{1}}{\partial y_{1}}) 
+& (\dfrac{\partial f_{1}}{\partial y_{2}}) 
+& \cdots 
+& (\dfrac{\partial f_{1}}{\partial y_{n}}) \\
+
+(\dfrac{\partial f_{2}}{\partial y_{1}}) 
+& (\dfrac{\partial f_{2}}{\partial y_{3}}) 
+& \cdots 
+& (\dfrac{\partial f_{2}}{\partial y_{n}}) \\
+
+\vdots & \vdots & \ddots & \vdots \\
+
+(\dfrac{\partial f_{n}}{\partial y_{1}}) 
+& (\dfrac{\partial f_{n}}{\partial y_{2}}) 
+& \cdots 
+& (\dfrac{\partial f_{n}}{\partial y_{n}}) 
+\end{bmatrix},
+\]
+gdzie pochodne cz¹stkowe obliczane s¹ w punkcie $(a_{1},a_{2}, ..., a_{n})$.
+
+Wówczas:
+\begin{enumerate}
+\item je¿eli wszystkie wartoœci w³asne macierzy Jacobiego J(P) maj¹ ujemne czêœci rzeczywiste, to punkt $P=(a_{1},a_{2}, ..., a_{n})$ jest asymptotycznie stabilnym punktem równowagi uk³adu
+\item je¿eli co najmniej jedna wartoœæ w³asna macierzy J(P) ma dodatni¹ czêœæ rzeczywist¹, to punkt $P=(a_{1},a_{2}, ..., a_{n})$ jest niestabilnym punktem równowagi uk³adu autonomicznego.
+\end{enumerate}
+
+\subsection{Analiza stabilnoœci}
+Gdy nie podaje siê metimazolu $s(t)=0$, stan nadczynnoœci tarczycy opisuje siê jako $E_{1} = (x_{1}, y_{1}, z_{1}, w_{1})$, gdzie 
+
+\begin{equation} \label{eq:e1}
+\left\lbrace 
+\arraycolsep=1.5pt\def\arraystretch{2.2}
+\begin{array}{ll}
+
+x_{1} = 0 \\
+
+y_{1} = \dfrac{k_{3}k_{3}^{2}}{k_{4}k_{8}N(k_{8}k{d}+k{7})}  \\
+
+z_{1} = \dfrac{k_{7}}{k_{8}N}\\
+
+w_{1} = \dfrac{k_{7}}{k_{8}}
+
+\end{array}
+\right.
+\end{equation}
+
+Obliczaj¹c pochodne cz¹stkowe modelu $f'(x, y, z, w)$, otrzymujemy nastêpuj¹c¹ macierz o wymiarach $4x4$. 
+
+\[
+J
+=
+\begin{bmatrix}
+\dfrac{-(k_{1}k_{a}z+k_{2}(x+k_{a})^2)}{(x+k_{a})^{2}} 
+& 0 
+& \dfrac{-xk_{1}}{(x+k_{a})} 
+& 0 \\
+
+0
+& -k_{4} 
+& \dfrac{wk_{3}}{w+k_{d}}
+& \dfrac{zk_{3}k_{d}}{(w+k_{d})^{2}}  \\
+
+-zk_{6} 
+& 0
+& \dfrac{-wk_{5}}{z^{2}} - xk_{6}
+& \dfrac{k_{5}}{z} \\
+
+\dfrac{-k_{7}k_{b}}{(x+k_{b})^{2}}
+& 0
+& 0
+& -k_{8}
+
+\end{bmatrix},
+\]
+
+Podstawiaj¹c do macierzy warunki pocz¹tkowe, okreœlone w uk³adzie \ref{eq:e1}, otrzymujemy macierz
+
+\[
+J
+=
+\begin{bmatrix}
+-\dfrac{k_{1}k_{7}}{k_{8}Nk_{a}} - k_{2}
+& 0 
+& 0
+& 0 \\
+
+0
+& -k_{4} 
+& \dfrac{k_{3}k_{7}}{k_{8}k_{d}+k_{7}}
+& \dfrac{k_{3}k_{7}k_{8}k_{d}}{N(k_{8}k_{d}+k_{7})^{2}} \\
+
+-\dfrac{k_{6}k_{7}}{k_{8}N} 
+& 0
+& \dfrac{k_{5}k_{8}N^{2}}{k_{7}}
+& \dfrac{k_{5}k_{8}N}{k_{7}} \\
+
+\dfrac{k_{7}}{k_{b}}
+& 0
+& 0
+& -k_{8}
+
+\end{bmatrix},
+\]
+
+Wartoœci w³asne macierzy oblicza siê za pomoc¹ równania charakterystycznego macierzy w postaci $det(J - \lambda I) = 0$. Wartoœci w³asne przedstawiaj¹ siê nastêpuj¹co:
+
+\begin{equation} \label{eq:lambda}
+\left\lbrace 
+\arraycolsep=1.5pt\def\arraystretch{2.2}
+\begin{array}{ll}
+
+\lambda_{1} = -k_{4} \\
+
+\lambda_{2} = -k_{8}  \\
+
+\lambda_{3} = -\dfrac{k_{1}k_{7}}{k_{8}Nk_{a}} -k_{2} \\
+
+\lambda_{4} = -\dfrac{k_{5}k_{8}N^2}{k_{7}}
+
+\end{array}
+\right.
+\end{equation}
+
+Wszystkie wartoœci w³asne maj¹ znak ujemny oraz parametry je opisuj¹ce s¹ dodatnie. Wynika z tego, ¿e wszystkie wartoœci w³asne omawianej macierzy $J$ maj¹ ujemne czêœci rzeczywiste. Wed³ug twierdzenia o stabilnoœci uk³adu, uk³ad jest uk³adem asymptotycznie stabilnym.
+
+Szczegó³owe obliczenia zosta³y przedstawione w dodatku. (ref - kiedy ju¿ bêdzie dodatek)
 
 %\emph{Przeprowadzenie symulacji wi¹¿e siê z kilkoma etapami. }
 %
@@ -300,7 +502,7 @@ Wnioski (scenariusze pacjentów)
 \item Poziom pocz¹tkowy FT4 wszystkich pacjentów
 \end{itemize}
 
-Do analizy modelu u¿yto danych 4 pacjentów zmagaj¹cych siê z nadczynnoœci¹ tarczycy Gravesa—Basedowa. Dane uzyskano… W tej czêœci pracy zosta³y przedstawione symulacje leczenia chorych. 
+W oparciu o program stworzony przez autora pracy, symulowano ró¿ne scenariusze terapii pacjentów. Do analizy modelu u¿yto danych 4 pacjentów zmagaj¹cych siê z nadczynnoœci¹ tarczycy Gravesa—Basedowa. Dane uzyskano… (to przy tabelce, tutaj tylko ref). W tej czêœci pracy zosta³y przedstawione symulacje leczenia chorych. 
 
 \section{Pacjent numer 20}
 
