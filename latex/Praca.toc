@@ -1,0 +1,23 @@
+\contentsline {chapter}{\numberline {1.}Wst\k ep}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Cel pracy}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Uk\IeC {\l }ad pracy}{1}{section.1.2}
+\contentsline {chapter}{\numberline {2.}Wprowadzenie teoretyczne}{2}{chapter.2}
+\contentsline {chapter}{\numberline {3.}Metodologia}{3}{chapter.3}
+\contentsline {section}{\numberline {3.1}Za\IeC {\l }o\.zenia modelu}{3}{section.3.1}
+\contentsline {section}{\numberline {3.2}Funkcje stanu}{3}{section.3.2}
+\contentsline {section}{\numberline {3.3}Parametry modelu}{4}{section.3.3}
+\contentsline {section}{\numberline {3.4}Model matematyczny}{5}{section.3.4}
+\contentsline {section}{\numberline {3.5}Warunki pocz\k atkowe modelu}{6}{section.3.5}
+\contentsline {section}{\numberline {3.6}Dane}{6}{section.3.6}
+\contentsline {section}{\numberline {3.7}Stabilno\'s\'c uk\IeC {\l }adu}{7}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Twierdzenie}{8}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Analiza stabilno\'sci}{8}{subsection.3.7.2}
+\contentsline {chapter}{\numberline {4.}Cz\k e\'s\'c konstrukcyjna/Specyfikacja wewn\k etrzna}{10}{chapter.4}
+\contentsline {section}{\numberline {4.1}Specyfikacja interfejsu programistycznego}{10}{section.4.1}
+\contentsline {chapter}{\numberline {5.}Instrukcja obs\IeC {\l }ugi/Specyfikacja zewn\k etrzna}{11}{chapter.5}
+\contentsline {chapter}{\numberline {6.}Rezultaty}{12}{chapter.6}
+\contentsline {section}{\numberline {6.1}Wst\k epne por\'ownanie pacjent\'ow}{12}{section.6.1}
+\contentsline {section}{\numberline {6.2}Pacjent numer 20}{12}{section.6.2}
+\contentsline {chapter}{\numberline {7.}Podsumowanie}{17}{chapter.7}
+\contentsline {section}{\numberline {7.1}Wnioski}{17}{section.7.1}
+\contentsline {chapter}{Bibliografia}{18}{section.7.1}
