@@ -35,4 +35,5 @@ Celem pośrednim jest stworzenie aplikacji, najpewniej będzie to GUI Matlab.
     5. Symbol Newtona
 
 # Trello
-Postępy pracy są widoczne w [https://trello.com/b/cM2dTOvN/projectepsilon](https://trello.com/b/cM2dTOvN/projectepsilon)
+Postępy pracy nad programem są widoczne w [https://trello.com/b/cM2dTOvN/projectepsilon](https://trello.com/b/cM2dTOvN/projectepsilon)
+Postępy w dokumencie pracy inżynierskiej są widoczne w https://trello.com/b/i9PEFHNW/docepsilon
