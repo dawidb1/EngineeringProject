@@ -25,10 +25,10 @@ else
     py = vpa(points.y,4)
     pz = vpa(points.z,4)
     pw = vpa(points.w,4)
-    px
-    py
-    pz
-    pw
+% points.x
+% points.y
+% points.z
+% points.w
 end
 points = Points(px, py, pz, pw);
 

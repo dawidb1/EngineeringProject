@@ -1,4 +1,4 @@
-function show_simulation( UIAxes,T,X, pLabel )
+function show_simulation( UIAxes, T, X, pLabel )
 %show_simulation Summary of this function goes here
 %   Detailed explanation goes here
 

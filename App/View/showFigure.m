@@ -1,10 +1,10 @@
-function printFigure(plotFigure, name)
+function showFigure(plotFigure, fig)
 %PRINTFIGURE Summary of this function goes here
 % Detailed explanation goes here
 
 % Create a temporary figure with axes.
-
-fig.Visible = 'off';
+fig = figure;
+% fig.Visible = 'off';
 figAxes = axes(fig);
 % Copy all UIAxes children, take over axes limits and aspect ratio.            
 allChildren = plotFigure.XAxis.Parent.Children;
@@ -28,10 +28,8 @@ ylabel(plotFigure.YLabel.String);
 grid
 
 % Save as png and fig files.
-saveas(fig, name, 'png');
-hgexport(fig,'-clipboard')
+% saveas(fig, name, 'png');
 
 % Delete the temporary figure.
-delete(fig);
+% delete(fig);
 end
-

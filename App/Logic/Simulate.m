@@ -9,10 +9,14 @@ InitialValuesVector = [ ISimulation.InitialValues.x ISimulation.InitialValues.y 
 PatientVector = ISimulation.Patient.getVector();
 DoseVector = [ISimulation.Dose.grams ISimulation.Dose.days];
 %% differential equantion
-ukladVector = [InitialValuesVector PatientVector DoseVector];
-[T,X] = ode45(@uklad_rownan,[t0 tend], ukladVector);
+% ukladVector = [InitialValuesVector PatientVector DoseVector];
+% [T,X] = ode45(@uklad_rownan,[t0 tend], ukladVector);
 
-X = X(:,1:4);
+[t, y] = ode45(@(t, y) uklad_rownan2(t, y, PatientVector, DoseVector), [t0 tend], InitialValuesVector);
+
+X = y;
+T = t;
+% X = X(:,1:4);
 
 %% stability analysis
 matrix = JacobainMatrix(ISimulation.Patient, ISimulation.InitialValues);
@@ -28,6 +32,9 @@ SimulationResult.T = T;
 SimulationResult.X = X;
 SimulationResult.points = points;
 SimulationResult.eigen = eigenValues;
+
+%% find ft4 range
+findFT4NormalRange(T,X);
 
 %% sygna³ dŸwiêkowy koñca obliczeñ
 % load handel.mat;

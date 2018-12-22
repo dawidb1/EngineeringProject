@@ -1,9 +1,9 @@
 classdef Patient
     properties
-        k1, k2, ka, k3, kd, k4, k5, N, k6, k7, kb, k8, label
+        k1, k2, ka, k3, kd, k4, k5, N, k6, k7, kb, k8, label, FT4, TRAb
     end
     methods
-        function obj = Patient(k1, k2, ka, k3, kd, k4, k5, N, k6, k7, kb, k8, label)
+        function obj = Patient(k1, k2, ka, k3, kd, k4, k5, N, k6, k7, kb, k8, label, FT4, TRAb)
             obj.k1 = k1;
             obj.k2 = k2;
             obj.ka = ka;
@@ -17,6 +17,8 @@ classdef Patient
             obj.kb = kb;
             obj.k8 = k8;
             obj.label = label;
+            obj.FT4 = FT4;
+            obj.TRAb = TRAb;
         end
         function table = getTable(obj)
             table = {

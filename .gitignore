@@ -1,3 +1,14 @@
 *.mat
 *.png
 *.asv
+*.fig
+
+*.aux
+*.lof
+*.log
+*.lot
+*.out
+*.pdf
+*.gz
+*.toc
+App/result figures plot/Patient# 20 MMI 0  FT4 25.63  TS 30  TRAb 7.5 Dose 0 Days 10
