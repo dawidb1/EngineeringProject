@@ -16,7 +16,8 @@
 \contentsline {section}{\numberline {4.1}Specyfikacja interfejsu programistycznego}{10}{section.4.1}
 \contentsline {chapter}{\numberline {5.}Instrukcja obs\IeC {\l }ugi/Specyfikacja zewn\k etrzna}{11}{chapter.5}
 \contentsline {chapter}{\numberline {6.}Rezultaty}{12}{chapter.6}
-\contentsline {section}{\numberline {6.1}Pacjent numer 20}{12}{section.6.1}
-\contentsline {chapter}{\numberline {7.}Podsumowanie}{16}{chapter.7}
-\contentsline {section}{\numberline {7.1}Wnioski}{16}{section.7.1}
-\contentsline {chapter}{Bibliografia}{17}{section.7.1}
+\contentsline {section}{\numberline {6.1}Wst\k epne por\'ownanie pacjent\'ow}{12}{section.6.1}
+\contentsline {section}{\numberline {6.2}Pacjent numer 20}{12}{section.6.2}
+\contentsline {chapter}{\numberline {7.}Podsumowanie}{17}{chapter.7}
+\contentsline {section}{\numberline {7.1}Wnioski}{17}{section.7.1}
+\contentsline {chapter}{Bibliografia}{18}{section.7.1}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.29)  22 DEC 2018 16:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.29)  22 DEC 2018 20:31
 entering extended mode
 **./Praca.tex
 (Praca.tex
@@ -610,50 +610,58 @@ Rozdzia\PlPrIeC {\l } 5.
 
 ]
 Rozdzia\PlPrIeC {\l } 6.
-<./rysunki/wyniki/p20_no_dose_d10.png, id=235, 421.575pt x 316.0608pt>
+<./rysunki/excel/pacjenci_ft4_trab.png, id=244, 580.41844pt x 362.10281pt>
+File: ./rysunki/excel/pacjenci_ft4_trab.png Graphic file (type png)
+<use ./rysunki/excel/pacjenci_ft4_trab.png>
+Package pdftex.def Info: ./rysunki/excel/pacjenci_ft4_trab.png  used on input l
+ine 508. on input line 508.
+Package pdftex.def Info: Requested size: 441.01773pt x 275.1402pt on input line
+ 508.
+<./rysunki/wyniki/p20_no_dose_d10.png, id=246, 421.575pt x 316.0608pt>
 File: ./rysunki/wyniki/p20_no_dose_d10.png Graphic file (type png)
 <use ./rysunki/wyniki/p20_no_dose_d10.png>
 Package pdftex.def Info: ./rysunki/wyniki/p20_no_dose_d10.png  used on input li
-ne 511. on input line 511.
+ne 516. on input line 516.
 Package pdftex.def Info: Requested size: 352.81552pt x 264.51508pt on input lin
-e 511.
-[12
-
- <./rysunki/wyniki/p20_no_dose_d10.png (PNG copy)>]
-<./rysunki/wyniki/p20_dose30_d1.png, id=241, 421.575pt x 316.18124pt>
+e 516.
+<./rysunki/wyniki/p20_dose30_d1.png, id=248, 421.575pt x 316.18124pt>
 File: ./rysunki/wyniki/p20_dose30_d1.png Graphic file (type png)
 <use ./rysunki/wyniki/p20_dose30_d1.png>
 Package pdftex.def Info: ./rysunki/wyniki/p20_dose30_d1.png  used on input line
- 520. on input line 520.
+ 525. on input line 525.
 Package pdftex.def Info: Requested size: 352.81552pt x 264.61588pt on input lin
-e 520.
-<./rysunki/wyniki/p20_dose30_d120.png, id=244, 421.575pt x 316.0608pt>
+e 525.
+<./rysunki/wyniki/p20_dose30_d120.png, id=250, 421.575pt x 316.0608pt>
 File: ./rysunki/wyniki/p20_dose30_d120.png Graphic file (type png)
 <use ./rysunki/wyniki/p20_dose30_d120.png>
 Package pdftex.def Info: ./rysunki/wyniki/p20_dose30_d120.png  used on input li
-ne 529. on input line 529.
+ne 534. on input line 534.
 Package pdftex.def Info: Requested size: 352.81552pt x 264.51508pt on input lin
-e 529.
-<./rysunki/wyniki/p20_dose30_d75_dose0_d45.png, id=246, 421.575pt x 316.0608pt>
+e 534.
+<./rysunki/wyniki/p20_dose30_d75_dose0_d45.png, id=252, 421.575pt x 316.0608pt>
 
 File: ./rysunki/wyniki/p20_dose30_d75_dose0_d45.png Graphic file (type png)
 <use ./rysunki/wyniki/p20_dose30_d75_dose0_d45.png>
 Package pdftex.def Info: ./rysunki/wyniki/p20_dose30_d75_dose0_d45.png  used on
- input line 537. on input line 537.
+ input line 542. on input line 542.
 Package pdftex.def Info: Requested size: 352.81552pt x 264.51508pt on input lin
-e 537.
-<./rysunki/wyniki/p20_treatment.png, id=248, 421.575pt x 316.0608pt>
+e 542.
+[12
+
+] [13 <./rysunki/excel/pacjenci_ft4_trab.png> <./rysunki/wyniki/p20_no_dose_d10
+.png (PNG copy)>] [14 <./rysunki/wyniki/p20_dose30_d1.png> <./rysunki/wyniki/p2
+0_dose30_d120.png (PNG copy)>]
+<./rysunki/wyniki/p20_treatment.png, id=268, 421.575pt x 316.0608pt>
 File: ./rysunki/wyniki/p20_treatment.png Graphic file (type png)
 <use ./rysunki/wyniki/p20_treatment.png>
 Package pdftex.def Info: ./rysunki/wyniki/p20_treatment.png  used on input line
- 546. on input line 546.
+ 551. on input line 551.
 Package pdftex.def Info: Requested size: 352.81552pt x 264.51508pt on input lin
-e 546.
- [13 <./rysunki/wyniki/p20_dose30_d1.png>] [14 <./rysunki/wyniki/p20_dose30_d12
-0.png (PNG copy)> <./rysunki/wyniki/p20_dose30_d75_dose0_d45.png (PNG copy)>] [
-15 <./rysunki/wyniki/p20_treatment.png (PNG copy)>]
+e 551.
+ [15 <./rysunki/wyniki/p20_dose30_d75_dose0_d45.png (PNG copy)>] [16 <./rysunki
+/wyniki/p20_treatment.png (PNG copy)>]
 Rozdzia\PlPrIeC {\l } 7.
-) [16
+) [17
 
 ] (Praca.bbl
 LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 12.
@@ -684,7 +692,7 @@ Package caption Warning: Unused \captionsetup[subfigure] on input line 148.
 See the caption package documentation for explanation.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 41.
-[17
+[18
 
 
 ]
@@ -693,14 +701,18 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 41.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 41.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 41.
 Package rerunfilecheck Info: File `Praca.out' has not changed.
-(rerunfilecheck)             Checksum: D84CC1DFB43FD647B63B86D0E9AEB0A9;1368.
+(rerunfilecheck)             Checksum: 0425E01C308A16D3D4DD03525EEDD083;1450.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 41.
  ) 
 Here is how much of TeX's memory you used:
- 9276 strings out of 493312
- 138445 string characters out of 3138899
+ 9288 strings out of 493312
+ 138720 string characters out of 3138899
  253626 words of memory out of 3000000
- 12585 multiletter control sequences out of 15000+200000
+ 12591 multiletter control sequences out of 15000+200000
  15078 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,14n,42p,620b,356s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -721,9 +733,9 @@ m Files/MiKTeX 2.9/fonts/type1/public/pl/plsy10.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/pl/plsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/pl/plti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/pltt12.pfb>
 
-Output written on Praca.pdf (21 pages, 412490 bytes).
+Output written on Praca.pdf (22 pages, 438221 bytes).
 PDF statistics:
- 348 PDF objects out of 1000 (max. 8388607)
- 72 named destinations out of 1000 (max. 500000)
- 202 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 365 PDF objects out of 1000 (max. 8388607)
+ 75 named destinations out of 1000 (max. 500000)
+ 215 words of extra memory for PDF output out of 10000 (max. 10000000)
 
