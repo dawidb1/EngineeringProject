@@ -80,7 +80,7 @@ Ka¿dy rozdzia³ warto jest równie¿ poprzedziæ krótkim wstêpem.}
 
 Dobór odpowiedniej dawki leku jest mo¿liwy, poprzez symulacjê organizmu pacjenta oraz jego odpowiedzi na terapiê. D¹¿y siê do stanu, w którym iloœæ hormonu T4 w formie wolnej, oznaczana jako fT4 \cite{ft4}, zmieni siê do wartoœci okreœlaj¹cej cz³owieka zdrowego. 
 
-W utworzonym programie wykorzystano model matematyczny, przedstawiony w pracy Balamurugan Pandiyan1 i Stephen J. Merrill. Wszelkie za³o¿enia i dane, pochodz¹ z ich pracy.\cite{graves1}
+W utworzonym programie wykorzystano model matematyczny, przedstawiony w pracy Balamurugan Pandiyan i Stephen J. Merrill. Wszelkie za³o¿enia i dane, pochodz¹ z ich pracy.\cite{graves1}
 
 \section{Za³o¿enia modelu}
 \begin{enumerate}
@@ -487,14 +487,6 @@ Instrukcja obs³ugi zbudowanego urz¹dzenia/programu komputerowego. Dok³adne wyjaœ
 \chapter{Rezultaty}
 %Zobrazowanie i omówienie wyników otrzymywanych wskutek zastosowania danego urz¹dzenia b¹dŸ aplikacji. Badanie ewentualnych parametrów (takich jak dok³adnoœæ, czu³oœæ...), czy te¿ zachowania w szczególnych sytuacjach. O ile to mo¿liwe tabelaryzacja rezultatów oraz ich statystyczna interpretacja. Ocena zachowania zaproponowanego rozwi¹zania. Analiza mo¿liwych przyczyn wyst¹pienia b³êdów. 
 
-
-\begin{itemize}
-\item Sugerowane leczenie ka¿dego z 4 pacjentów przez 180 dni. (matlab)
-\item Poziom pocz¹tkowy FT4 wszystkich pacjentów
-\item Iloœæ przyjêtego MMI przez wszystkich pacjentów w trakcie 180 dni.
-
-\end{itemize}
-
 W oparciu o program stworzony przez autora pracy, symulowano ró¿ne scenariusze terapii pacjentów. Do analizy modelu u¿yto danych 4 pacjentów(Ref. \ref{sec:dane}), zmagaj¹cych siê z nadczynnoœci¹ tarczycy Gravesa—Basedowa. W tej czêœci pracy zosta³y przedstawione symulacje leczenia chorych. 
 
 \section{Wstêpne porównanie pacjentów}
@@ -519,14 +511,12 @@ Na najwiêksz¹ nadczynnoœæ tarczycy, wed³ug poziomu fT4, cierpi pacjent numer 70.
 
 Na pocz¹tku analizowano stan pacjenta, bez podania leku. Poziom FT4 pacjenta wynosi 25,63 pg/ml. Jest to znacznie powy¿ej normy (7-18 pg/ml). Œwiadczy to o nadczynnoœci tarczycy. Przy symulacji trwaj¹cej 10 dni, ¿adne przebiegi czasowe nie ulegaj¹ zmianie. Mo¿na to zaobserwowaæ na rysunku (Rys.~\ref{p20_no_dose_img}). Dla nieskoñczenie d³ugiego okresu, rezultaty s¹ takie same. Wynika to z faktu, ¿e przy braku leczenia, model jest asymptotycznie stabilny.
 
-
 \begin{figure}
 	\centering
 	\includegraphics[width=\size\textwidth]{wyniki/p20_dose30_d1}
 	\caption{Pacjent nr 20, leczony 30 mg leku.}\label{p20_dose30_d1_img}
 \end{figure}
 
- 
 Po jednorazowym podaniu 30 mg MMI (Rys.~\ref{p20_dose30_d1_img}), lek zostaje ca³kowicie wydalony przez organizm w czasie jednego dnia. Ta dawka nie ma znacz¹cego wp³ywu na funkcje tarczycy. 
  
 \begin{figure}
@@ -545,14 +535,65 @@ Przy podawaniu 30mg leku przez 120 dni, stan gospodarki hormonalnej tarczycy pac
   
 Jak pokazano na wykresie (Rys.~\ref{p20_dose30_d75_dose0_d45_img}) przy podawaniu dawki 30 mg przez 75 dni i odstawieniu leku, pacjent powróci³ do stanu nadczynnoœci tarczycy. Trwa³o to oko³o 35 dni. Pacjent wymaga nastêpnej serii leczenia. 	
 
-
 \begin{figure}
 	\centering
 	\includegraphics[width=\size\textwidth]{wyniki/p20_treatment}
-	\caption{Pacjent nr 20, sugerowane leczenie.}\label{p20_treatment_img}
+	\caption{Pacjent nr 20, przyk³adowe leczenie.}\label{p20_treatment_img}
 \end{figure}
 
-Na rysunku (Rys.~\ref{p20_treatment_img}), zasugerowano leczenie pacjenta numer 20. Przy leczeniu dawk¹ 30 mg przez 2 miesi¹ce, stê¿enie FT4 pacjenta osi¹gnê³o górn¹ graniczn¹ wartoœæ po 27 dniach. Po 60 dniach wynosi³o 12,3 pg/ml. Postanowiono zwiêkszyæ dawkê metizamolu do 40 mg dziennie. Graniczna wartoœæ zosta³a osi¹gniêta po 25 dniach, a stê¿enie pod koniec etapu wynios³o 10,97 pg/ml. Nastêpnie zmniejszono dawkê do 20 pg/ml i 10 pg/ml. Po tym okresie nale¿y zaobserwowaæ czy choroba jest w stadium reemisji. Jeœli tak, nale¿y zacz¹æ seriê leczenia od pocz¹tku.
+Na rysunku (Rys.~\ref{p20_treatment_img}), pokazano przyk³adowe leczenie pacjenta numer 20. Przy leczeniu dawk¹ 30 mg przez 2 miesi¹ce, stê¿enie FT4 pacjenta osi¹gnê³o górn¹ graniczn¹ wartoœæ po 27 dniach. Po 60 dniach wynosi³o 12,3 pg/ml. Postanowiono zwiêkszyæ dawkê metizamolu do 40 mg dziennie. Graniczna wartoœæ zosta³a osi¹gniêta po 25 dniach, a stê¿enie pod koniec etapu wynios³o 10,97 pg/ml. Nastêpnie zmniejszono dawkê do 20 pg/ml i 10 pg/ml. Po tym okresie nale¿y zaobserwowaæ czy choroba jest w stadium reemisji. Jeœli tak, nale¿y zacz¹æ seriê leczenia od pocz¹tku.
+
+W artykue A. Prakash'a \cite{mmi}, opisane zosta³y ró¿ne stosowane metody leczenia choroby Gravesa. Niektóre z badañ wskazuj¹, ¿e du¿e dawki metimazolu i krótka terapia zwiêkszaj¹ ryzyko wyst¹pienia nawrotów choroby. Optymalna d³ugoœæ terapii powinna wynosiæ 12-18 miesiêcy. Przy 18-miesiêcznej terapii, ryzyko nawrotu choroby to 37\%. 6-miesiêczna terapia wywo³a nawrót u 58\% leczonych.
+
+Sugerowana terapia dla pacjenta nr 20 przedstawia siê nastêpuj¹co (Rys.~\ref{p20_treatment1_img}). FT4 cz³owieka zdrowego osi¹ga po 27 dniach terapii.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\size\textwidth]{wyniki/p20_treatment1}
+	\caption{Pacjent nr 20, sugerowane leczenie.}\label{p20_treatment1_img}
+\end{figure}
+
+\section{Pacjent numer 31}
+
+Pacjent numer 31 jest odmiennym przypadkiem. Jego poziom przeciwcia³ jest niski w odniesieniu do innych pacjentów, przy podobnym stê¿eniu fT4. Symulacje wykaza³y, ¿e jest ma³o wra¿liwy na leczenie metimazolem. Dla tego pacjenta, warto rozpatrywaæ inne metody leczenia. Sugerowane leczenie obejmuje wiêksze dawki leku. Sugerowana terapia trwa 180 dni (Rys.~\ref{p31_treatment_img}), przy czym ostatnie 6 miesiêcy, pacjent dostaje 10 mg MMI.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\size\textwidth]{wyniki/p31_treatment}
+	\caption{Pacjent nr 31, sugerowane leczenie.}\label{p31_treatment_img}
+\end{figure}
+
+
+\section{Pacjent numer 55}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\size\textwidth]{wyniki/p55_treatment}
+	\caption{Pacjent nr 55, sugerowane leczenie.}\label{p55_treatment_img}
+\end{figure}
+
+Rysunek (Rys.~\ref{p55_treatment_img}) sugeruje leczenie pacjenta numer 55. Zastosowano to samo leczenie, co w przypadku pacjenta nr 20 (Rys.~\ref{p20_treatment_img}). Po 29 dniach jego poziom fT4 odpowiada górnej granicy osoby zdrowej. Po 60 dniach, mo¿e obni¿yæ dawkê z 30 do 20 mg. 
+
+
+\section{Pacjent numer 70}
+
+Pacjent nr 70 ma najwy¿szy pocz¹tkowy poziom fT4. Proponowana terapia trwa 14 miesiêcy (Rys.~\ref{p70_treatment_img}). Jako, ¿e jego poziom ft4 koreluje z wysokim poziomem TRAb, chory dobrze reaguje na leczenie. FT4 osoby zdrowej osi¹ga po 42 dniach. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\size\textwidth]{wyniki/p70_treatment}
+	\caption{Pacjent nr 70, sugerowane leczenie.}\label{p70_treatment_img}
+\end{figure}
+
+\section{Porównanie zapotrzebowania na lek}
+
+Przeanalizowano zapotrzebowanie na lek omawianych w pracy pacjentów. Zsumowano iloœæ przyjêtego leku, podczas sugerowanego leczenia, przez okres pierwszych 360 dni. Dla niektórych, jest to koniec terapii. Wyniki przedstawione zosta³y na wykresie (Rys.~\ref{pacjenci_mmi_img}). 3/4 pacjentów przyjmie oko³o 5g leku. Pacjent numer 31 musi przyj¹æ 10g leku oraz bêdzie kontynuowa³ leczenie przez 6 miesiêcy.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{excel/pacjenci_mmi}
+	\caption{Porównanie zapotrzebowania na lek pacjentów.}\label{pacjenci_mmi_img}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Podsumowanie}
