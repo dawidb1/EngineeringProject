@@ -418,11 +418,7 @@ Szczegó³owe obliczenia zosta³y przedstawione w dodatku. (ref - kiedy ju¿ bêdzie 
 %
 %\emph{W trakcie realizacji zadania, w~pierwszym kroku, nale¿y odizolowaæ znaki wodne w~warstwie p³ótna. Wykorzystano w~tym celu dostêpn¹ w~œrodowisku XYZ funkcje Z. Parametry do funkcji okreœlono poprez\ldots}
 
-Project w programie Matlab, appdesigner.
-
-Struktura projektu - wszystkie klasy
-Diagram przep³ywu danych
-
+Projekt zosta³ zrealizowany w programie MATLAB. Jest to œrodowisko do wykonywania obliczeñ naukowych i in¿ynierskich, oraz do tworzenia symulacji komputerowych. (ref wiki) Do utworzenia graficznego interfejsu, u¿yto œrodowiska Appdesigner, który jest stosunkowo nowym narzêdziem programu MATLAB.
 
 \section{Specyfikacja interfejsu programistycznego}
 
@@ -437,6 +433,51 @@ Diagram przep³ywu danych
 \item jakiekolwiek problemy programistyczne etc, wszystko co z implementacj¹
 \item Funkcje dodatkowe, nie wchodz¹ce w sk³ad programu
 \end{itemize}
+
+\subsection{Interfejsy i klasy}
+Utworzono kilka interfejsów i klas, dla ³atwiejszego zarz¹dzania przep³ywem danych. Utworzono typy danych dla:
+\begin{itemize}
+\item Patient - zawiera wszystkie obliczone parametry pacjenta, oraz wyniki pierwszego badania fT4 i TRAb.
+\item Dose - zawiera pola dla iloœci i czasu ustalonej dawki leczenia.
+\item InitialValues - 4 wartoœci odpowiadaj¹ce warunkom pocz¹tkowym symulacji.
+\item StabilityPoint - 4 wartoœci odpowiadaj¹ce punktom w przestrzeni, w których uk³ad osi¹ga stabilnoœæ.
+\item StartData - wszystkie pola i struktury potrzebne do startu aplikacji.
+\item Simulation - wszystkie pola i struktury potrzebne do rozpoczêcia symulacji.
+\item SimulationResult - wszystkie pola i struktury potrzebne do wyœwietlenia wyników symulacji.
+\end{itemize}
+
+Aplikacja przesy³a dane g³ównie pomiêdzy 2 widokami:
+\begin{enumerate}
+\item App - Aplikacja jest inicjalizowana. Wczytujemy dane, wybieramy szczegó³y symulacji oraz j¹ rozpoczynamy.
+\item SimulationView - W tym widoku obserwujemy symulacjê.
+\end{enumerate}
+
+\subsection{Przep³yw danych w aplikacji}
+Do przekazania danych pomiêdzy widokami aplikacji, s³u¿¹ g³ównie 3 interfejsy. S¹ to:
+\begin{enumerate}
+\item StartData (Rys.~\ref{start_data_img})
+\item Simulation (Rys.~\ref{simulation_img})
+\item SimulationResult (Rys.~\ref{simulation_result_img})
+\end{enumerate}
+
+Na diagramach przedstawiono informacje, które przechowuj¹ obiekty je implementuj¹ce.
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\textwidth]{visio/start_data}
+	\caption{Interfejs StartData.}\label{start_data_img}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\size\textwidth]{visio/simulation}
+	\caption{Interfejs Simulation.}\label{simulation_img}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\size\textwidth]{visio/simulation_result}
+	\caption{Interfejs SimulationResult.}\label{simulation_result_img}
+\end{figure}
 
 %Jeœli projekt, praca dotyczy systemu informatycznego, w dokumentacji umieszcza siê z~regu³y jedynie interfejs programistyczny (b¹dŸ jego fragmenty). Pe³ny kod mo¿na do³¹czyæ w za³¹czniku.
 

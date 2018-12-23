@@ -14,14 +14,16 @@
 \BOOKMARK [2][-]{subsection.3.7.2}{Analiza stabilnosci}{section.3.7}% 14
 \BOOKMARK [0][-]{chapter.4}{Czesc konstrukcyjna/Specyfikacja wewnetrzna}{}% 15
 \BOOKMARK [1][-]{section.4.1}{Specyfikacja interfejsu programistycznego}{chapter.4}% 16
-\BOOKMARK [0][-]{chapter.5}{Instrukcja obs\233ugi/Specyfikacja zewnetrzna}{}% 17
-\BOOKMARK [0][-]{chapter.6}{Rezultaty}{}% 18
-\BOOKMARK [1][-]{section.6.1}{Wstepne por\363wnanie pacjent\363w}{chapter.6}% 19
-\BOOKMARK [1][-]{section.6.2}{Pacjent numer 20}{chapter.6}% 20
-\BOOKMARK [1][-]{section.6.3}{Pacjent numer 31}{chapter.6}% 21
-\BOOKMARK [1][-]{section.6.4}{Pacjent numer 55}{chapter.6}% 22
-\BOOKMARK [1][-]{section.6.5}{Pacjent numer 70}{chapter.6}% 23
-\BOOKMARK [1][-]{section.6.6}{Por\363wnanie zapotrzebowania na lek}{chapter.6}% 24
-\BOOKMARK [0][-]{chapter.7}{Podsumowanie}{}% 25
-\BOOKMARK [1][-]{section.7.1}{Wnioski}{chapter.7}% 26
-\BOOKMARK [0][-]{section.7.1}{Bibliografia}{}% 27
+\BOOKMARK [2][-]{subsection.4.1.1}{Interfejsy i klasy}{section.4.1}% 17
+\BOOKMARK [2][-]{subsection.4.1.2}{Przep\233yw danych w aplikacji}{section.4.1}% 18
+\BOOKMARK [0][-]{chapter.5}{Instrukcja obs\233ugi/Specyfikacja zewnetrzna}{}% 19
+\BOOKMARK [0][-]{chapter.6}{Rezultaty}{}% 20
+\BOOKMARK [1][-]{section.6.1}{Wstepne por\363wnanie pacjent\363w}{chapter.6}% 21
+\BOOKMARK [1][-]{section.6.2}{Pacjent numer 20}{chapter.6}% 22
+\BOOKMARK [1][-]{section.6.3}{Pacjent numer 31}{chapter.6}% 23
+\BOOKMARK [1][-]{section.6.4}{Pacjent numer 55}{chapter.6}% 24
+\BOOKMARK [1][-]{section.6.5}{Pacjent numer 70}{chapter.6}% 25
+\BOOKMARK [1][-]{section.6.6}{Por\363wnanie zapotrzebowania na lek}{chapter.6}% 26
+\BOOKMARK [0][-]{chapter.7}{Podsumowanie}{}% 27
+\BOOKMARK [1][-]{section.7.1}{Wnioski}{chapter.7}% 28
+\BOOKMARK [0][-]{section.7.1}{Bibliografia}{}% 29
