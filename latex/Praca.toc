@@ -18,6 +18,10 @@
 \contentsline {chapter}{\numberline {6.}Rezultaty}{12}{chapter.6}
 \contentsline {section}{\numberline {6.1}Wst\k epne por\'ownanie pacjent\'ow}{12}{section.6.1}
 \contentsline {section}{\numberline {6.2}Pacjent numer 20}{12}{section.6.2}
-\contentsline {chapter}{\numberline {7.}Podsumowanie}{17}{chapter.7}
-\contentsline {section}{\numberline {7.1}Wnioski}{17}{section.7.1}
-\contentsline {chapter}{Bibliografia}{18}{section.7.1}
+\contentsline {section}{\numberline {6.3}Pacjent numer 31}{16}{section.6.3}
+\contentsline {section}{\numberline {6.4}Pacjent numer 55}{17}{section.6.4}
+\contentsline {section}{\numberline {6.5}Pacjent numer 70}{17}{section.6.5}
+\contentsline {section}{\numberline {6.6}Por\'ownanie zapotrzebowania na lek}{17}{section.6.6}
+\contentsline {chapter}{\numberline {7.}Podsumowanie}{20}{chapter.7}
+\contentsline {section}{\numberline {7.1}Wnioski}{20}{section.7.1}
+\contentsline {chapter}{Bibliografia}{21}{section.7.1}
