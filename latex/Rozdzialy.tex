@@ -110,6 +110,7 @@ Rozwa¿any model jest uk³adem równañ ró¿niczkowych w którym:
 \section{Parametry modelu}
 
 \begin{table}[h]
+\label{tab:params}
 \begin{tabular}{|l|l|l|l|}
 \hline
 \textbf{Parametr} & \textbf{Opis}                                                                                                    & \textbf{Wartoœæ}              & \textbf{Jednostka}            \\ \hline
@@ -418,33 +419,32 @@ Szczegó³owe obliczenia zosta³y przedstawione w dodatku. (ref - kiedy ju¿ bêdzie 
 %
 %\emph{W trakcie realizacji zadania, w~pierwszym kroku, nale¿y odizolowaæ znaki wodne w~warstwie p³ótna. Wykorzystano w~tym celu dostêpn¹ w~œrodowisku XYZ funkcje Z. Parametry do funkcji okreœlono poprez\ldots}
 
-Projekt zosta³ zrealizowany w programie MATLAB. Jest to œrodowisko do wykonywania obliczeñ naukowych i in¿ynierskich, oraz do tworzenia symulacji komputerowych. (ref wiki) Do utworzenia graficznego interfejsu, u¿yto œrodowiska Appdesigner, który jest stosunkowo nowym narzêdziem programu MATLAB.
+Projekt zosta³ zrealizowany w programie MATLAB. Jest to œrodowisko do wykonywania obliczeñ naukowych i in¿ynierskich, oraz do tworzenia symulacji komputerowych \cite{matlab}. Do utworzenia graficznego interfejsu, u¿yto œrodowiska Appdesigner, który jest stosunkowo nowym narzêdziem programu MATLAB.
 
-\section{Specyfikacja interfejsu programistycznego}
+\section{Interfejsy i klasy}
+\begin{table}[]
+\caption{Klasy i interfejsy aplikacji.}
+\label{tab:interfejsy}
+\begin{tabular}{|p{4cm}|p{10.5cm}|}
 
-\begin{itemize}
-\item struktura MVC 
-\item Wszystkie klasy i interfejsy z omówieniem
-\item Implementacja s(t)
-\item Testy
-\item Przyk³ady ciekawszych funkcji
-\item Obliczenie wielkoœci macierzy wynikowej i maksymalnej iloœci dni
-\item Optymalizacja, przez zmianê parametrów ode45
-\item jakiekolwiek problemy programistyczne etc, wszystko co z implementacj¹
-\item Funkcje dodatkowe, nie wchodz¹ce w sk³ad programu
-\end{itemize}
+\hline
+\textbf{Zmienna} & \textbf{Opis}                                                                                                                  \\ \hline
+Patient          & parametry pacjenta oraz wyniki pierwszego badania fT4 i TRAb.                                     \\ \hline
+Dose             & iloœæ metimazolu i czasu dawki leczenia.                                                                      \\ \hline
+InitialValues    & warunki pocz¹tkowe symulacji.                                                                       \\ \hline
+StabilityPoint   & punkty w przestrzeni, w których uk³ad osi¹ga stabilnoœæ.
+\\ \hline
+Eigen            & wartoœci w³asne uk³adu.                                                                            \\ \hline
+T                & wektor z punktami czasowymi symulacji.                                                                                         \\ \hline
+X                & rozwi¹zania równañ ró¿niczkowych w czasie.                                                                        \\ \hline
+StartData        & wszystkie pola i struktury potrzebne do startu aplikacji.                                                                      \\ \hline
+Simulation       & wszystkie pola i struktury potrzebne do rozpoczêcia symulacji.                                                                 \\ \hline
+SimulationResult & wszystkie pola i struktury potrzebne do wyœwietlenia wyników symulacji.                                                        \\ \hline
+\end{tabular}
+\end{table}
+Utworzono kilka interfejsów i klas. Zawarto jest w tabeli (Tab. \ref{tab:interfejsy}).
 
-\subsection{Interfejsy i klasy}
-Utworzono kilka interfejsów i klas, dla ³atwiejszego zarz¹dzania przep³ywem danych. Utworzono typy danych dla:
-\begin{itemize}
-\item Patient - zawiera wszystkie obliczone parametry pacjenta, oraz wyniki pierwszego badania fT4 i TRAb.
-\item Dose - zawiera pola dla iloœci i czasu ustalonej dawki leczenia.
-\item InitialValues - 4 wartoœci odpowiadaj¹ce warunkom pocz¹tkowym symulacji.
-\item StabilityPoint - 4 wartoœci odpowiadaj¹ce punktom w przestrzeni, w których uk³ad osi¹ga stabilnoœæ.
-\item StartData - wszystkie pola i struktury potrzebne do startu aplikacji.
-\item Simulation - wszystkie pola i struktury potrzebne do rozpoczêcia symulacji.
-\item SimulationResult - wszystkie pola i struktury potrzebne do wyœwietlenia wyników symulacji.
-\end{itemize}
+
 
 Aplikacja przesy³a dane g³ównie pomiêdzy 2 widokami:
 \begin{enumerate}
@@ -452,7 +452,7 @@ Aplikacja przesy³a dane g³ównie pomiêdzy 2 widokami:
 \item SimulationView - W tym widoku obserwujemy symulacjê.
 \end{enumerate}
 
-\subsection{Przep³yw danych w aplikacji}
+\section{Przep³yw danych w aplikacji}
 Do przekazania danych pomiêdzy widokami aplikacji, s³u¿¹ g³ównie 3 interfejsy. S¹ to:
 \begin{enumerate}
 \item StartData (Rys.~\ref{start_data_img})
@@ -460,7 +460,7 @@ Do przekazania danych pomiêdzy widokami aplikacji, s³u¿¹ g³ównie 3 interfejsy. S
 \item SimulationResult (Rys.~\ref{simulation_result_img})
 \end{enumerate}
 
-Na diagramach przedstawiono informacje, które przechowuj¹ obiekty je implementuj¹ce.
+Na diagramach przedstawiono sk³adowe 3 g³ównych interfejsów.
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\textwidth]{visio/start_data}
@@ -478,6 +478,162 @@ Na diagramach przedstawiono informacje, które przechowuj¹ obiekty je implementuj
 	\includegraphics[width=\size\textwidth]{visio/simulation_result}
 	\caption{Interfejs SimulationResult.}\label{simulation_result_img}
 \end{figure}
+
+\section{Metody utworzonego programu}\label{sec:methods}
+
+\subsubsection*{Simulate}
+Metoda Simulate przyjmuje obiekt typu Simulation (Rys. \ref{simulation_img}) i zwraca SimulationResult (Rys. \ref{simulation_result_img}).
+\begin{lstlisting}
+function SimulationResult = Simulate(Simulation)
+\end{lstlisting}
+
+\subsubsection*{Uklad\_rownan}
+Metoda uklad\_rownan przyjmuje chwilê czasow¹ t, warunki pocz¹tkowe uk³adu, parametry pacjenta oraz dawki leczenia. Metoda ta jest wykorzystywana przez solver ode45 do symulacji uk³adu w ka¿dej chwili czasowej t. Zwraca rozwi¹zania uk³adu równañ.
+\begin{lstlisting}
+function rownania = uklad_rownan(t, InitialValuesVector, PatientVector, DoseVector)
+\end{lstlisting}
+
+
+\subsubsection*{TreatmentDose}
+Metoda treatmentDose przyjmuje dawki leku, liczbê dni leczenia oraz chwilê czasow¹ t. Metoda ta jest wykorzystywana przez solver ode45, do obliczania przyjmowanej iloœci MMI czyli funkcji s(t).
+\begin{lstlisting}
+function s = treatmentDose(DOSES, DAYS, t)
+\end{lstlisting}
+
+\subsubsection*{Stability\_points}
+Metoda stability\_points przyjmuje parametry pacjenta i zwraca punkt w przestrzeni 4-wymiarowej, w którym uk³ad osi¹gnie stabilnoœæ.
+\begin{lstlisting}
+function points = stability_points(patient)
+\end{lstlisting}
+
+
+\subsubsection*{JacobainMatrix}
+Metoda JacobainMatrix przyjmuje parametry pacjenta i warunki pocz¹tkowe. Zwraca macierz Jacobiego dla danego uk³adu.
+\begin{lstlisting}
+function matrix = JacobainMatrix( patient, initialValues )
+\end{lstlisting}
+
+\subsubsection*{ConvertStringToNArray}
+Metoda convertStringToNArray konwertuje napis, na tablice. Jako, ¿e jest to osobna metoda w programie, zosta³a sprawdzona testem jednostkowym.
+\begin{lstlisting}
+function [arrayOutput] = convertStringInputToNArray(textInput)
+\end{lstlisting}
+
+\subsubsection*{Test\_convertStringInputToNArray}
+Test jednostkowy - implementacja skryptu:
+\begin{lstlisting}
+input = '10, 12, 20, 30';
+expected = [10 12 20 30 0]; % N element array
+
+result = convertStringInputToNArray(input, 5);
+
+if isequal(result, expected)
+    disp('convertStringInputToNArray correct!'); 
+else
+    disp('convertStringInputToNArray failed!'); 
+end
+\end{lstlisting}
+
+\subsubsection*{ParsingErrorDialog}
+Niektóre z wprowadzanych danych s¹ napisami, dlatego aplikacja jest zabezpieczona przed niepoprawnymi wpisami. U¿ytkownik otrzymuje stosowne powiadomienie o b³êdzie, dziêki funkcji parsingErrorDialog.
+\begin{lstlisting}
+function parsingErrorDialog(axis)
+\end{lstlisting}
+
+\subsubsection*{Show\_simulation}
+Do narysowania wyników symulacji w czasie s³u¿y metoda show\_simulation. Przyjmuje ona miejsce wykresu (UIAxes), dane do wykreœlenia (T, X) oraz tytu³ wykresu (pLabel).
+\begin{lstlisting}
+function show_simulation( UIAxes, T, X, pLabel )
+\end{lstlisting}
+
+
+\subsubsection*{PrintFigure}
+Appdesigner nie obs³uguje zaawansowanej manipulacji wykresami, dlatego do zapisywania nale¿y utworzyæ figure typu widmo, kopiuj¹c wszystkie informacje z poprzedniego wykresu. S³u¿y do tego metoda printFigure.
+\begin{lstlisting}
+function printFigure(plotFigure, name)
+\end{lstlisting}
+
+\subsubsection*{Plot\_phase}
+Do narysowania portretów fazowych symulacji, s³u¿y metoda plot\_phase.
+\begin{lstlisting}
+function plot_phase(ax, x, y, px, py, xlab, ylab)
+\end{lstlisting}
+
+\subsubsection*{FindFT4NormalRange}
+FindFT4NormalRange jest funkcj¹ dodatkow¹. Nie jest zaimplementowana w graficznym interfejsie aplikacji. Wypisuje w konsoli programu Matlab iloœæ dni, po których pacjent, osi¹ga graniczny poziom fT4, dla cz³owieka zdrowego.
+\begin{lstlisting}
+function timeUpFT4 = findFT4NormalRange(T, X)
+\end{lstlisting}
+
+\section{Wykorzystane funkcje programu Matlab}
+\subsubsection*{Ode45}
+
+Do rozwi¹zywania równañ ró¿niczkowych u¿yto funkcji \textbf{ode45}. Pocz¹tkowo u¿yto bazowej wersji funkcji ode45:
+
+\begin{lstlisting}
+[t,y] = ode45(odefun(t,y,A,B),tspan,y0)
+\end{lstlisting}
+gdzie:
+
+Parametrami funkcji s¹
+\begin{itemize}
+\item odefun - funkcja zwracaj¹ca równania ró¿niczkowe w punkcie t. Funkcja ta zosta³a opisana w dalszej czêœci pracy. \ref{sec:methods} 
+\item tspan - przedzia³ czasowy symulacji
+\item y0 - punkty pocz¹tkowe równañ
+\item A i B - wektory z dodatkowymi parametrami
+\end{itemize}
+
+Wynikiem funkcji s¹
+\begin{itemize}
+\item t - wektor czasowy rozwi¹zania uk³adu równañ ró¿niczkowych
+\item y - wektory rozwi¹zañ uk³adu równañ ró¿niczkowych
+\end{itemize}
+
+Dla optymalizacji pamiêci programu u¿yto przeci¹¿enia metody, która mo¿e przyj¹æ dodatkowe parametry A i B, bez umieszczania ich w macierzy wynikowej y. Za ich pomoc¹ przekazywane s¹ dane wybranego pacjenta oraz dawki leczenia. Dziêki takiemu rozwi¹zaniu, symulacja zajmuje ponad 4 razy mniej miejsca pamiêci RAM.
+\begin{lstlisting}
+[t,y] = ode45(@(t,y) odefcn(t,y,A,B), tspan, y0);
+\end{lstlisting}
+
+\subsubsection*{Eig}
+\begin{lstlisting}
+e = eig(A)
+\end{lstlisting}
+Funkcja przyjmuje macierz kwadratow¹ A. Zwraca wektor kolumnowy z wartoœciami w³asnymi przyjêtej macierzy.
+
+\subsubsection*{Solve}
+\begin{lstlisting}
+results = solve(eqns, syms);
+\end{lstlisting}
+Funkcja rozwi¹zuje uk³ady równañ u¿ywaj¹c zmiennych symbolicznych. Przyjmuje 2 parametry
+\begin{itemize}
+\item eqns - tablicê równañ
+\item syms - tablicê zmiennych symbolicznych u¿ytych w równaniach
+\end{itemize}
+Zwraca wyniki dla zmiennych symbolicznych.
+
+\subsubsection*{Find}
+\begin{lstlisting}
+k = find(X,n,direction)
+\end{lstlisting}
+Funkcja przeszukuje wartoœci tablicy lub listy, zwracaj¹c indeksy, w których równanie jest prawdziwe. Przyjmuje 3 zmienne
+\begin{itemize}
+\item X - równanie zawieraj¹ce tablicê do przeszukania i zmienn¹ do której przyrównuje
+\item n - iloœæ indeksów, które pierwsze zostan¹ przyporz¹dkowane
+\item direction - kierunek przyporz¹dkowania
+\end{itemize}
+
+\subsubsection*{Strsplit}
+\begin{lstlisting}
+C = strsplit(str,delimiter)
+\end{lstlisting}
+Funkcja dzieli napis na tablicê napisów w miejscach okreœlonego znaku. Funkcja zwraca tablicê napisów.
+\begin{itemize}
+\item str - napis
+\item delimeter - znak, w którego miejscach napis jest roz³¹czany
+\end{itemize}
+
+
+
 
 %Jeœli projekt, praca dotyczy systemu informatycznego, w dokumentacji umieszcza siê z~regu³y jedynie interfejs programistyczny (b¹dŸ jego fragmenty). Pe³ny kod mo¿na do³¹czyæ w za³¹czniku.
 

@@ -13,17 +13,18 @@
 \contentsline {subsection}{\numberline {3.7.1}Twierdzenie}{8}{subsection.3.7.1}
 \contentsline {subsection}{\numberline {3.7.2}Analiza stabilno\'sci}{8}{subsection.3.7.2}
 \contentsline {chapter}{\numberline {4.}Cz\k e\'s\'c konstrukcyjna/Specyfikacja wewn\k etrzna}{10}{chapter.4}
-\contentsline {section}{\numberline {4.1}Specyfikacja interfejsu programistycznego}{10}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Interfejsy i klasy}{10}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Przep\IeC {\l }yw danych w aplikacji}{11}{subsection.4.1.2}
-\contentsline {chapter}{\numberline {5.}Instrukcja obs\IeC {\l }ugi/Specyfikacja zewn\k etrzna}{13}{chapter.5}
-\contentsline {chapter}{\numberline {6.}Rezultaty}{14}{chapter.6}
-\contentsline {section}{\numberline {6.1}Wst\k epne por\'ownanie pacjent\'ow}{14}{section.6.1}
-\contentsline {section}{\numberline {6.2}Pacjent numer 20}{14}{section.6.2}
-\contentsline {section}{\numberline {6.3}Pacjent numer 31}{18}{section.6.3}
-\contentsline {section}{\numberline {6.4}Pacjent numer 55}{19}{section.6.4}
-\contentsline {section}{\numberline {6.5}Pacjent numer 70}{19}{section.6.5}
-\contentsline {section}{\numberline {6.6}Por\'ownanie zapotrzebowania na lek}{19}{section.6.6}
-\contentsline {chapter}{\numberline {7.}Podsumowanie}{22}{chapter.7}
-\contentsline {section}{\numberline {7.1}Wnioski}{22}{section.7.1}
-\contentsline {chapter}{Bibliografia}{23}{section.7.1}
+\contentsline {section}{\numberline {4.1}Interfejsy i klasy}{10}{section.4.1}
+\contentsline {section}{\numberline {4.2}Przep\IeC {\l }yw danych w aplikacji}{11}{section.4.2}
+\contentsline {section}{\numberline {4.3}Metody utworzonego programu}{11}{section.4.3}
+\contentsline {section}{\numberline {4.4}Wykorzystane funkcje programu Matlab}{14}{section.4.4}
+\contentsline {chapter}{\numberline {5.}Instrukcja obs\IeC {\l }ugi/Specyfikacja zewn\k etrzna}{17}{chapter.5}
+\contentsline {chapter}{\numberline {6.}Rezultaty}{18}{chapter.6}
+\contentsline {section}{\numberline {6.1}Wst\k epne por\'ownanie pacjent\'ow}{18}{section.6.1}
+\contentsline {section}{\numberline {6.2}Pacjent numer 20}{18}{section.6.2}
+\contentsline {section}{\numberline {6.3}Pacjent numer 31}{22}{section.6.3}
+\contentsline {section}{\numberline {6.4}Pacjent numer 55}{23}{section.6.4}
+\contentsline {section}{\numberline {6.5}Pacjent numer 70}{23}{section.6.5}
+\contentsline {section}{\numberline {6.6}Por\'ownanie zapotrzebowania na lek}{23}{section.6.6}
+\contentsline {chapter}{\numberline {7.}Podsumowanie}{26}{chapter.7}
+\contentsline {section}{\numberline {7.1}Wnioski}{26}{section.7.1}
+\contentsline {chapter}{Bibliografia}{27}{section.7.1}
