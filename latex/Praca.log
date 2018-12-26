@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.29)  26 DEC 2018 20:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.29)  26 DEC 2018 23:59
 entering extended mode
 **./Praca.tex
 (Praca.tex
@@ -428,7 +428,11 @@ Package color Info: Driver file: pdftex.def on input line 147.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-) (Praca.aux)
+) (Praca.aux
+
+LaTeX Warning: Label `simulation_img' multiply defined.
+
+)
 \openout1 = `Praca.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
@@ -447,8 +451,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
 LaTeX Font Info:    ... okay on input line 35.
 LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 35.
 LaTeX Font Info:    Try loading font information for OT4+cmr on input line 35.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\polski\ot4cmr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\polski\ot4cmr.fd"
 File: ot4cmr.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    ... okay on input line 35.
@@ -611,21 +614,21 @@ LaTeX Warning: No positions in optional float specifier.
 [10
 
 ]
-<./rysunki/visio/start_data.png, id=301, 439.6425pt x 255.95625pt>
+<./rysunki/visio/start_data.png, id=345, 439.6425pt x 255.95625pt>
 File: ./rysunki/visio/start_data.png Graphic file (type png)
 <use ./rysunki/visio/start_data.png>
 Package pdftex.def Info: ./rysunki/visio/start_data.png  used on input line 466
 . on input line 466.
 Package pdftex.def Info: Requested size: 308.71106pt x 179.73445pt on input lin
 e 466.
-<./rysunki/visio/simulation.png, id=302, 526.96875pt x 256.70906pt>
+<./rysunki/visio/simulation.png, id=346, 526.96875pt x 256.70906pt>
 File: ./rysunki/visio/simulation.png Graphic file (type png)
 <use ./rysunki/visio/simulation.png>
 Package pdftex.def Info: ./rysunki/visio/simulation.png  used on input line 472
 . on input line 472.
 Package pdftex.def Info: Requested size: 352.81552pt x 171.88057pt on input lin
 e 472.
-<./rysunki/visio/simulation_result.png, id=304, 497.60907pt x 256.70906pt>
+<./rysunki/visio/simulation_result.png, id=348, 497.60907pt x 256.70906pt>
 File: ./rysunki/visio/simulation_result.png Graphic file (type png)
 <use ./rysunki/visio/simulation_result.png>
 Package pdftex.def Info: ./rysunki/visio/simulation_result.png  used on input l
@@ -718,100 +721,163 @@ Overfull \vbox (0.84998pt too high) has occurred while \output is active []
 
 [16]
 Rozdzia\PlPrIeC {\l } 5.
+<./rysunki/specs/window1.jpg, id=447, 542.025pt x 459.96844pt>
+File: ./rysunki/specs/window1.jpg Graphic file (type jpg)
+<use ./rysunki/specs/window1.jpg>
+Package pdftex.def Info: ./rysunki/specs/window1.jpg  used on input line 686. o
+n input line 686.
+Package pdftex.def Info: Requested size: 441.01773pt x 374.26387pt on input lin
+e 686.
+<./rysunki/specs/choose-patient.jpg, id=450, 228.855pt x 388.45125pt>
+File: ./rysunki/specs/choose-patient.jpg Graphic file (type jpg)
+<use ./rysunki/specs/choose-patient.jpg>
+Package pdftex.def Info: ./rysunki/specs/choose-patient.jpg  used on input line
+ 695. on input line 695.
+Package pdftex.def Info: Requested size: 176.40439pt x 299.43437pt on input lin
+e 695.
+<./rysunki/specs/patient-list.jpg, id=451, 147.55125pt x 120.45pt>
+File: ./rysunki/specs/patient-list.jpg Graphic file (type jpg)
+<use ./rysunki/specs/patient-list.jpg>
+Package pdftex.def Info: ./rysunki/specs/patient-list.jpg  used on input line 7
+01. on input line 701.
+Package pdftex.def Info: Requested size: 176.40439pt x 144.00626pt on input lin
+e 701.
+<./rysunki/specs/simulation.jpg, id=454, 298.11375pt x 182.18062pt>
+File: ./rysunki/specs/simulation.jpg Graphic file (type jpg)
+<use ./rysunki/specs/simulation.jpg>
+Package pdftex.def Info: ./rysunki/specs/simulation.jpg  used on input line 712
+. on input line 712.
+Package pdftex.def Info: Requested size: 176.40439pt x 107.80252pt on input lin
+e 712.
+<./rysunki/specs/adv-treatment.jpg, id=455, 249.93375pt x 128.73094pt>
+File: ./rysunki/specs/adv-treatment.jpg Graphic file (type jpg)
+<use ./rysunki/specs/adv-treatment.jpg>
+Package pdftex.def Info: ./rysunki/specs/adv-treatment.jpg  used on input line 
+718. on input line 718.
+Package pdftex.def Info: Requested size: 176.40439pt x 90.86137pt on input line
+ 718.
+<./rysunki/specs/initial.jpg, id=457, 274.02374pt x 209.28188pt>
+File: ./rysunki/specs/initial.jpg Graphic file (type jpg)
+<use ./rysunki/specs/initial.jpg>
+Package pdftex.def Info: ./rysunki/specs/initial.jpg  used on input line 728. o
+n input line 728.
+Package pdftex.def Info: Requested size: 176.40439pt x 134.72868pt on input lin
+e 728.
 [17
 
 ]
+<./rysunki/specs/progressbar.jpg, id=463, 423.83344pt x 188.20313pt>
+File: ./rysunki/specs/progressbar.jpg Graphic file (type jpg)
+<use ./rysunki/specs/progressbar.jpg>
+Package pdftex.def Info: ./rysunki/specs/progressbar.jpg  used on input line 73
+6. on input line 736.
+Package pdftex.def Info: Requested size: 264.61333pt x 117.50604pt on input lin
+e 736.
+
+Overfull \vbox (0.84998pt too high) has occurred while \output is active []
+
+
+[18 <./rysunki/specs/window1.jpg>]
+Overfull \vbox (0.84998pt too high) has occurred while \output is active []
+
+
+[19 <./rysunki/specs/choose-patient.jpg> <./rysunki/specs/patient-list.jpg>]
+Overfull \vbox (0.84998pt too high) has occurred while \output is active []
+
+
+[20 <./rysunki/specs/simulation.jpg> <./rysunki/specs/adv-treatment.jpg> <./rys
+unki/specs/initial.jpg> <./rysunki/specs/progressbar.jpg>]
 Rozdzia\PlPrIeC {\l } 6.
-<./rysunki/excel/pacjenci_ft4_trab.png, id=408, 580.41844pt x 362.10281pt>
+<./rysunki/excel/pacjenci_ft4_trab.png, id=479, 580.41844pt x 362.10281pt>
 File: ./rysunki/excel/pacjenci_ft4_trab.png Graphic file (type png)
 <use ./rysunki/excel/pacjenci_ft4_trab.png>
 Package pdftex.def Info: ./rysunki/excel/pacjenci_ft4_trab.png  used on input l
-ine 697. on input line 697.
+ine 756. on input line 756.
 Package pdftex.def Info: Requested size: 441.01773pt x 275.1402pt on input line
- 697.
-<./rysunki/wyniki/p20_no_dose_d10.png, id=409, 421.575pt x 316.0608pt>
+ 756.
+<./rysunki/wyniki/p20_no_dose_d10.png, id=480, 421.575pt x 316.0608pt>
 File: ./rysunki/wyniki/p20_no_dose_d10.png Graphic file (type png)
 <use ./rysunki/wyniki/p20_no_dose_d10.png>
 Package pdftex.def Info: ./rysunki/wyniki/p20_no_dose_d10.png  used on input li
-ne 705. on input line 705.
+ne 764. on input line 764.
 Package pdftex.def Info: Requested size: 352.81552pt x 264.51508pt on input lin
-e 705.
-<./rysunki/wyniki/p20_dose30_d1.png, id=411, 421.575pt x 316.18124pt>
+e 764.
+<./rysunki/wyniki/p20_dose30_d1.png, id=482, 421.575pt x 316.18124pt>
 File: ./rysunki/wyniki/p20_dose30_d1.png Graphic file (type png)
 <use ./rysunki/wyniki/p20_dose30_d1.png>
 Package pdftex.def Info: ./rysunki/wyniki/p20_dose30_d1.png  used on input line
- 713. on input line 713.
+ 772. on input line 772.
 Package pdftex.def Info: Requested size: 352.81552pt x 264.61588pt on input lin
-e 713.
-<./rysunki/wyniki/p20_dose30_d120.png, id=413, 421.575pt x 316.0608pt>
+e 772.
+<./rysunki/wyniki/p20_dose30_d120.png, id=484, 421.575pt x 316.0608pt>
 File: ./rysunki/wyniki/p20_dose30_d120.png Graphic file (type png)
 <use ./rysunki/wyniki/p20_dose30_d120.png>
 Package pdftex.def Info: ./rysunki/wyniki/p20_dose30_d120.png  used on input li
-ne 721. on input line 721.
+ne 780. on input line 780.
 Package pdftex.def Info: Requested size: 352.81552pt x 264.51508pt on input lin
-e 721.
-<./rysunki/wyniki/p20_dose30_d75_dose0_d45.png, id=415, 421.575pt x 316.0608pt>
+e 780.
+<./rysunki/wyniki/p20_dose30_d75_dose0_d45.png, id=486, 421.575pt x 316.0608pt>
 
 File: ./rysunki/wyniki/p20_dose30_d75_dose0_d45.png Graphic file (type png)
 <use ./rysunki/wyniki/p20_dose30_d75_dose0_d45.png>
 Package pdftex.def Info: ./rysunki/wyniki/p20_dose30_d75_dose0_d45.png  used on
- input line 729. on input line 729.
+ input line 788. on input line 788.
 Package pdftex.def Info: Requested size: 352.81552pt x 264.51508pt on input lin
-e 729.
-<./rysunki/wyniki/p20_treatment.png, id=417, 421.575pt x 316.0608pt>
+e 788.
+<./rysunki/wyniki/p20_treatment.png, id=488, 421.575pt x 316.0608pt>
 File: ./rysunki/wyniki/p20_treatment.png Graphic file (type png)
 <use ./rysunki/wyniki/p20_treatment.png>
 Package pdftex.def Info: ./rysunki/wyniki/p20_treatment.png  used on input line
- 737. on input line 737.
+ 796. on input line 796.
 Package pdftex.def Info: Requested size: 352.81552pt x 264.51508pt on input lin
-e 737.
-[18
+e 796.
+[21
 
-] [19 <./rysunki/excel/pacjenci_ft4_trab.png> <./rysunki/wyniki/p20_no_dose_d10
-.png (PNG copy)>] [20 <./rysunki/wyniki/p20_dose30_d1.png> <./rysunki/wyniki/p2
-0_dose30_d120.png (PNG copy)>] [21 <./rysunki/wyniki/p20_dose30_d75_dose0_d45.p
+] [22 <./rysunki/excel/pacjenci_ft4_trab.png> <./rysunki/wyniki/p20_no_dose_d10
+.png (PNG copy)>] [23 <./rysunki/wyniki/p20_dose30_d1.png> <./rysunki/wyniki/p2
+0_dose30_d120.png (PNG copy)>] [24 <./rysunki/wyniki/p20_dose30_d75_dose0_d45.p
 ng (PNG copy)> <./rysunki/wyniki/p20_treatment.png (PNG copy)>]
-<./rysunki/wyniki/p20_treatment1.png, id=440, 421.575pt x 316.0608pt>
+<./rysunki/wyniki/p20_treatment1.png, id=510, 421.575pt x 316.0608pt>
 File: ./rysunki/wyniki/p20_treatment1.png Graphic file (type png)
 <use ./rysunki/wyniki/p20_treatment1.png>
 Package pdftex.def Info: ./rysunki/wyniki/p20_treatment1.png  used on input lin
-e 749. on input line 749.
+e 808. on input line 808.
 Package pdftex.def Info: Requested size: 352.81552pt x 264.51508pt on input lin
-e 749.
-<./rysunki/wyniki/p31_treatment.png, id=442, 421.575pt x 316.0608pt>
+e 808.
+<./rysunki/wyniki/p31_treatment.png, id=512, 421.575pt x 316.0608pt>
 File: ./rysunki/wyniki/p31_treatment.png Graphic file (type png)
 <use ./rysunki/wyniki/p31_treatment.png>
 Package pdftex.def Info: ./rysunki/wyniki/p31_treatment.png  used on input line
- 759. on input line 759.
+ 818. on input line 818.
 Package pdftex.def Info: Requested size: 352.81552pt x 264.51508pt on input lin
-e 759.
- [22 <./rysunki/wyniki/p20_treatment1.png (PNG copy)>]
-<./rysunki/wyniki/p55_treatment.png, id=448, 421.575pt x 316.0608pt>
+e 818.
+ [25 <./rysunki/wyniki/p20_treatment1.png (PNG copy)>]
+<./rysunki/wyniki/p55_treatment.png, id=518, 421.575pt x 316.0608pt>
 File: ./rysunki/wyniki/p55_treatment.png Graphic file (type png)
 <use ./rysunki/wyniki/p55_treatment.png>
 Package pdftex.def Info: ./rysunki/wyniki/p55_treatment.png  used on input line
- 768. on input line 768.
+ 827. on input line 827.
 Package pdftex.def Info: Requested size: 352.81552pt x 264.51508pt on input lin
-e 768.
-<./rysunki/wyniki/p70_treatment.png, id=452, 421.575pt x 316.0608pt>
+e 827.
+<./rysunki/wyniki/p70_treatment.png, id=522, 421.575pt x 316.0608pt>
 File: ./rysunki/wyniki/p70_treatment.png Graphic file (type png)
 <use ./rysunki/wyniki/p70_treatment.png>
 Package pdftex.def Info: ./rysunki/wyniki/p70_treatment.png  used on input line
- 781. on input line 781.
+ 840. on input line 840.
 Package pdftex.def Info: Requested size: 352.81552pt x 264.51508pt on input lin
-e 781.
-<./rysunki/excel/pacjenci_mmi.png, id=454, 663.22781pt x 353.06906pt>
+e 840.
+<./rysunki/excel/pacjenci_mmi.png, id=524, 663.22781pt x 353.06906pt>
 File: ./rysunki/excel/pacjenci_mmi.png Graphic file (type png)
 <use ./rysunki/excel/pacjenci_mmi.png>
-Package pdftex.def Info: ./rysunki/excel/pacjenci_mmi.png  used on input line 7
-91. on input line 791.
+Package pdftex.def Info: ./rysunki/excel/pacjenci_mmi.png  used on input line 8
+50. on input line 850.
 Package pdftex.def Info: Requested size: 441.01773pt x 234.77719pt on input lin
-e 791.
- [23 <./rysunki/wyniki/p31_treatment.png (PNG copy)>] [24 <./rysunki/wyniki/p55
-_treatment.png (PNG copy)> <./rysunki/wyniki/p70_treatment.png (PNG copy)>] [25
+e 850.
+ [26 <./rysunki/wyniki/p31_treatment.png (PNG copy)>] [27 <./rysunki/wyniki/p55
+_treatment.png (PNG copy)> <./rysunki/wyniki/p70_treatment.png (PNG copy)>] [28
  <./rysunki/excel/pacjenci_mmi.png>]
 Rozdzia\PlPrIeC {\l } 7.
-) [26
+) [29
 
 ] (Praca.bbl
 Underfull \hbox (badness 2903) in paragraph at lines 19--25
@@ -837,7 +903,7 @@ Package caption Warning: Unused \captionsetup[subfigure] on input line 148.
 See the caption package documentation for explanation.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
-[27
+[30
 
 
 ]
@@ -846,14 +912,18 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
 Package rerunfilecheck Info: File `Praca.out' has not changed.
-(rerunfilecheck)             Checksum: 8E435353B88D91CCD02A6160CB5C9336;1940.
+(rerunfilecheck)             Checksum: 189A6017A61B7EBED28C1B1E121AB0FE;2363.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  ) 
 Here is how much of TeX's memory you used:
- 10377 strings out of 493312
- 152781 string characters out of 3138899
+ 10442 strings out of 493312
+ 154312 string characters out of 3138899
  276909 words of memory out of 3000000
- 13535 multiletter control sequences out of 15000+200000
+ 13575 multiletter control sequences out of 15000+200000
  15374 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,14n,42p,628b,1959s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -874,9 +944,9 @@ m Files/MiKTeX 2.9/fonts/type1/public/pl/plsy10.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/pl/plsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/pl/plti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/pltt10.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/pltt12.pfb>
-Output written on Praca.pdf (32 pages, 779802 bytes).
+Output written on Praca.pdf (35 pages, 961554 bytes).
 PDF statistics:
- 577 PDF objects out of 1000 (max. 8388607)
- 170 named destinations out of 1000 (max. 500000)
- 311 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 650 PDF objects out of 1000 (max. 8388607)
+ 186 named destinations out of 1000 (max. 500000)
+ 394 words of extra memory for PDF output out of 10000 (max. 10000000)
 
