@@ -676,10 +676,69 @@ Funkcja dzieli napis na tablicê napisów w miejscach okreœlonego znaku. Funkcja z
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Instrukcja obs³ugi/Specyfikacja zewnêtrzna}
-Instrukcja obs³ugi zbudowanego urz¹dzenia/programu komputerowego. Dok³adne wyjaœnienie zasad pos³ugiwania siê tym, co zosta³o otrzymane w efekcie przeprowadzonych prac. Mo¿na wykorzystaæ zrzuty ekranów, scenariusze u¿ytkowe itp.
+W tej czêœci zostanie szczegó³owo omówiony program autora pracy wraz z instrukcj¹ jego obs³ugi.
 
+\section{Okno g³ówne}
+Na rysunku (Rys. \ref{window1_img}) przedstawiono g³ówne okno aplikacji. S³u¿y ono do konfiguracji symulacji. Mo¿na podzieliæ ja na 3 ró¿ne czêœci. 
 
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{specs/window1}
+	\caption{Okno g³ówne aplikacji.}\label{window1_img}
+\end{figure}
 
+\subsection{Wybór pacjenta}
+W pierwszej czêœci, któr¹ przedstawia zdjêcie (Rys. \ref{choose-patient_img}) wybiera siê pacjenta, na którym przeprowadzane s¹ symulacje. Parametry, które go opisuj¹ przedstawia tabela. Do wyboru jest 4 pacjentów (Rys. \ref{patient-list_img}), którzy s¹ analizowani w tej pracy. Dodatkowych pacjentów nale¿y dodaæ z poziomu kodu.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.4\textwidth]{specs/choose-patient}
+	\caption{Wybór pacjenta.}\label{choose-patient_img}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.4\textwidth]{specs/patient-list}
+	\caption{Lista wyboru pacjenta.}\label{patient-list_img}
+\end{figure}
+
+\subsection{Wybór parametrów symulacji}
+Ta czêœæ s³u¿y do wyboru parametrów symulacji (Rys. \ref{simulation_img}): czasu, leczenia i dawki metimazolu. W pierszym polu wpisuje siê czas symulacji wyra¿ony w dniach. Nastêpnie na w³¹czniku, mo¿emy wybraæ, leczenie lub brak leczenia dla pacjenta. W³¹czenie terapii aktywuje pole dawki leku, w którym wybiera siê iloœæ metimazolu, jak¹ codziennie przyjmuje pacjent.
+
+Terapie mog¹ byæ bardzo skomplikowane, dlatego istnieje mo¿liwoœæ utworzenia serii leczenia. Wystarczy wpisaæ w te pola kilka wartoœci po przecinku. Dla u³atwienia pod spodem znajduj¹ siê 3 przyciski. Pierwsze 2 - "Simple Dose" i "Advanced Dose" automatycznie wpisuj¹ w omawiane wczeœniej pola przyk³adowe terapie. Trzeci przycisk daje informacjê, jak wype³niaæ pola. Na rysunku (Rys. \ref{adv-treatment_img}) pokazano przyk³adow¹ zaawansowan¹ terapiê.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.4\textwidth]{specs/simulation}
+	\caption{Konfiguracja symulacji bez leczenia.}\label{simulation_img}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.4\textwidth]{specs/adv-treatment}
+	\caption{Konfiguracja zaawansowanego leczenia.}\label{adv-treatment_img}
+\end{figure}
+
+\subsection{Warunki pocz¹tkowe}
+
+Warunki pocz¹tkowe s¹ w pe³ni zautomatyzowane. S¹ pokazane na rysunku (Rys. \ref{initial_img}). Poziom fT4, przeciwcia³ i wielkoœæ komórek ustalaj¹ siê po wyborze pacjenta. Pole MMI ustawia siê po wybraniu dawki. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.4\textwidth]{specs/initial}
+	\caption{Przyk³adowe warunki pocz¹tkowe.}\label{initial_img}
+\end{figure}
+
+\subsection{Symulacja}
+Naciœniêcie przycisku symulacji, rozpoczyna obliczenia. Oczekiwanie potwierdza okno modalne z paskiem postêpu (Rys. \ref{progressbar_img}).
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\textwidth]{specs/progressbar}
+	\caption{Okno modalne oczekiwania na obliczenia.}\label{progressbar_img}
+\end{figure}
+
+\section{Okno symulacji}
+\textit{Niedokoñczone}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Rezultaty}
 %Zobrazowanie i omówienie wyników otrzymywanych wskutek zastosowania danego urz¹dzenia b¹dŸ aplikacji. Badanie ewentualnych parametrów (takich jak dok³adnoœæ, czu³oœæ...), czy te¿ zachowania w szczególnych sytuacjach. O ile to mo¿liwe tabelaryzacja rezultatów oraz ich statystyczna interpretacja. Ocena zachowania zaproponowanego rozwi¹zania. Analiza mo¿liwych przyczyn wyst¹pienia b³êdów. 

@@ -5,9 +5,9 @@ function plot_phase(ax, x, y, px, py, xlab, ylab)
     xlabel(ax, xlab);
     ylabel(ax, ylab);
     
-    hold(ax,'on');
-    plot(ax, px, py, '*r');
-    legend(ax,'portrait phaze','stability point')
+%     hold(ax,'on');
+%     plot(ax, px, py, '*r');
+    legend(ax,'portrait phaze')
 
 end
 
