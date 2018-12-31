@@ -9,11 +9,11 @@
 %
 %\emph{Automatyczna analiza obrazów (AAO)\footnote{Tak wprowadzamy skróty.} jest niezwykle istotn¹ i szybko rozwijaj¹c¹ siê dziedzin¹ nauki. Bez narzêdzi (\ang{tools}) AAO trudno dziœ sobie wyobraziæ ksi¹¿ki o~przetwarzaniu obrazów \cite{Gonzalez} i~inne. Jednym z~popularniejszych narzêdzi analizy s¹ no¿yczki.}
 
-Choroba Gravesa jest najczêstsz¹, idiopatyczn¹ form¹ nadczynnoœci tarczycy. To choroba autoimmunologiczna, powodowana nadaktywnoœci¹ przeciwcia³ przeciwtarczycowych (TRAb). Imituj¹ one dzia³anie hormonu TSH, stymuluj¹c receptory TSH (TSHR). Efektem jest nadprodukcja hormonów tarczycy: trójjodotyroniny (T3) i tyroksyny (T4) \cite{wiki}. Prowadzi to bezpoœrednio do nadczynnoœci tarczycy. 
+Choroba Gravesa jest najczêstsz¹, idiopatyczn¹ form¹ nadczynnoœci tarczycy. To choroba autoimmunologiczna, powodowana nadaktywnoœci¹ przeciwcia³ przeciwtarczycowych (TRAb). Imituj¹ one dzia³anie hormonu TSH, stymuluj¹c receptory TSH (TSHR). Efektem jest nadprodukcja hormonów tarczycy: trójjodotyroniny (T3) i tyroksyny (T4) \cite{wiki}. Co w konsekwencji prowadzi do nadczynnoœci tarczycy. 
 
-Standardowe leczenie to terapia lekami przeciwtarczycowymi \textit{(antithyroid drugs - ATD)}. Jednym z nich jest metimazol. Chamuje dzia³anie enzymu, odpowiadaj¹cego za syntezê hormonów tarczycy. Terapia skutkuje obni¿eniem T3 i T4, jednak bardzo czêsto wystêpuj¹ reemisje. 
+Standardowe leczenie to terapia lekami przeciwtarczycowymi \textit{(antithyroid drugs - ATD)}. Jednym z nich jest metimazol, który hamuje dzia³anie enzymu, odpowiadaj¹cego za syntezê hormonów tarczycy. Taka terapia skutkuje obni¿eniem hormonów T3 i T4, jednak bardzo czêsto wystêpuj¹ reemisje. 
 
-Dotychczas stosowane terapie, s¹ uniwersalne, pozbawione indywidualnego podejœcia. W pracy przedstawiono program do symulacji terapii. Na podstawie danych z badañ pacjenta, pozwala przewidzieæ odpowiedŸ jego organizmu. Pozwala to skuteczniej zaplanowaæ terapiê i przewidzieæ reemisje. 
+Dotychczas stosowane terapie, s¹ uniwersalne, pozbawione indywidualnego podejœcia. W pracy przedstawiono program do symulacji terapii. Na podstawie danych, pozyskanych z badañ pacjenta, pozwala przewidzieæ odpowiedŸ jego organizmu. Pozwala to skuteczniej zaplanowaæ terapiê i przewidzieæ reemisje. 
 
 %\begin{itemize}
 % \item Jak dzia³a tarczyca i jej uk³ad hormonalny.
@@ -78,127 +78,143 @@ Ka¿dy rozdzia³ warto jest równie¿ poprzedziæ krótkim wstêpem.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Metodologia}\label{Chapter_Metodologia}
 
-Dobór odpowiedniej dawki leku jest mo¿liwy, poprzez symulacjê organizmu pacjenta oraz jego odpowiedzi na terapiê. D¹¿y siê do stanu, w którym iloœæ hormonu T4 w formie wolnej, oznaczana jako fT4 \cite{ft4}, zmieni siê do wartoœci okreœlaj¹cej cz³owieka zdrowego. 
+Dobór odpowiedniej dawki leku jest mo¿liwy, poprzez symulacjê zachowania siê organizmu pacjenta oraz jego odpowiedzi na terapiê. Celem terapii jest osi¹gniecie stanu, w którym iloœæ hormonu T4 w formie wolnej (oznaczana jako fT4 \cite{ft4}), zmieni siê do wartoœci charakterystycznej dla osoby zdrowej. 
 
-W utworzonym programie wykorzystano model matematyczny, przedstawiony w pracy Balamurugan Pandiyan i Stephen J. Merrill. Wszelkie za³o¿enia i dane, pochodz¹ z ich pracy.\cite{graves1}
+W napisanej przez Autora niniejszej pracy aplikacji okienkowej, zaimplementowano model matematyczny, przedstawiony w pracy Balamurugan Pandiyan i Stephen J. Merrill \cite{graves1}. Wszelkie za³o¿enia i dane, zaczerpniêto z ich pracy.
 
 \section{Za³o¿enia modelu}
+Zaimplementowany model matematyczny pozwala obserwowaæ poziom hormonu T3 w formie wolnej, przeciwcia³ TRAb, metimazolu we krwi pacjenta oraz rozmiar gruczo³u tarczycy w czasie. Poni¿ej zosta³y opisane za³o¿enia modelu.
+
 \begin{enumerate}
-\item TRAb imituje dzia³anie TSH i stymuluje komórki tarczycowe do wzrostu, produkcji i wydzielania hormonów tarczycy.
-\item Po za¿yciu leku doustnie, metimazol (MMI) jest szybko i kompletnie absorbowany do surowicy krwi i jego przyswajalnoœæ, jest estymowana i wynosi œrednio 93%.
-\item Tarczyca przyjmuje MMI z krwi, co dezaktywuje funkcjonalny wzrost gruczo³u. 
-\item Dawka leku zostaje poch³oniêta z krwi po spo¿yciu.
+\item Przeciwcia³a tarczycowe TRAb imituj¹ dzia³anie TSH i stymuluj¹ komórki tarczycowe do wzrostu, produkcji i wydzielania hormonów tarczycy.
+\item Po za¿yciu doustnie leku w postaci metimazolu (MMI), jest on szybko i kompletnie absorbowany do surowicy krwi. Jego przyswajalnoœæ, jest estymowana i wynosi œrednio 93%.
+\item Tarczyca przyswaja MMI z krwi, który dezaktywuje funkcjonalny wzrost gruczo³u. 
+\item Dawka leku wch³ania siê z krwi po jego spo¿yciu.
 \item Rozmiar gruczo³u tarczycy jest ukrytym kompartmentem w modelu.
-\item Po doustnym podaniu leku, stê¿enie metimazolu w surowicy krwi wykazuje podobny dynamiczny wzór, jak stê¿enie wewn¹trz tarczycy.
+\item Po doustnym podaniu leku, stê¿enie metimazolu w surowicy krwi wykazuje tak¹ sam¹ dynamikê, jak stê¿enie wewn¹trz tarczycy.
 \end{enumerate}
 
 \section{Funkcje stanu}
 
 %klucze: (warunki pocz¹tkowe, parametry, zmienne stanu??)
 
-Rozwa¿any model jest uk³adem równañ ró¿niczkowych w którym:
+Rozwa¿any model jest uk³adem równañ ró¿niczkowych zwyczajnych w którym przyjmujemy nastêpuj¹ce oznaczenia:
 
 \begin{itemize}
-\item x(t) - iloœæ metimazolu (mg) na litr surowicy krwi w chwili czasowej t.
-\item y(t) - iloœæ FT4 (pg) na mililitr surowicy krwi w chwili czasowej t.
+\item x(t) - iloœæ metimazolu (mg) na litr surowicy krwi w chwili czasowej t,
+\item y(t) - iloœæ hormonu FT4 (pg) na mililitr surowicy krwi w chwili czasowej t,
 \item z(t) - rozmiar funkcjonalny gruczo³u tarczycy (ml) lub objêtoœæ aktywnych komórek w chwili czasowej t.
-\item w(t) - iloœæ przeciwcia³ TRAb (U) na mililitr krwii w chwili czasowej t.
-\item s(t) - zawartoœæ MMI przyjêtego doustnie co dzieñ na litr objêtoœci cia³a.
+\item w(t) - iloœæ przeciwcia³ TRAb (U) na mililitr krwii w chwili czasowej t,
+\item s(t) - poziom MMI przyjêtego doustnie na litr objêtoœci cia³a w chwili czasowej t.
 
 \end{itemize}
 
-\section{Parametry modelu}
-
-\begin{table}[h]
-\label{tab:params}
-\begin{tabular}{|l|l|l|l|}
-\hline
-\textbf{Parametr} & \textbf{Opis}                                                                                                    & \textbf{Wartoœæ}              & \textbf{Jednostka}            \\ \hline
-$k_{1}$                & \begin{tabular}[c]{@{}l@{}}Wzglêdne maksimum wykorzystania \\ MMI.\end{tabular}                                  & $8,374\cdot 10^{3}$ & mg/($ml\cdot l\text{dzieñ}$)                  \\ \hline
-$k_{2}$              & WskaŸnik eliminacji MMI.                                                                                         & 3,3271                        & 1/\text{dzieñ}                         \\ \hline
-ka                & \begin{tabular}[c]{@{}l@{}}Sta³a Michealisa-Mentena po³owicznego \\ maksymalnego wykorzystania MMI.\end{tabular} & 0,358068                      & mg/L                          \\ \hline
-$k_{3}$                & Wzglêdne maksimum sekrecji FT4.                                                                                  & 0,119                         & $pg/(ml^{2}\cdot\text{dzieñ})$                   \\ \hline
-$k_{d}$                & \begin{tabular}[c]{@{}l@{}}Sta³a Michealisa-Mentena\\ po³owicznej maksymalnej  sekrecji FT4.\end{tabular}        & 0,05                          & U/ml                          \\ \hline
-$k_{4}$                & WskaŸnik eliminacji FT4.                                                                                         & 0,099021                      & 1/\text{dzieñ}                         \\ \hline
-$k_{5}$                & \begin{tabular}[c]{@{}l@{}}Wzglêdny wspó³czynnik wzrostu \\ gruczo³u tarczycy.\end{tabular}                      & $1 \cdot 10^{6}$       & $ml^{3}/(U\cdot\text{dzieñ})$ \\ \hline
-N                 & \begin{tabular}[c]{@{}l@{}}Maksymalny wspó³czynnik wzrostu \\ tarczycy.\end{tabular}                             & 0,833                         & $U/(ml^{2})$     \\ \hline
-$k_{6}$                & \begin{tabular}[c]{@{}l@{}}Wspó³czynnik nieaktywnych komórek \\ tarczycy.\end{tabular}                           & 0,001                         & $ml/(mg\cdot\text{dzieñ})$                   \\ \hline
-$k_{7}$                & \begin{tabular}[c]{@{}l@{}}Maksymalny wspó³czynnik produkcji\\ przeciwcia³ TRAb.\end{tabular}                    & 0,875                         & $U/(ml\cdot\text{dzieñ})$                    \\ \hline
-$k_{b}$                & \begin{tabular}[c]{@{}l@{}}Wspó³czynnik hamowania produkcji \\ przeciwcia³.\end{tabular}                         & 1,5                           & mg/L                          \\ \hline
-$k_{8}$                & WskaŸnik eliminacji TRAb.                                                                                        & 0,035                         & 1/\text{dzieñ}                         \\ \hline
-\end{tabular}
-\end{table}
-
-Wartoœæ $k_{1}$ zosta³a zaczerpniêta z literatury (todo ref). Parametry $k_{2}$, $k_{4}$, $k_{8}$ s¹ estymowane. $k_{a}$, $k_{d}$, $k_{5}$, $k_{6}$, $k_{b}$ s¹ symulowane. $k_{3}$, $N$, $k_{7}$ - wyliczone.
-
-Aby model maksymalnie pasowa³ do pacjenta, niektóre wartoœci s¹ estymowane. Polega to na porównaniu wyników terapii danego pacjenta z symulacj¹, obliczenie b³êdu œredniokwadratowego i dostosowanie parametrów, w celu zmniejszenia b³êdu.
-
-Parametry, które mo¿na obliczyæ, s¹ przekszta³conymi równaniami ró¿niczkowymi modelu. Obliczenia dokonuje siê g³ównie za pomoc¹ wartoœci pocz¹tkowych modelu. S¹ to wyniki badañ, podczas pierwszej wizyty pacjenta. Parametr $k_{3}$ obliczono jako:
-\[
-k_{3} = \dfrac{k_{4}y0(k_{d}+w0)}{z0w0}
-\]
-
-\[
-N = \dfrac{w0}{z0}
-\]
-
-\[
-k_{7} jak wyliczyæ?
-\]
-
 \section{Model matematyczny}
 
-Wykorzystano model symuluj¹cy leczenie pacjenta, po przyjêciu metimazolu (MMI). \ref{eq:uklad} 
+Model symuluj¹cy leczenie pacjenta po przyjêciu metimazolu (MMI) \ref{eq:uklad}. 
 
 \begin{equation} \label{eq:uklad}
 \left\lbrace 
 \arraycolsep=1.5pt\def\arraystretch{2.2}
 \begin{array}{ll}
 
-\dfrac{dx}{dt} = s(t) - \dfrac{(k_{1}z)x}{k_{a} + x} - k_{2}x, \quad x(t_{0}) = x_{0} \\
+\dfrac{dx}{dt} = s(t) - \dfrac{(k_{1}z)x}{k_{a} + x} - k_{2}x\\
 
-\dfrac{dy}{dt} = \dfrac{(k_{3}z)w}{k_{d} + w } - k_{4}y, \quad y(t_{0}) = y_{0} \\
+\dfrac{dy}{dt} = \dfrac{(k_{3}z)w}{k_{d} + w } - k_{4}y\\
 
-\dfrac{dz}{dt} = k_{5} (\dfrac{w}{z} - N) - k_{6}zx, \quad z(t_{0}) = z_{0} \\
+\dfrac{dz}{dt} = k_{5} (\dfrac{w}{z} - N) - k_{6}zx\\
 
-\dfrac{dw}{dt} = k_{7} - \dfrac{k_{7}x}{k_{b} + x} - k_{8}w, \quad w(t_{0}) = w_{0}
-
+\dfrac{dw}{dt} = k_{7} - \dfrac{k_{7}x}{k_{b} + x} - k_{8}w\\
 \end{array}
 \right.
 \end{equation}
 
-Ka¿de rozwi¹zanie modelu musi spe³niaæ odpowiedni warunek
-$x(t) \geq 0, y(t) \geq 0, z(t) > 0, w(t) \geq 0$. 
-Warunki pocz¹tkowe s¹ opisane przez $E_{0} = (x_{0}, y_{0}, z_{0}, w_{0})$. Szczegó³owy opis uk³adu znajduje siê w dalszej czêœci sekcji.
+Rozwi¹zania modelu przyjmuj¹ wartoœci nieujemne $x(t) \geq 0, y(t) \geq 0, z(t) > 0, w(t) \geq 0$ dla dowolnej chwili czasowej t, z warunkami pocz¹tkowymi $E_{0} = (x_{0}, y_{0}, z_{0}, w_{0})$. Szczegó³owy opis uk³adu znajduje siê w dalszej czêœci sekcji.
 
-\begin{align}
+\begin{equation}
 \label{eq:dxdt}
 \dfrac{dx}{dt} = s(t) - \dfrac{(k_{1}z)x}{k_{a} + x} - k_{2}x\\
+\end{equation}
+
+Równanie \ref{eq:dxdt} opisuje tempo zmian iloœci metimazolu w chwili t, które zale¿y od dawki metimazolu $s(t)$ przyjêtej przez pacjenta w chwili t, pomniejszonej o 2 sk³adniki. Pierwszy sk³adnik, zgodnie z równaniem Michaelisa-Mentena $\dfrac{(k_{1}z)x}{k_{a} + x}$ charakteryzuje tempo wch³aniania metimazolu (MMI) przez gruczo³ tarczycy, z uwzglêdnieniem jego rozmiaru ($z$), zak³adaj¹c maksymalny wychwyt leku ($k_{1}$). Jest ono podzielone, wed³ug równania kinetycznego Michaelisa-Mentena, przez sta³¹ ($k_{a}$). Drugi sk³adnik $k_{2}x$ odzwierciedla wydalanie lub eliminacjê leku, przez mechanizm niespecyficzny.  /todo wyjaœniæ mechanizm niespecyficzny/
+
+\begin{equation}
 \label{eq:dydt}
 \dfrac{dy}{dt} = \dfrac{(k_{3}z)w}{k_{d} + w } - k_{4}y \\
+\end{equation}
+
+Nastêpne równanie  \ref{eq:dydt} opisuje tempo zmian hormonu tyroksyny w formie wolnej (fT4). Pierwsze wyra¿enie $\dfrac{(k_{3}z)w}{k_{d} + w}$, opisuje znany z poprzedniego \ref{eq:dxdt} równania mechanizm Michaelisa-Mentena, wykorzystany do obliczenia wskaŸnika wydzielania fT4. Jest on pomniejszony, o wskaŸnik eliminacji fT4 z krwi $k_{4}y$. 
+
+\begin{equation}
 \label{eq:dzdt}
 \dfrac{dz}{dt} = k_{5} (\dfrac{w}{z} - N) - k_{6}zx \\
+\end{equation}
+
+Trzecie równanie \ref{eq:dzdt} opisuje zmiany funkcjonalnego rozmiaru gruczo³u tarczycy. Bazuje na maksymalnym wspó³czynniku wzrostu ($N$) i wzglêdnym wspó³czynniku wzrostu ($k_{5}$), w obecnoœci przeciwcia³ przeciwtarczycowych ($w$) \cite{trab} $k_{5}(\dfrac{w}{z} - N)$. Pomniejszone o wspó³czynnik funckjonalnego rozmiaru tarczycy dla komórek nieaktywowanych przez leczenie MMI. 
+
+\begin{equation}
 \label{eq:dwdt}
 \dfrac{dw}{dt} = k_{7} - \dfrac{k_{7}x}{k_{b} + x} - k_{8}w
-\end{align}
+\end{equation}
 
-Równanie \ref{eq:dxdt} zawiera dawkê, przyjmowan¹ przez pacjenta $s(t)$, pomniejszon¹ o 2 sk³adniki. Pierwszy to $\dfrac{(k_{1}z)x}{k_{a} + x}$. Zawiera wch³anianie metimazolu (MMI) przez gruczo³ tarczycy, wed³ug jego rozmiaru ($z$), zak³adaj¹c jego maksymalny wychwyt ($k_{1}$). Jest ono podzielone, wed³ug równania kinetycznego Michaela-Mentena, przez sta³¹ ($k_{a}$). Drugim sk³adnikiem jest $k_{2}x$, który odzwierciedla wydalanie lub wskaŸnik eliminacji leku, przez mechanizm niespecyficzny. 
-
-Pierwsze wyra¿enie w nastêpnym równaniu \ref{eq:dydt} $\dfrac{(k_{3}z)w}{k_{d} + w}$, opisuje znany z poprzedniego \ref{eq:dxdt} \textit{?równania?(powtórzenie)} mechanizm Michaela-Mentena, wykorzystany do obliczenia wskaŸnika wydzielania tyroksyny w formie wolnej (fT4). Jest on pomniejszony, o wskaŸnik eliminacji fT4 z krwi $k_{4}y$. 
-
-Trzecie równanie \ref{eq:dzdt} opisuje wspó³czynnik powiêkszenia funkcjonalnego rozmiaru gruczo³u tarczycy, bazuj¹c na maksymalnym wspó³czynniku wzrostu ($N$) i wzglêdnym wspó³czynniku wzrostu ($k_{5}$), w obecnoœci przeciwcia³ przeciwtarczycowych ($w$) \cite{trab} $k_{5}(\dfrac{w}{z} - N)$. Pomniejszone o wspó³czynnik funckjonalnego rozmiaru tarczycy dla komórek nieaktywowanych przez leczenie MMI. 
-
-W równaniu \ref{eq:dwdt}, parametr $k_{7}$ przedstawiaj¹cy maksymaln¹ produkcjê przeciwcia³ TRAb, spowodowan¹ odpowiedzi¹ autoimmunologiczn¹. Œrodkowe wyra¿enie $\dfrac{k_{7}x}{k_{b} + x}$, przedstawia mechanizm hamowania odpowiedzi immunologicznej, spowodowany podaniem metimazolu. Ostatnie wyra¿enie $k_{8}w$, odnosi siê do opóŸnienia, jakie dotyczy eliminacji TRAb spowodowanego leczeniem.
+Równanie \ref{eq:dwdt} opisuje tempo zmian stê¿enia przeciwcia³ przeciwtarczycowych. Parametr $k_{7}$ przedstawiaj¹cy maksymaln¹ produkcjê przeciwcia³ TRAb, spowodowan¹ odpowiedzi¹ autoimmunologiczn¹. Œrodkowe wyra¿enie $\dfrac{k_{7}x}{k_{b} + x}$, przedstawia mechanizm hamowania odpowiedzi immunologicznej, spowodowany podaniem metimazolu. Ostatnie wyra¿enie $k_{8}w$, odnosi siê do opóŸnienia, jakie dotyczy eliminacji TRAb spowodowanego leczeniem.
 \\
 
-Comments:
-\textit{[Czy mogê powiedzieæ "pomniejszon¹", skoro wiem, ¿e wszystkie sk³adowe s¹ nieujemne?]}
+\section{Parametry modelu}
+Na podstawie literatury /todo: cite/ przyjêto parametry modelu, zebrane w tabeli (Tab. \ref{tab:params}).
 
-\textit{[Zdanie ca³kowicie przet³umaczone \ref{eq:dxdt} - 'The last
-term,
-$k_{2}x$,
-represents the excretion or elimination rate of the drug through non-specific
-mechanism.' - Czy to jest plagiat, skoro wszêdzie bêd¹ odnoœniki do tego artyku³u?]}
+\begin{table}[h]
+\caption{Parametry wejœciowe uk³adu równañ ró¿niczkowych.}
+\label{tab:params}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Parametr} & \textbf{Opis}                                                                                                    & \textbf{Wartoœæ}              & \textbf{Jednostka}            \\ \hline
+$k_{1}$                & \begin{tabular}[c]{@{}l@{}}Wzglêdne maksimum wykorzystania \\ MMI.\end{tabular}                                  & $8,374\cdot 10^{3}$ & mg/($ml\cdot l\text{dzieñ}$)                  \\ \hline
+$k_{2}$              & WskaŸnik eliminacji MMI.                                                                                         & 3,3271                        & 1/\text{dzieñ}                         \\ \hline
+$k_{a}$                & \begin{tabular}[c]{@{}l@{}}Sta³a Michealisa-Mentena po³owicznego \\ maksymalnego wykorzystania MMI.\end{tabular} & 0,358068                      & mg/L                          \\ \hline
+$k_{3}$                & Wzglêdne maksimum sekrecji FT4.                                                                                  & 0,119                         & $pg/(ml^{2}\cdot\text{dzieñ})$                   \\ \hline
+$k_{d}$                & \begin{tabular}[c]{@{}l@{}}Sta³a Michealisa-Mentena\\ po³owicznej maksymalnej  sekrecji FT4.\end{tabular}        & 0,05                          & U/ml                          \\ \hline
+$k_{4}$                & WskaŸnik eliminacji FT4.                                                                                         & 0,099021                      & 1/\text{dzieñ}                         \\ \hline
+$k_{5}$                
+& \begin{tabular}[c]{@{}l@{}}
+Wzglêdny wspó³czynnik wzrostu \\ gruczo³u tarczycy.\end{tabular}                      & $1 \cdot 10^{6}$       & $ml^{3}/(U\cdot\text{dzieñ})$ \\ \hline
+N                 
+& \begin{tabular}[c]{@{}l@{}}
+Maksymalny wspó³czynnik wzrostu \\ gruczo³u tarczycy.\end{tabular}                             & 0,833                         & $U/(ml^{2})$     \\ \hline
+$k_{6}$                
+& \begin{tabular}[c]{@{}l@{}}
+Wspó³czynnik nieaktywnych komórek \\ tarczycy.\end{tabular}                           & 0,001                         & $ml/(mg\cdot\text{dzieñ})$                   \\ \hline
+$k_{7}$                & \begin{tabular}[c]{@{}l@{}}Maksymalny wspó³czynnik produkcji\\ przeciwcia³ TRAb.\end{tabular}                    & 0,875                         & $U/(ml\cdot\text{dzieñ})$                    \\ \hline
+$k_{b}$                & \begin{tabular}[c]{@{}l@{}}Wspó³czynnik hamowania produkcji \\ przeciwcia³.\end{tabular}                         & 1,5                           & mg/L                          \\ \hline
+$k_{8}$                & WskaŸnik eliminacji TRAb.                                                                                        & 0,035                         & 1/\text{dzieñ}                         \\ \hline
+\end{tabular}
+\end{table}
+
+Maksymalna szybkoœæ pobierania MMI wzrasta wraz ze zwiêkszeniem dawki leku, ale powy¿ej 15 mg/dzieñ, wzrost ten mo¿na pomin¹æ. Maksymalne wch³anianie leku, odbywa siê zatem, kiedy dawka wynosi 15 mg/dzieñ. Zak³adaj¹c, ¿e standardowa objêtoœæ funkcjonalna gruczo³u tarczycy podczas nadczynnoœci wynosi 30 ml, a 59,71 l to standardowa objêtoœæ organizmu, mo¿emy estymowaæ parametr $k_{1} = \dfrac{15}{30\cdot 59,71} = 8,374 \cdot 10^{-3} mg/ml\cdot \text{\textit{ldzieñ}}$.
+
+Zak³ada siê, ¿e wspó³czynnik wydalania MMI przez organizm niespecyficzny jest wyk³adniczy i mo¿e zostaæ obliczony jako $k_{2} = \dfrac{ln(2)}{5h} = 3,43711/\text{\textit{dzieñ}}$.
+
+Najwiêksze wydalanie metimazolu, wystêpuje oko³o godziny 12 dla maksymalnej przyjêtej dawki 15 mg/dzieñ. Ta informacja pozwala okreœliæ wartoœæ $k_{a} = 0.358068 mg/l$ przez symulacje, korzystaj¹c z równania dynamicznego Michealisa-Mentena. 
+
+Parametr $k_{3}$ jest przekszta³conym równaniem \ref{eq3} modelu. Posiadaj¹c informacje z badañ pacjentów podczas ich pierwszej wizyty, mo¿emy obliczyæ
+$k_{3} = \dfrac{k_{4}y_{0}(k_{d}+w_{0})}{z_{0}w_{0}}$.
+
+Parametr $k_{d}$ zosta³ estymowany w programie Matlab, u¿ywaj¹c procedury optymalizacyjnej \textbf{fmincon} z doln¹ granic¹ wynosz¹c¹ 0.05 i górn¹ granic¹ 0.1. 
+
+Nastêpnie $k_{3} = \dfrac{k_{4}y_{0}(k_{d}+w_{0})}{z_{0}w_{0}}$.
+
+Parametr $k_{4}$ to wspó³czynnik wydalania fT4 z organizmu. Zak³adaj¹c niespecyficzny mechanizm, wspó³czynnik wydalania jest wyk³adniczy i mo¿e byæ wyliczony jako $k_{4} = \dfrac{ln(2)}{7 dni} = 0.099021 l/\text{\textit{dzieñ}}$.
+
+Parametry $k_{5}$ oraz $k_{6}$ zosta³y wyznaczone podczas symulacji.
+
+Parametr N, zosta³ wyliczony bazuj¹c na danych TRAb i fT4 pacjenta $N = \dfrac{w_{0}}{z_{0}}$.
+
+Parametr $k_{8}$ okreœla czas ¿ycia przeciwcia³. Zak³ada siê, ¿e jest on wyk³adniczy i mo¿e zostaæ wyliczony jako $k8 = \dfrac{ln(2)}{20dni} = 0.035 l/\text{\textit{dzieñ}}$. 
+
+Parametr $k_{7}$ zosta³ estymowany jako 
+$k_{7} = k_{8} \cdot w_{0}$.
+
+Parametr $k_{b}$ jest wspó³czynnikiem po³owicznego maksymalnego hamowania stê¿enia przeciwcia³ TRAb (sta³a Michealisa-Mentena), który mo¿e zostaæ wyestymowany, za pomoc¹ procedury \textbf{fmincon} w doln¹ granic¹ 3 i górn¹ 12.
 
 %\begin{equation} 
 %\end{equation}
@@ -217,24 +233,26 @@ mechanism.' - Czy to jest plagiat, skoro wszêdzie bêd¹ odnoœniki do tego artyku³
 
 \section{Warunki pocz¹tkowe modelu}
 
-Model sk³ada siê z 4 parametrów, okreœlaj¹cych warunki pocz¹tkowe. 
+Warunki pocz¹tkowe modelu $E_{0} = (x_{0}, y_{0}, z_{0}, w_{0})$, zosta³y ustalone w sposób nastêpuj¹cy:
+
+Stê¿enie pocz¹tkowe FT4 $(y_{0})$ oraz przeciwcia³ TRAb $(w_{0})$ pochodzi z badañ podczas pierwszej wizyty pacjenta. 
+
+Pocz¹tkow¹ wartoœæ MMI $(x_{0})$ \ref{eq:x0} wyliczono na podstawie dawki leku i objêtoœci dystrybucji metimazolu w organiŸmie, wynosz¹cym 3 litry. 
+
+\begin{equation}
+\label{eq:x0}
+x_{0} = \dfrac{\text{Dawka leku}}{\text{Objêtoœæ dystrybucji leku w organiŸmie}}
+\end{equation}
 
 
-Obliczenie wartoœci pocz¹tkowej MMI w krwioobiegu ($x_{0}$):
+Pocz¹tkowy rozmiar funkcjonalny tarczycy $(z_{0})$ \ref{eq:z0} wyznaczono przekszta³caj¹c pierwsze równanie ró¿niczkowe \ref{eq:dxdt}.
 
-\[x_{0} = \dfrac{\text{Dawka leku}}{\text{Objêtoœæ dystrybucji leku w organiŸmie}}\]
+\begin{equation}
+\label{eq:z0}
+z_{0} = \dfrac{(s(t) - k_{2}x_{0})(k_{a} + x_{0})}{k_{1}x_{0}}
+\end{equation}
 
-przy czym, objêtoœæ dystrybucji metimazolu w organiŸmie wynosi 3L. 
-
-Rozmiar funkcjonalny tarczycy, obliczono przekszta³caj¹c pierwsze równanie ró¿niczkowe modelu, do postaci:
-
-
-\[z_{0} = \dfrac{(s(t) - k_{2}x_{0})(k_{a} + x_{0})}{k_{1}x_{0}}\]
-
-Stê¿enie pocz¹tkowe FT4 $(y_{0})$ oraz przeciwcia³ TRAb $(w_{0})$ pochodzi z badañ podczas pierwszej wizyty pacjenta.
-
-
-\section{Dane}\label{sec:dane}
+\section{Dane do symulacji}\label{sec:dane}
 
 \begin{table}[]
 \caption{Parametry wybranych pacjentów.}
@@ -257,13 +275,13 @@ $k_{8}$                & 0,035                  & 0,035                  & 0,035
 \end{tabular}
 \end{table}
 
-Do artyku³u \cite{graves1} zosta³y do³¹czone dane z leczenia 23 pacjentów, chorych na nadczynnoœæ tarczycy Gravesa. Zawieraj¹ one informacje o poziomie fT4, TRAb oraz dniu terapii, w którym badanie zosta³o przeprowadzone.
+W niniejszej pracy przeprowadzono szereg symulacji modelu leczenia choroby Gravesa na podstawie danych do³¹czonych do artyku³u \cite{graves1}. Pochodz¹ one z badañ 23 pacjentów. Zawieraj¹ informacje o poziomie fT4, TRAb oraz dniu terapii, w którym badanie zosta³o przeprowadzone.
 
-Autorzy pos³ugiwali siê danymi leczenia ponad 70 chorych, wybieraj¹c te, które by³y kompletne. U wielu pacjentów wystêpuj¹ braki z badania TRAb. Dzieje siê tak, poniewa¿ przy wizycie kontrolnej, pomiar fT4 jest wystarczaj¹cy. 
+Autorzy pos³ugiwali siê danymi leczenia ponad 70 chorych, wybieraj¹c te, które by³y kompletne. U wielu pacjentów wystêpuj¹ braki z badania TRAb. Dzieje siê tak, poniewa¿ przy wizycie kontrolnej, pomiar fT4 jest wystarczaj¹cy, do okreœlenia stadium choroby.
 
-Do przeprowadzenia symulacji, s¹ potrzebne jedynie pomiary przy pierwszej wizycie. Pomiary w trakcie leczenia zosta³y u¿yte do sprawdzenia poprawnoœci dzia³ania modelu.
+W przeprowadzonych symulacjach wykorzystano jedynie dane z pierwszej wizyty. Pomiary w trakcie leczenia zosta³y u¿yte do sprawdzenia poprawnoœci dzia³ania modelu.
 
-Do analizy na potrzeby tej pracy, przedstawionej w dalszej czêœci, u¿yto danych 4 pacjentów. Zosta³y one przedstawione w tabeli (Tab. \ref{tab:pacjenci}). S¹ to pacjenci numer 20, 31, 55 i 70. 
+Do analiz na potrzeby tej pracy, wykorzystano dane 4 pacjentów (pacjenta nr 20, 31, 55, 70). Zosta³y one przedstawione w tabeli (Tab. \ref{tab:pacjenci}).
 
 \section{Stabilnoœæ uk³adu}
 
@@ -301,7 +319,7 @@ Wówczas:
 \item je¿eli co najmniej jedna wartoœæ w³asna macierzy J(P) ma dodatni¹ czêœæ rzeczywist¹, to punkt $P=(a_{1},a_{2}, ..., a_{n})$ jest niestabilnym punktem równowagi uk³adu autonomicznego.
 \end{enumerate}
 
-\subsection{Analiza stabilnoœci}
+\subsection{Analiza stabilnoœci modelu}
 Gdy nie podaje siê metimazolu $s(t)=0$, stan nadczynnoœci tarczycy opisuje siê jako $E_{1} = (x_{1}, y_{1}, z_{1}, w_{1})$, gdzie 
 
 \begin{equation} \label{eq:e1}
@@ -429,38 +447,38 @@ Projekt zosta³ zrealizowany w programie MATLAB. Jest to œrodowisko do wykonywani
 
 \hline
 \textbf{Zmienna} & \textbf{Opis}                                                                                                                  \\ \hline
-Patient          & parametry pacjenta oraz wyniki pierwszego badania fT4 i TRAb.                                     \\ \hline
-Dose             & iloœæ metimazolu i czasu dawki leczenia.                                                                      \\ \hline
-InitialValues    & warunki pocz¹tkowe symulacji.                                                                       \\ \hline
-StabilityPoint   & punkty w przestrzeni, w których uk³ad osi¹ga stabilnoœæ.
+Patient          & Parametry pacjenta oraz wyniki pierwszego badania fT4 i TRAb.                                     \\ \hline
+Dose             & Iloœæ metimazolu i czasu dawki leczenia.                                                                      \\ \hline
+InitialValues    & Warunki pocz¹tkowe symulacji.                                                                       \\ \hline
+StabilityPoint   & Punkty stacjonarne uk³adu.
 \\ \hline
-Eigen            & wartoœci w³asne uk³adu.                                                                            \\ \hline
-T                & wektor z punktami czasowymi symulacji.                                                                                         \\ \hline
-X                & rozwi¹zania równañ ró¿niczkowych w czasie.                                                                        \\ \hline
-StartData        & wszystkie pola i struktury potrzebne do startu aplikacji.                                                                      \\ \hline
-Simulation       & wszystkie pola i struktury potrzebne do rozpoczêcia symulacji.                                                                 \\ \hline
-SimulationResult & wszystkie pola i struktury potrzebne do wyœwietlenia wyników symulacji.                                                        \\ \hline
+Eigen            & Wartoœci w³asne uk³adu.                                                                            \\ \hline
+T                & Wektor z punktami czasowymi symulacji.                                                                                         \\ \hline
+X                & Rozwi¹zania równañ ró¿niczkowych.
+ \\ \hline
+StartData        & Wszystkie pola i struktury potrzebne do startu aplikacji.                                                                      \\ \hline
+Simulation       & Wszystkie pola i struktury potrzebne do rozpoczêcia symulacji.                                                                 \\ \hline
+SimulationResult & Wszystkie pola i struktury potrzebne do wyœwietlenia wyników symulacji.                                                        \\ \hline
 \end{tabular}
 \end{table}
-Utworzono kilka interfejsów i klas. Zawarto jest w tabeli (Tab. \ref{tab:interfejsy}).
+Utworzono kilka interfejsów i klas, których opis zawarto w tabeli (Tab. \ref{tab:interfejsy}).
 
 
 
-Aplikacja przesy³a dane g³ównie pomiêdzy 2 widokami:
+Aplikacja przesy³a dane g³ównie pomiêdzy dwoma widokami:
 \begin{enumerate}
 \item App - Aplikacja jest inicjalizowana. Wczytujemy dane, wybieramy szczegó³y symulacji oraz j¹ rozpoczynamy.
 \item SimulationView - W tym widoku obserwujemy symulacjê.
 \end{enumerate}
 
 \section{Przep³yw danych w aplikacji}
-Do przekazania danych pomiêdzy widokami aplikacji, s³u¿¹ g³ównie 3 interfejsy. S¹ to:
+Do przekazania danych pomiêdzy widokami aplikacji, s³u¿¹ g³ównie trzy interfejsy. S¹ to:
 \begin{enumerate}
 \item StartData (Rys.~\ref{start_data_img})
-\item Simulation (Rys.~\ref{simulation_img})
+\item Simulation (Rys.~\ref{i-simulation_img})
 \item SimulationResult (Rys.~\ref{simulation_result_img})
 \end{enumerate}
 
-Na diagramach przedstawiono sk³adowe 3 g³ównych interfejsów.
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\textwidth]{visio/start_data}
@@ -470,7 +488,7 @@ Na diagramach przedstawiono sk³adowe 3 g³ównych interfejsów.
 \begin{figure}
 	\centering
 	\includegraphics[width=\size\textwidth]{visio/simulation}
-	\caption{Interfejs Simulation.}\label{simulation_img}
+	\caption{Interfejs Simulation.}\label{i-simulation_img}
 \end{figure}
 
 \begin{figure}
@@ -482,41 +500,41 @@ Na diagramach przedstawiono sk³adowe 3 g³ównych interfejsów.
 \section{Metody utworzonego programu}\label{sec:methods}
 
 \subsubsection*{Simulate}
-Metoda Simulate przyjmuje obiekt typu Simulation (Rys. \ref{simulation_img}) i zwraca SimulationResult (Rys. \ref{simulation_result_img}).
+Metoda Simulate zajmuje siê wszystkimi obliczeniami zwi¹zanymi z symulacj¹. Przyjmuje obiekt typu Simulation (Rys. \ref{simulation_img}) i zwraca SimulationResult (Rys. \ref{simulation_result_img}).
 \begin{lstlisting}
 function SimulationResult = Simulate(Simulation)
 \end{lstlisting}
 
-\subsubsection*{Uklad\_rownan}
-Metoda uklad\_rownan przyjmuje chwilê czasow¹ t, warunki pocz¹tkowe uk³adu, parametry pacjenta oraz dawki leczenia. Metoda ta jest wykorzystywana przez solver ode45 do symulacji uk³adu w ka¿dej chwili czasowej t. Zwraca rozwi¹zania uk³adu równañ.
+\subsubsection*{UkladRownan}
+Metoda \textit{UkladRownan} przyjmuje chwilê czasow¹ t, warunki pocz¹tkowe uk³adu, parametry pacjenta oraz dawki leczenia. Metoda ta jest wykorzystywana przez solver ode45 do symulacji uk³adu w ka¿dej chwili czasowej t. Zwraca rozwi¹zania uk³adu równañ.
 \begin{lstlisting}
-function rownania = uklad_rownan(t, InitialValuesVector, PatientVector, DoseVector)
+function rownania = UkladRownan(t, InitialValuesVector, PatientVector, DoseVector)
 \end{lstlisting}
 
 
 \subsubsection*{TreatmentDose}
-Metoda treatmentDose przyjmuje dawki leku, liczbê dni leczenia oraz chwilê czasow¹ t. Metoda ta jest wykorzystywana przez solver ode45, do obliczania przyjmowanej iloœci MMI czyli funkcji s(t).
+Metoda \textit{TreatmentDose} przyjmuje dawki leku, liczbê dni leczenia oraz chwilê czasow¹ t. Metoda ta jest wykorzystywana przez solver ode45, do obliczania przyjmowanej iloœci MMI czyli funkcji s(t).
 \begin{lstlisting}
-function s = treatmentDose(DOSES, DAYS, t)
+function s = TreatmentDose(DOSES, DAYS, t)
 \end{lstlisting}
 
-\subsubsection*{Stability\_points}
-Metoda stability\_points przyjmuje parametry pacjenta i zwraca punkt w przestrzeni 4-wymiarowej, w którym uk³ad osi¹gnie stabilnoœæ.
+\subsubsection*{StabilityPoints}
+Metoda \textit{StabilityPoints} przyjmuje parametry pacjenta i zwraca punkt w przestrzeni 4-wymiarowej, w którym uk³ad osi¹gnie stabilnoœæ.
 \begin{lstlisting}
-function points = stability_points(patient)
+function points = StabilityPoints(patient)
 \end{lstlisting}
 
 
 \subsubsection*{JacobainMatrix}
-Metoda JacobainMatrix przyjmuje parametry pacjenta i warunki pocz¹tkowe. Zwraca macierz Jacobiego dla danego uk³adu.
+Metoda \textit{JacobainMatrix} przyjmuje parametry pacjenta i warunki pocz¹tkowe. Zwraca macierz Jacobiego dla danego uk³adu.
 \begin{lstlisting}
 function matrix = JacobainMatrix( patient, initialValues )
 \end{lstlisting}
 
 \subsubsection*{ConvertStringToNArray}
-Metoda convertStringToNArray konwertuje napis, na tablice. Jako, ¿e jest to osobna metoda w programie, zosta³a sprawdzona testem jednostkowym.
+Metoda \textit{ConvertStringToNArray} konwertuje napis, na tablice. Jako, ¿e jest to osobna metoda w programie, zosta³a sprawdzona testem jednostkowym.
 \begin{lstlisting}
-function [arrayOutput] = convertStringInputToNArray(textInput)
+function [arrayOutput] = ConvertStringInputToNArray(textInput)
 \end{lstlisting}
 
 \subsubsection*{Test\_convertStringInputToNArray}
@@ -525,7 +543,7 @@ Test jednostkowy - implementacja skryptu:
 input = '10, 12, 20, 30';
 expected = [10 12 20 30 0]; % N element array
 
-result = convertStringInputToNArray(input, 5);
+result = ConvertStringInputToNArray(input, 5);
 
 if isequal(result, expected)
     disp('convertStringInputToNArray correct!'); 
@@ -535,61 +553,60 @@ end
 \end{lstlisting}
 
 \subsubsection*{ParsingErrorDialog}
-Niektóre z wprowadzanych danych s¹ napisami, dlatego aplikacja jest zabezpieczona przed niepoprawnymi wpisami. U¿ytkownik otrzymuje stosowne powiadomienie o b³êdzie, dziêki funkcji parsingErrorDialog.
+Niektóre z wprowadzanych danych s¹ napisami, dlatego aplikacja jest zabezpieczona przed niepoprawnymi wpisami. U¿ytkownik otrzymuje stosowne powiadomienie o b³êdzie, dziêki funkcji \textit{parsingErrorDialog}.
 \begin{lstlisting}
 function parsingErrorDialog(axis)
 \end{lstlisting}
 
-\subsubsection*{Show\_simulation}
-Do narysowania wyników symulacji w czasie s³u¿y metoda show\_simulation. Przyjmuje ona miejsce wykresu (UIAxes), dane do wykreœlenia (T, X) oraz tytu³ wykresu (pLabel).
+\subsubsection*{ShowSimulation}
+Do narysowania wyników symulacji w czasie s³u¿y metoda \textit{ShowSimulation}. Przyjmuje ona wykres (UIAxes), dane do wykreœlenia (T, X) oraz tytu³ wykresu (pLabel).
 \begin{lstlisting}
-function show_simulation( UIAxes, T, X, pLabel )
+function ShowSimulation( UIAxes, T, X, pLabel )
 \end{lstlisting}
 
 
 \subsubsection*{PrintFigure}
-Appdesigner nie obs³uguje zaawansowanej manipulacji wykresami, dlatego do zapisywania nale¿y utworzyæ figure typu widmo, kopiuj¹c wszystkie informacje z poprzedniego wykresu. S³u¿y do tego metoda printFigure.
+Appdesigner nie obs³uguje zaawansowanej manipulacji wykresami, dlatego do zapisywania nale¿y utworzyæ figure typu widmo, kopiuj¹c wszystkie informacje z poprzedniego wykresu. S³u¿y do tego metoda \textit{PrintFigure}.
 \begin{lstlisting}
-function printFigure(plotFigure, name)
+function PrintFigure(plotFigure, name)
 \end{lstlisting}
 
-\subsubsection*{Plot\_phase}
-Do narysowania portretów fazowych symulacji, s³u¿y metoda plot\_phase.
+\subsubsection*{PlotPhase}
+Do narysowania portretów fazowych symulacji, s³u¿y metoda \textit{PlotPhase}.
 \begin{lstlisting}
-function plot_phase(ax, x, y, px, py, xlab, ylab)
+function PlotPhase(ax, x, y, px, py, xlab, ylab)
 \end{lstlisting}
 
 \subsubsection*{FindFT4NormalRange}
-FindFT4NormalRange jest funkcj¹ dodatkow¹. Nie jest zaimplementowana w graficznym interfejsie aplikacji. Wypisuje w konsoli programu Matlab iloœæ dni, po których pacjent, osi¹ga graniczny poziom fT4, dla cz³owieka zdrowego.
+\textit{FindFT4NormalRange} jest funkcj¹ dodatkow¹. Nie jest zaimplementowana w graficznym interfejsie aplikacji. Wypisuje w konsoli programu Matlab iloœæ dni, po których pacjent, osi¹ga graniczny poziom fT4, dla osoby zdrowej.
 \begin{lstlisting}
-function timeUpFT4 = findFT4NormalRange(T, X)
+function timeUpFT4 = FindFT4NormalRange(T, X)
 \end{lstlisting}
 
 \section{Wykorzystane funkcje programu Matlab}
 \subsubsection*{Ode45}
 
-Do rozwi¹zywania równañ ró¿niczkowych u¿yto funkcji \textbf{ode45}. Pocz¹tkowo u¿yto bazowej wersji funkcji ode45:
+Do rozwi¹zywania uk³adu równañ ró¿niczkowych u¿yto funkcji \textbf{ode45}. Pocz¹tkowo u¿yto bazowej wersji funkcji ode45:
 
 \begin{lstlisting}
 [t,y] = ode45(odefun(t,y,A,B),tspan,y0)
 \end{lstlisting}
-gdzie:
 
-Parametrami funkcji s¹
+Parametry funkcji:
 \begin{itemize}
-\item odefun - funkcja zwracaj¹ca równania ró¿niczkowe w punkcie t. Funkcja ta zosta³a opisana w dalszej czêœci pracy. \ref{sec:methods} 
-\item tspan - przedzia³ czasowy symulacji
-\item y0 - punkty pocz¹tkowe równañ
-\item A i B - wektory z dodatkowymi parametrami
+\item odefun - funkcja zwracaj¹ca równania ró¿niczkowe w punkcie t\ref{sec:methods},
+\item tspan - przedzia³ czasowy symulacji,
+\item y0 - punkty pocz¹tkowe równañ,
+\item A i B - wektory z dodatkowymi parametrami.
 \end{itemize}
 
-Wynikiem funkcji s¹
+Funkcja \textit{ode45} zwraca wektor [t,y] gdzie:
 \begin{itemize}
-\item t - wektor czasowy rozwi¹zania uk³adu równañ ró¿niczkowych
-\item y - wektory rozwi¹zañ uk³adu równañ ró¿niczkowych
+\item t - wektor czasowy,
+\item y - wektory rozwi¹zañ uk³adu równañ ró¿niczkowych.
 \end{itemize}
 
-Dla optymalizacji pamiêci programu u¿yto przeci¹¿enia metody, która mo¿e przyj¹æ dodatkowe parametry A i B, bez umieszczania ich w macierzy wynikowej y. Za ich pomoc¹ przekazywane s¹ dane wybranego pacjenta oraz dawki leczenia. Dziêki takiemu rozwi¹zaniu, symulacja zajmuje ponad 4 razy mniej miejsca pamiêci RAM.
+Dla optymalizacji pamiêci programu u¿yto przeci¹¿enia metody, która mo¿e przyj¹æ dodatkowe parametry A i B, bez umieszczania ich w macierzy wynikowej y. Za ich pomoc¹ przekazywane s¹ dane wybranego pacjenta oraz dawki leku. Dziêki takiemu rozwi¹zaniu, symulacja zajmuje ponad 4 razy mniej miejsca pamiêci RAM.
 \begin{lstlisting}
 [t,y] = ode45(@(t,y) odefcn(t,y,A,B), tspan, y0);
 \end{lstlisting}
@@ -598,41 +615,39 @@ Dla optymalizacji pamiêci programu u¿yto przeci¹¿enia metody, która mo¿e przyj¹æ
 \begin{lstlisting}
 e = eig(A)
 \end{lstlisting}
-Funkcja przyjmuje macierz kwadratow¹ A. Zwraca wektor kolumnowy z wartoœciami w³asnymi przyjêtej macierzy.
+Funkcja przyjmuje macierz kwadratow¹ A. Zwraca wektor kolumnowy z wartoœciami w³asnymi macierzy A.
 
 \subsubsection*{Solve}
 \begin{lstlisting}
 results = solve(eqns, syms);
 \end{lstlisting}
-Funkcja rozwi¹zuje uk³ady równañ u¿ywaj¹c zmiennych symbolicznych. Przyjmuje 2 parametry
+Funkcja rozwi¹zuje uk³ady równañ u¿ywaj¹c zmiennych symbolicznych. Przyjmuje dwa parametry:
 \begin{itemize}
-\item eqns - tablicê równañ
-\item syms - tablicê zmiennych symbolicznych u¿ytych w równaniach
+\item eqns - tablicê równañ,
+\item syms - tablicê zmiennych symbolicznych u¿ytych w równaniach.
 \end{itemize}
-Zwraca wyniki dla zmiennych symbolicznych.
+Funkcja zwraca wyniki dla zmiennych symbolicznych.
 
 \subsubsection*{Find}
 \begin{lstlisting}
 k = find(X,n,direction)
 \end{lstlisting}
-Funkcja przeszukuje wartoœci tablicy lub listy, zwracaj¹c indeksy, w których równanie jest prawdziwe. Przyjmuje 3 zmienne
+Funkcja przeszukuje wartoœci tablicy lub listy, zwracaj¹c indeksy, w których równanie jest prawdziwe. Przyjmuje trzy zmienne:
 \begin{itemize}
-\item X - równanie zawieraj¹ce tablicê do przeszukania i zmienn¹ do której przyrównuje
-\item n - iloœæ indeksów, które pierwsze zostan¹ przyporz¹dkowane
-\item direction - kierunek przyporz¹dkowania
+\item X - równanie zawieraj¹ce tablicê do przeszukania i zmienn¹ do której przyrównuje,
+\item n - iloœæ indeksów, które pierwsze zostan¹ przyporz¹dkowane,
+\item direction - kierunek przyporz¹dkowania.
 \end{itemize}
 
 \subsubsection*{Strsplit}
 \begin{lstlisting}
 C = strsplit(str,delimiter)
 \end{lstlisting}
-Funkcja dzieli napis na tablicê napisów w miejscach okreœlonego znaku. Funkcja zwraca tablicê napisów.
+Funkcja dzieli napis na tablicê napisów w miejscach okreœlonego znaku i zwraca tablicê napisów. Parametry funkcji:
 \begin{itemize}
-\item str - napis
-\item delimeter - znak, w którego miejscach napis jest roz³¹czany
+\item str - napis,
+\item delimeter - znak, w którego miejscach napis jest roz³¹czany.
 \end{itemize}
-
-
 
 
 %Jeœli projekt, praca dotyczy systemu informatycznego, w dokumentacji umieszcza siê z~regu³y jedynie interfejs programistyczny (b¹dŸ jego fragmenty). Pe³ny kod mo¿na do³¹czyæ w za³¹czniku.
