@@ -2,35 +2,42 @@
 \BOOKMARK [1][-]{section.1.1}{Cel pracy}{chapter.1}% 2
 \BOOKMARK [1][-]{section.1.2}{Uk\233ad pracy}{chapter.1}% 3
 \BOOKMARK [0][-]{chapter.2}{Wprowadzenie teoretyczne}{}% 4
-\BOOKMARK [0][-]{chapter.3}{Metodologia}{}% 5
-\BOOKMARK [1][-]{section.3.1}{Za\233ozenia modelu}{chapter.3}% 6
-\BOOKMARK [1][-]{section.3.2}{Funkcje stanu}{chapter.3}% 7
-\BOOKMARK [1][-]{section.3.3}{Model matematyczny}{chapter.3}% 8
-\BOOKMARK [1][-]{section.3.4}{Parametry modelu}{chapter.3}% 9
-\BOOKMARK [1][-]{section.3.5}{Warunki poczatkowe modelu}{chapter.3}% 10
-\BOOKMARK [1][-]{section.3.6}{Dane do symulacji}{chapter.3}% 11
-\BOOKMARK [1][-]{section.3.7}{Stabilnosc uk\233adu}{chapter.3}% 12
-\BOOKMARK [2][-]{subsection.3.7.1}{Twierdzenie}{section.3.7}% 13
-\BOOKMARK [2][-]{subsection.3.7.2}{Analiza stabilnosci modelu}{section.3.7}% 14
-\BOOKMARK [0][-]{chapter.4}{Czesc konstrukcyjna/Specyfikacja wewnetrzna}{}% 15
-\BOOKMARK [1][-]{section.4.1}{Interfejsy i klasy}{chapter.4}% 16
-\BOOKMARK [1][-]{section.4.2}{Przep\233yw danych w aplikacji}{chapter.4}% 17
-\BOOKMARK [1][-]{section.4.3}{Metody utworzonego programu}{chapter.4}% 18
-\BOOKMARK [1][-]{section.4.4}{Wykorzystane funkcje programu Matlab}{chapter.4}% 19
-\BOOKMARK [0][-]{chapter.5}{Instrukcja obs\233ugi/Specyfikacja zewnetrzna}{}% 20
-\BOOKMARK [1][-]{section.5.1}{Okno g\233\363wne}{chapter.5}% 21
-\BOOKMARK [2][-]{subsection.5.1.1}{Wyb\363r pacjenta}{section.5.1}% 22
-\BOOKMARK [2][-]{subsection.5.1.2}{Wyb\363r parametr\363w symulacji}{section.5.1}% 23
-\BOOKMARK [2][-]{subsection.5.1.3}{Warunki poczatkowe}{section.5.1}% 24
-\BOOKMARK [2][-]{subsection.5.1.4}{Symulacja}{section.5.1}% 25
-\BOOKMARK [1][-]{section.5.2}{Okno symulacji}{chapter.5}% 26
-\BOOKMARK [0][-]{chapter.6}{Rezultaty}{}% 27
-\BOOKMARK [1][-]{section.6.1}{Wstepne por\363wnanie pacjent\363w}{chapter.6}% 28
-\BOOKMARK [1][-]{section.6.2}{Pacjent numer 20}{chapter.6}% 29
-\BOOKMARK [1][-]{section.6.3}{Pacjent numer 31}{chapter.6}% 30
-\BOOKMARK [1][-]{section.6.4}{Pacjent numer 55}{chapter.6}% 31
-\BOOKMARK [1][-]{section.6.5}{Pacjent numer 70}{chapter.6}% 32
-\BOOKMARK [1][-]{section.6.6}{Por\363wnanie zapotrzebowania na lek}{chapter.6}% 33
-\BOOKMARK [0][-]{chapter.7}{Podsumowanie}{}% 34
-\BOOKMARK [1][-]{section.7.1}{Wnioski}{chapter.7}% 35
-\BOOKMARK [0][-]{section.7.1}{Bibliografia}{}% 36
+\BOOKMARK [1][-]{section.2.1}{Funkcjonowanie uk\233adu hormonalnego tarczycy}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.2}{Symptomy}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.3}{Czynniki ryzyka}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.4}{Diagnoza choroby}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.5}{Leczenie}{chapter.2}% 9
+\BOOKMARK [0][-]{chapter.3}{Metodologia}{}% 10
+\BOOKMARK [1][-]{section.3.1}{Za\233ozenia modelu}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.2}{Funkcje stanu}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.3}{Model matematyczny}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.4}{Parametry modelu}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.5}{Warunki poczatkowe modelu}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.6}{Dane do symulacji}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.7}{Stabilnosc uk\233adu}{chapter.3}% 17
+\BOOKMARK [2][-]{subsection.3.7.1}{Twierdzenie}{section.3.7}% 18
+\BOOKMARK [2][-]{subsection.3.7.2}{Analiza stabilnosci modelu}{section.3.7}% 19
+\BOOKMARK [0][-]{chapter.4}{Czesc konstrukcyjna/Specyfikacja wewnetrzna}{}% 20
+\BOOKMARK [1][-]{section.4.1}{Interfejsy i klasy}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.2}{Przep\233yw danych w aplikacji}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.3}{Metody utworzonego programu}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.4}{Wykorzystane funkcje programu Matlab}{chapter.4}% 24
+\BOOKMARK [0][-]{chapter.5}{Instrukcja obs\233ugi/Specyfikacja zewnetrzna}{}% 25
+\BOOKMARK [1][-]{section.5.1}{Okno g\233\363wne}{chapter.5}% 26
+\BOOKMARK [2][-]{subsection.5.1.1}{Wyb\363r pacjenta}{section.5.1}% 27
+\BOOKMARK [2][-]{subsection.5.1.2}{Wyb\363r parametr\363w symulacji}{section.5.1}% 28
+\BOOKMARK [2][-]{subsection.5.1.3}{Warunki poczatkowe}{section.5.1}% 29
+\BOOKMARK [2][-]{subsection.5.1.4}{Symulacja}{section.5.1}% 30
+\BOOKMARK [1][-]{section.5.2}{Okno symulacji}{chapter.5}% 31
+\BOOKMARK [2][-]{subsection.5.2.1}{Wykres wynik\363w symulacji}{section.5.2}% 32
+\BOOKMARK [2][-]{subsection.5.2.2}{Portrety fazowe oraz szczeg\363\233y symulacji}{section.5.2}% 33
+\BOOKMARK [0][-]{chapter.6}{Rezultaty}{}% 34
+\BOOKMARK [1][-]{section.6.1}{Wstepne por\363wnanie pacjent\363w}{chapter.6}% 35
+\BOOKMARK [1][-]{section.6.2}{Pacjent numer 20}{chapter.6}% 36
+\BOOKMARK [1][-]{section.6.3}{Pacjent numer 31}{chapter.6}% 37
+\BOOKMARK [1][-]{section.6.4}{Pacjent numer 55}{chapter.6}% 38
+\BOOKMARK [1][-]{section.6.5}{Pacjent numer 70}{chapter.6}% 39
+\BOOKMARK [1][-]{section.6.6}{Por\363wnanie zapotrzebowania na lek}{chapter.6}% 40
+\BOOKMARK [0][-]{chapter.7}{Podsumowanie}{}% 41
+\BOOKMARK [1][-]{section.7.1}{Wnioski}{chapter.7}% 42
+\BOOKMARK [0][-]{section.7.1}{Bibliografia}{}% 43

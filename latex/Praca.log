@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.29)  31 DEC 2018 09:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.29)  3 JAN 2019 00:56
 entering extended mode
 **./Praca.tex
 (Praca.tex
@@ -561,43 +561,64 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] (Rozdzialy.tex
 Rozdzia\PlPrIeC {\l } 1.
+
+Overfull \hbox (1.49573pt too wide) in paragraph at lines 15--16
+[]\OT4/cmr/m/n/12 zastosowanie mo-de-lu ma-te-ma-tycz-ne-go od-zwier-cie-dla-j¡
+-ce-go wªa-±ci-we funk-cje ukªa-
+ []
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.69 \chapter
+l.29 \chapter
              {Wprowadzenie teoretyczne} [1
 
 
 ]
 Rozdzia\PlPrIeC {\l } 2.
+<./rysunki/visio/feedback-loop.png, id=326, 272.217pt x 506.49225pt>
+File: ./rysunki/visio/feedback-loop.png Graphic file (type png)
+<use ./rysunki/visio/feedback-loop.png>
+Package pdftex.def Info: ./rysunki/visio/feedback-loop.png  used on input line 
+48. on input line 48.
+Package pdftex.def Info: Requested size: 220.50887pt x 410.30284pt on input lin
+e 48.
 [2
 
-]
+] [3 <./rysunki/visio/feedback-loop.png>] [4]
+<./rysunki/visio/trab-mmi.png, id=350, 279.444pt x 320.99925pt>
+File: ./rysunki/visio/trab-mmi.png Graphic file (type png)
+<use ./rysunki/visio/trab-mmi.png>
+Package pdftex.def Info: ./rysunki/visio/trab-mmi.png  used on input line 104. 
+on input line 104.
+Package pdftex.def Info: Requested size: 264.61333pt x 303.96794pt on input lin
+e 104.
+ [5 <./rysunki/visio/trab-mmi.png>] [6]
 Rozdzia\PlPrIeC {\l } 3.
 
-Overfull \hbox (1.49365pt too wide) in paragraph at lines 101--102
+Overfull \hbox (1.49365pt too wide) in paragraph at lines 133--134
 []\OT4/cmr/m/n/12 Rozwa»any mo-del jest ukªa-dem rów-na« ró»-nicz-ko-wych zwy-c
 zaj-nych w któ-rym przyj-
  []
 
-[3
+[7
 
 ]
-Overfull \hbox (15.84677pt too wide) in paragraph at lines 132--133
+Overfull \hbox (15.84677pt too wide) in paragraph at lines 164--165
 \OT4/cmr/m/n/12 0\OML/plm/m/it/12 ; w\OT4/cmr/m/n/12 (\OML/plm/m/it/12 t\OT4/cm
 r/m/n/12 ) \OMS/plsy/m/n/12 ­ \OT4/cmr/m/n/12 0$ dla do-wol-nej chwi-li cza-so-
 wej t, z wa-run-ka-mi po-cz¡t-ko-wy-mi $\OML/plm/m/it/12 E[] \OT4/cmr/m/n/12 = 
 (\OML/plm/m/it/12 x[]; y[]; z[]; w[]\OT4/cmr/m/n/12 )$.
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 160--162
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 192--194
 
  []
 
 
-Overfull \hbox (4.9276pt too wide) in paragraph at lines 169--191
+Overfull \hbox (20.18704pt too wide) in paragraph at lines 201--223
 [][] 
  []
 
@@ -605,51 +626,48 @@ Overfull \hbox (4.9276pt too wide) in paragraph at lines 169--191
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (3.68787pt too wide) in paragraph at lines 197--198
+Overfull \hbox (3.68787pt too wide) in paragraph at lines 229--230
 \OT4/cmr/m/n/12 przy-j¦-tej daw-ki 15 mg/dzie«. Ta in-for-ma-cja po-zwa-la okre
 -±li¢ war-to±¢ $\OML/plm/m/it/12 k[] \OT4/cmr/m/n/12 = 0\OML/plm/m/it/12 :\OT4/
 cmr/m/n/12 358068\OML/plm/m/it/12 mg=l$
  []
 
-
-LaTeX Warning: Reference `eq3' on page 5 undefined on input line 199.
-
-[5] [6]
+[9] [10]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 257.
+               Default added (so using `tbp') on input line 289.
 
-[7] [8] [9] [10]
+[11] [12] [13] [14]
 Rozdzia\PlPrIeC {\l } 4.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 443.
+               Default added (so using `tbp') on input line 475.
 
-[11
+[15
 
 ]
-<./rysunki/visio/start_data.png, id=355, 439.6425pt x 255.95625pt>
+<./rysunki/visio/start_data.png, id=446, 439.6425pt x 255.95625pt>
 File: ./rysunki/visio/start_data.png Graphic file (type png)
 <use ./rysunki/visio/start_data.png>
-Package pdftex.def Info: ./rysunki/visio/start_data.png  used on input line 484
-. on input line 484.
+Package pdftex.def Info: ./rysunki/visio/start_data.png  used on input line 516
+. on input line 516.
 Package pdftex.def Info: Requested size: 308.71106pt x 179.73445pt on input lin
-e 484.
-<./rysunki/visio/simulation.png, id=356, 526.96875pt x 256.70906pt>
+e 516.
+<./rysunki/visio/simulation.png, id=447, 526.96875pt x 256.70906pt>
 File: ./rysunki/visio/simulation.png Graphic file (type png)
 <use ./rysunki/visio/simulation.png>
-Package pdftex.def Info: ./rysunki/visio/simulation.png  used on input line 490
-. on input line 490.
+Package pdftex.def Info: ./rysunki/visio/simulation.png  used on input line 522
+. on input line 522.
 Package pdftex.def Info: Requested size: 352.81552pt x 171.88057pt on input lin
-e 490.
-<./rysunki/visio/simulation_result.png, id=358, 497.60907pt x 256.70906pt>
+e 522.
+<./rysunki/visio/simulation_result.png, id=449, 497.60907pt x 256.70906pt>
 File: ./rysunki/visio/simulation_result.png Graphic file (type png)
 <use ./rysunki/visio/simulation_result.png>
 Package pdftex.def Info: ./rysunki/visio/simulation_result.png  used on input l
-ine 496. on input line 496.
+ine 528. on input line 528.
 Package pdftex.def Info: Requested size: 352.81552pt x 182.014pt on input line 
-496.
-LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 504
+528.
+LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 536
 .
  ("C:\Program Files\MiKTeX 2.9\tex\latex\polski\ot4cmtt.fd"
 File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
@@ -660,35 +678,14 @@ File: latin2.def 2015/03/17 v1.2c Input encoding file
 Overfull \vbox (0.84998pt too high) has occurred while \output is active []
 
 
-[12 <./rysunki/visio/start_data.png>]
+[16 <./rysunki/visio/start_data.png>]
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin2.def"
 File: latin2.def 2015/03/17 v1.2c Input encoding file
 )
 Overfull \vbox (0.84998pt too high) has occurred while \output is active []
 
 
-[13 <./rysunki/visio/simulation.png> <./rysunki/visio/simulation_result.png>]
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin2.def"
-File: latin2.def 2015/03/17 v1.2c Input encoding file
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin2.def"
-File: latin2.def 2015/03/17 v1.2c Input encoding file
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin2.def"
-File: latin2.def 2015/03/17 v1.2c Input encoding file
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin2.def"
-File: latin2.def 2015/03/17 v1.2c Input encoding file
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin2.def"
-File: latin2.def 2015/03/17 v1.2c Input encoding file
-)
-Overfull \vbox (0.84998pt too high) has occurred while \output is active []
-
-
-[14] ("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin2.def"
-File: latin2.def 2015/03/17 v1.2c Input encoding file
-)
+[17 <./rysunki/visio/simulation.png> <./rysunki/visio/simulation_result.png>]
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin2.def"
 File: latin2.def 2015/03/17 v1.2c Input encoding file
 )
@@ -707,7 +704,13 @@ File: latin2.def 2015/03/17 v1.2c Input encoding file
 Overfull \vbox (0.84998pt too high) has occurred while \output is active []
 
 
-[15] ("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin2.def"
+[18] ("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin2.def"
+File: latin2.def 2015/03/17 v1.2c Input encoding file
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin2.def"
+File: latin2.def 2015/03/17 v1.2c Input encoding file
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin2.def"
 File: latin2.def 2015/03/17 v1.2c Input encoding file
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin2.def"
@@ -722,171 +725,250 @@ File: latin2.def 2015/03/17 v1.2c Input encoding file
 Overfull \vbox (0.84998pt too high) has occurred while \output is active []
 
 
-[16] ("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin2.def"
+[19] ("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin2.def"
+File: latin2.def 2015/03/17 v1.2c Input encoding file
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin2.def"
+File: latin2.def 2015/03/17 v1.2c Input encoding file
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin2.def"
+File: latin2.def 2015/03/17 v1.2c Input encoding file
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin2.def"
 File: latin2.def 2015/03/17 v1.2c Input encoding file
 )
 Overfull \vbox (0.84998pt too high) has occurred while \output is active []
 
 
-[17]
+[20] ("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin2.def"
+File: latin2.def 2015/03/17 v1.2c Input encoding file
+)
+Overfull \vbox (0.84998pt too high) has occurred while \output is active []
+
+
+[21]
 Rozdzia\PlPrIeC {\l } 5.
-<./rysunki/specs/window1.jpg, id=457, 542.025pt x 459.96844pt>
+<./rysunki/specs/window1.jpg, id=548, 542.025pt x 459.96844pt>
 File: ./rysunki/specs/window1.jpg Graphic file (type jpg)
 <use ./rysunki/specs/window1.jpg>
-Package pdftex.def Info: ./rysunki/specs/window1.jpg  used on input line 704. o
-n input line 704.
+Package pdftex.def Info: ./rysunki/specs/window1.jpg  used on input line 694. o
+n input line 694.
 Package pdftex.def Info: Requested size: 441.01773pt x 374.26387pt on input lin
-e 704.
-<./rysunki/specs/choose-patient.jpg, id=460, 228.855pt x 388.45125pt>
+e 694.
+<./rysunki/specs/choose-patient.jpg, id=551, 228.855pt x 388.45125pt>
 File: ./rysunki/specs/choose-patient.jpg Graphic file (type jpg)
 <use ./rysunki/specs/choose-patient.jpg>
 Package pdftex.def Info: ./rysunki/specs/choose-patient.jpg  used on input line
- 713. on input line 713.
+ 703. on input line 703.
 Package pdftex.def Info: Requested size: 176.40439pt x 299.43437pt on input lin
-e 713.
-<./rysunki/specs/patient-list.jpg, id=461, 147.55125pt x 120.45pt>
+e 703.
+<./rysunki/specs/patient-list.jpg, id=552, 147.55125pt x 120.45pt>
 File: ./rysunki/specs/patient-list.jpg Graphic file (type jpg)
 <use ./rysunki/specs/patient-list.jpg>
 Package pdftex.def Info: ./rysunki/specs/patient-list.jpg  used on input line 7
-19. on input line 719.
+09. on input line 709.
 Package pdftex.def Info: Requested size: 176.40439pt x 144.00626pt on input lin
-e 719.
-<./rysunki/specs/simulation.jpg, id=464, 298.11375pt x 182.18062pt>
+e 709.
+<./rysunki/specs/simulation.jpg, id=556, 298.11375pt x 182.18062pt>
 File: ./rysunki/specs/simulation.jpg Graphic file (type jpg)
 <use ./rysunki/specs/simulation.jpg>
-Package pdftex.def Info: ./rysunki/specs/simulation.jpg  used on input line 730
-. on input line 730.
+Package pdftex.def Info: ./rysunki/specs/simulation.jpg  used on input line 720
+. on input line 720.
 Package pdftex.def Info: Requested size: 176.40439pt x 107.80252pt on input lin
-e 730.
-<./rysunki/specs/adv-treatment.jpg, id=465, 249.93375pt x 128.73094pt>
+e 720.
+<./rysunki/specs/adv-treatment.jpg, id=557, 249.93375pt x 128.73094pt>
 File: ./rysunki/specs/adv-treatment.jpg Graphic file (type jpg)
 <use ./rysunki/specs/adv-treatment.jpg>
 Package pdftex.def Info: ./rysunki/specs/adv-treatment.jpg  used on input line 
-736. on input line 736.
+726. on input line 726.
 Package pdftex.def Info: Requested size: 176.40439pt x 90.86137pt on input line
- 736.
-<./rysunki/specs/initial.jpg, id=467, 274.02374pt x 209.28188pt>
+ 726.
+<./rysunki/specs/initial.jpg, id=559, 274.02374pt x 209.28188pt>
 File: ./rysunki/specs/initial.jpg Graphic file (type jpg)
 <use ./rysunki/specs/initial.jpg>
-Package pdftex.def Info: ./rysunki/specs/initial.jpg  used on input line 746. o
-n input line 746.
+Package pdftex.def Info: ./rysunki/specs/initial.jpg  used on input line 736. o
+n input line 736.
 Package pdftex.def Info: Requested size: 176.40439pt x 134.72868pt on input lin
-e 746.
-[18
+e 736.
+[22
 
 ]
-<./rysunki/specs/progressbar.jpg, id=473, 423.83344pt x 188.20313pt>
+<./rysunki/specs/progressbar.jpg, id=565, 423.83344pt x 188.20313pt>
 File: ./rysunki/specs/progressbar.jpg Graphic file (type jpg)
 <use ./rysunki/specs/progressbar.jpg>
-Package pdftex.def Info: ./rysunki/specs/progressbar.jpg  used on input line 75
-4. on input line 754.
+Package pdftex.def Info: ./rysunki/specs/progressbar.jpg  used on input line 74
+4. on input line 744.
 Package pdftex.def Info: Requested size: 264.61333pt x 117.50604pt on input lin
-e 754.
+e 744.
+<./rysunki/specs/window2.jpg, id=567, 974.89218pt x 546.54187pt>
+File: ./rysunki/specs/window2.jpg Graphic file (type jpg)
+<use ./rysunki/specs/window2.jpg>
+Package pdftex.def Info: ./rysunki/specs/window2.jpg  used on input line 753. o
+n input line 753.
+Package pdftex.def Info: Requested size: 441.01773pt x 247.24254pt on input lin
+e 753.
 
 Overfull \vbox (0.84998pt too high) has occurred while \output is active []
 
 
-[19 <./rysunki/specs/window1.jpg>]
+[23 <./rysunki/specs/window1.jpg>]
+<./rysunki/specs/w2-simulation.jpg, id=573, 442.65375pt x 511.15968pt>
+File: ./rysunki/specs/w2-simulation.jpg Graphic file (type jpg)
+<use ./rysunki/specs/w2-simulation.jpg>
+Package pdftex.def Info: ./rysunki/specs/w2-simulation.jpg  used on input line 
+762. on input line 762.
+Package pdftex.def Info: Requested size: 352.81552pt x 407.43855pt on input lin
+e 762.
+
 Overfull \vbox (0.84998pt too high) has occurred while \output is active []
 
 
-[20 <./rysunki/specs/choose-patient.jpg> <./rysunki/specs/patient-list.jpg>]
+[24 <./rysunki/specs/choose-patient.jpg> <./rysunki/specs/patient-list.jpg>]
+<./rysunki/specs/figure-gui.jpg, id=580, 442.65375pt x 464.4853pt>
+File: ./rysunki/specs/figure-gui.jpg Graphic file (type jpg)
+<use ./rysunki/specs/figure-gui.jpg>
+Package pdftex.def Info: ./rysunki/specs/figure-gui.jpg  used on input line 770
+. on input line 770.
+Package pdftex.def Info: Requested size: 352.81552pt x 370.23505pt on input lin
+e 770.
+<./rysunki/specs/img-path.jpg, id=581, 451.6875pt x 118.19156pt>
+File: ./rysunki/specs/img-path.jpg Graphic file (type jpg)
+<use ./rysunki/specs/img-path.jpg>
+Package pdftex.def Info: ./rysunki/specs/img-path.jpg  used on input line 776. 
+on input line 776.
+Package pdftex.def Info: Requested size: 352.81552pt x 92.3261pt on input line 
+776.
+<./rysunki/specs/portrait.jpg, id=583, 526.96875pt x 508.90125pt>
+File: ./rysunki/specs/portrait.jpg Graphic file (type jpg)
+<use ./rysunki/specs/portrait.jpg>
+Package pdftex.def Info: ./rysunki/specs/portrait.jpg  used on input line 785. 
+on input line 785.
+Package pdftex.def Info: Requested size: 352.81552pt x 340.73688pt on input lin
+e 785.
+<./rysunki/specs/details.jpg, id=585, 265.74281pt x 462.22687pt>
+File: ./rysunki/specs/details.jpg Graphic file (type jpg)
+<use ./rysunki/specs/details.jpg>
+Package pdftex.def Info: ./rysunki/specs/details.jpg  used on input line 793. o
+n input line 793.
+Package pdftex.def Info: Requested size: 220.50887pt x 383.55652pt on input lin
+e 793.
+
 Overfull \vbox (0.84998pt too high) has occurred while \output is active []
 
 
-[21 <./rysunki/specs/simulation.jpg> <./rysunki/specs/adv-treatment.jpg> <./rys
-unki/specs/initial.jpg> <./rysunki/specs/progressbar.jpg>]
+[25 <./rysunki/specs/simulation.jpg> <./rysunki/specs/adv-treatment.jpg> <./rys
+unki/specs/initial.jpg>]
+Overfull \vbox (0.84998pt too high) has occurred while \output is active []
+
+
+[26 <./rysunki/specs/progressbar.jpg> <./rysunki/specs/window2.jpg>]
+Overfull \vbox (0.84998pt too high) has occurred while \output is active []
+
+
+[27 <./rysunki/specs/w2-simulation.jpg>]
+Overfull \vbox (0.84998pt too high) has occurred while \output is active []
+
+
+[28 <./rysunki/specs/figure-gui.jpg> <./rysunki/specs/img-path.jpg>]
+Overfull \vbox (0.84998pt too high) has occurred while \output is active []
+
+
+[29 <./rysunki/specs/portrait.jpg>]
+Overfull \vbox (0.84998pt too high) has occurred while \output is active []
+
+
+[30 <./rysunki/specs/details.jpg>]
 Rozdzia\PlPrIeC {\l } 6.
-<./rysunki/excel/pacjenci_ft4_trab.png, id=489, 580.41844pt x 362.10281pt>
+<./rysunki/excel/pacjenci_ft4_trab.png, id=613, 580.41844pt x 362.10281pt>
 File: ./rysunki/excel/pacjenci_ft4_trab.png Graphic file (type png)
 <use ./rysunki/excel/pacjenci_ft4_trab.png>
 Package pdftex.def Info: ./rysunki/excel/pacjenci_ft4_trab.png  used on input l
-ine 774. on input line 774.
+ine 811. on input line 811.
 Package pdftex.def Info: Requested size: 441.01773pt x 275.1402pt on input line
- 774.
-<./rysunki/wyniki/p20_no_dose_d10.png, id=490, 421.575pt x 316.0608pt>
+ 811.
+<./rysunki/wyniki/p20_no_dose_d10.png, id=614, 421.575pt x 316.0608pt>
 File: ./rysunki/wyniki/p20_no_dose_d10.png Graphic file (type png)
 <use ./rysunki/wyniki/p20_no_dose_d10.png>
 Package pdftex.def Info: ./rysunki/wyniki/p20_no_dose_d10.png  used on input li
-ne 782. on input line 782.
+ne 819. on input line 819.
 Package pdftex.def Info: Requested size: 352.81552pt x 264.51508pt on input lin
-e 782.
-<./rysunki/wyniki/p20_dose30_d1.png, id=492, 421.575pt x 316.18124pt>
+e 819.
+<./rysunki/wyniki/p20_dose30_d1.png, id=616, 421.575pt x 316.18124pt>
 File: ./rysunki/wyniki/p20_dose30_d1.png Graphic file (type png)
 <use ./rysunki/wyniki/p20_dose30_d1.png>
 Package pdftex.def Info: ./rysunki/wyniki/p20_dose30_d1.png  used on input line
- 790. on input line 790.
+ 827. on input line 827.
 Package pdftex.def Info: Requested size: 352.81552pt x 264.61588pt on input lin
-e 790.
-<./rysunki/wyniki/p20_dose30_d120.png, id=494, 421.575pt x 316.0608pt>
+e 827.
+<./rysunki/wyniki/p20_dose30_d120.png, id=618, 421.575pt x 316.0608pt>
 File: ./rysunki/wyniki/p20_dose30_d120.png Graphic file (type png)
 <use ./rysunki/wyniki/p20_dose30_d120.png>
 Package pdftex.def Info: ./rysunki/wyniki/p20_dose30_d120.png  used on input li
-ne 798. on input line 798.
+ne 835. on input line 835.
 Package pdftex.def Info: Requested size: 352.81552pt x 264.51508pt on input lin
-e 798.
-<./rysunki/wyniki/p20_dose30_d75_dose0_d45.png, id=496, 421.575pt x 316.0608pt>
+e 835.
+<./rysunki/wyniki/p20_dose30_d75_dose0_d45.png, id=620, 421.575pt x 316.0608pt>
 
 File: ./rysunki/wyniki/p20_dose30_d75_dose0_d45.png Graphic file (type png)
 <use ./rysunki/wyniki/p20_dose30_d75_dose0_d45.png>
 Package pdftex.def Info: ./rysunki/wyniki/p20_dose30_d75_dose0_d45.png  used on
- input line 806. on input line 806.
+ input line 843. on input line 843.
 Package pdftex.def Info: Requested size: 352.81552pt x 264.51508pt on input lin
-e 806.
-<./rysunki/wyniki/p20_treatment.png, id=498, 421.575pt x 316.0608pt>
+e 843.
+<./rysunki/wyniki/p20_treatment.png, id=622, 421.575pt x 316.0608pt>
 File: ./rysunki/wyniki/p20_treatment.png Graphic file (type png)
 <use ./rysunki/wyniki/p20_treatment.png>
 Package pdftex.def Info: ./rysunki/wyniki/p20_treatment.png  used on input line
- 814. on input line 814.
+ 851. on input line 851.
 Package pdftex.def Info: Requested size: 352.81552pt x 264.51508pt on input lin
-e 814.
-[22
+e 851.
+[31
 
-] [23 <./rysunki/excel/pacjenci_ft4_trab.png> <./rysunki/wyniki/p20_no_dose_d10
-.png (PNG copy)>] [24 <./rysunki/wyniki/p20_dose30_d1.png> <./rysunki/wyniki/p2
-0_dose30_d120.png (PNG copy)>] [25 <./rysunki/wyniki/p20_dose30_d75_dose0_d45.p
+] [32 <./rysunki/excel/pacjenci_ft4_trab.png> <./rysunki/wyniki/p20_no_dose_d10
+.png (PNG copy)>] [33 <./rysunki/wyniki/p20_dose30_d1.png> <./rysunki/wyniki/p2
+0_dose30_d120.png (PNG copy)>] [34 <./rysunki/wyniki/p20_dose30_d75_dose0_d45.p
 ng (PNG copy)> <./rysunki/wyniki/p20_treatment.png (PNG copy)>]
-<./rysunki/wyniki/p20_treatment1.png, id=520, 421.575pt x 316.0608pt>
+<./rysunki/wyniki/p20_treatment1.png, id=646, 421.575pt x 316.0608pt>
 File: ./rysunki/wyniki/p20_treatment1.png Graphic file (type png)
 <use ./rysunki/wyniki/p20_treatment1.png>
 Package pdftex.def Info: ./rysunki/wyniki/p20_treatment1.png  used on input lin
-e 826. on input line 826.
+e 863. on input line 863.
 Package pdftex.def Info: Requested size: 352.81552pt x 264.51508pt on input lin
-e 826.
-<./rysunki/wyniki/p31_treatment.png, id=522, 421.575pt x 316.0608pt>
+e 863.
+ [35 <./rysunki/wyniki/p20_treatment1.png (PNG copy)>]
+<./rysunki/wyniki/p31_treatment.png, id=653, 421.575pt x 316.0608pt>
 File: ./rysunki/wyniki/p31_treatment.png Graphic file (type png)
 <use ./rysunki/wyniki/p31_treatment.png>
 Package pdftex.def Info: ./rysunki/wyniki/p31_treatment.png  used on input line
- 836. on input line 836.
+ 873. on input line 873.
 Package pdftex.def Info: Requested size: 352.81552pt x 264.51508pt on input lin
-e 836.
- [26 <./rysunki/wyniki/p20_treatment1.png (PNG copy)>]
-<./rysunki/wyniki/p55_treatment.png, id=529, 421.575pt x 316.0608pt>
+e 873.
+<./rysunki/wyniki/p55_treatment.png, id=654, 421.575pt x 316.0608pt>
 File: ./rysunki/wyniki/p55_treatment.png Graphic file (type png)
 <use ./rysunki/wyniki/p55_treatment.png>
 Package pdftex.def Info: ./rysunki/wyniki/p55_treatment.png  used on input line
- 845. on input line 845.
+ 882. on input line 882.
 Package pdftex.def Info: Requested size: 352.81552pt x 264.51508pt on input lin
-e 845.
-<./rysunki/wyniki/p70_treatment.png, id=533, 421.575pt x 316.0608pt>
+e 882.
+ [36 <./rysunki/wyniki/p31_treatment.png (PNG copy)>]
+<./rysunki/wyniki/p70_treatment.png, id=662, 421.575pt x 316.0608pt>
 File: ./rysunki/wyniki/p70_treatment.png Graphic file (type png)
 <use ./rysunki/wyniki/p70_treatment.png>
 Package pdftex.def Info: ./rysunki/wyniki/p70_treatment.png  used on input line
- 858. on input line 858.
+ 894. on input line 894.
 Package pdftex.def Info: Requested size: 352.81552pt x 264.51508pt on input lin
-e 858.
-<./rysunki/excel/pacjenci_mmi.png, id=535, 663.22781pt x 353.06906pt>
+e 894.
+<./rysunki/excel/pacjenci_mmi.png, id=664, 663.22781pt x 353.06906pt>
 File: ./rysunki/excel/pacjenci_mmi.png Graphic file (type png)
 <use ./rysunki/excel/pacjenci_mmi.png>
-Package pdftex.def Info: ./rysunki/excel/pacjenci_mmi.png  used on input line 8
-68. on input line 868.
+Package pdftex.def Info: ./rysunki/excel/pacjenci_mmi.png  used on input line 9
+04. on input line 904.
 Package pdftex.def Info: Requested size: 441.01773pt x 234.77719pt on input lin
-e 868.
- [27 <./rysunki/wyniki/p31_treatment.png (PNG copy)>] [28 <./rysunki/wyniki/p55
-_treatment.png (PNG copy)> <./rysunki/wyniki/p70_treatment.png (PNG copy)>] [29
- <./rysunki/excel/pacjenci_mmi.png>]
+e 904.
+ [37 <./rysunki/wyniki/p55_treatment.png (PNG copy)>] [38 <./rysunki/wyniki/p70
+_treatment.png (PNG copy)> <./rysunki/excel/pacjenci_mmi.png>]
 Rozdzia\PlPrIeC {\l } 7.
-) [30
+) [39
 
 ] (Praca.bbl
 Underfull \hbox (badness 2903) in paragraph at lines 19--25
@@ -912,7 +994,7 @@ Package caption Warning: Unused \captionsetup[subfigure] on input line 148.
 See the caption package documentation for explanation.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
-[31
+[40
 
 
 ]
@@ -921,26 +1003,22 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
 Package rerunfilecheck Info: File `Praca.out' has not changed.
-(rerunfilecheck)             Checksum: 0CB89923F527AE04F557111F62D6D283;2383.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: 3C3D865D512746A9E8EC5828124DCB48;2899.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  ) 
 Here is how much of TeX's memory you used:
- 10453 strings out of 493312
- 154418 string characters out of 3138899
+ 10533 strings out of 493312
+ 156136 string characters out of 3138899
  276909 words of memory out of 3000000
- 13581 multiletter control sequences out of 15000+200000
+ 13628 multiletter control sequences out of 15000+200000
  16456 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,14n,42p,712b,1959s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plsc.enc}{C:/Program Files/Mi
 KTeX 2.9/fonts/enc/dvips/pl/pltt.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvi
-ps/pl/plrm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plms.enc}{C:/Pro
-gram Files/MiKTeX 2.9/fonts/enc/dvips/pl/plmi.enc}{C:/Program Files/MiKTeX 2.9/
-fonts/enc/dvips/pl/plme.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/pli
+ps/pl/plmi.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.enc}{C:/Pro
+gram Files/MiKTeX 2.9/fonts/enc/dvips/pl/plme.enc}{C:/Program Files/MiKTeX 2.9/
+fonts/enc/dvips/pl/plms.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/pli
 t.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plbx12.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/pl/plcsc10.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/pl/plex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
@@ -953,9 +1031,9 @@ m Files/MiKTeX 2.9/fonts/type1/public/pl/plsy10.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/pl/plsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/pl/plti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/pltt10.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/pltt12.pfb>
-Output written on Praca.pdf (36 pages, 966955 bytes).
+Output written on Praca.pdf (45 pages, 1381975 bytes).
 PDF statistics:
- 661 PDF objects out of 1000 (max. 8388607)
- 189 named destinations out of 1000 (max. 500000)
- 394 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 794 PDF objects out of 1000 (max. 8388607)
+ 214 named destinations out of 1000 (max. 500000)
+ 490 words of extra memory for PDF output out of 10000 (max. 10000000)
 
