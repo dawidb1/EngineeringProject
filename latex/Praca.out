@@ -18,12 +18,12 @@
 \BOOKMARK [2][-]{subsection.3.7.1}{Twierdzenie}{section.3.7}% 18
 \BOOKMARK [2][-]{subsection.3.7.2}{Analiza stabilnosci modelu}{section.3.7}% 19
 \BOOKMARK [0][-]{chapter.4}{Czesc konstrukcyjna/Specyfikacja wewnetrzna}{}% 20
-\BOOKMARK [1][-]{section.4.1}{Interfejsy i klasy}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.1}{Klasy aplikacji}{chapter.4}% 21
 \BOOKMARK [1][-]{section.4.2}{Przep\233yw danych w aplikacji}{chapter.4}% 22
 \BOOKMARK [1][-]{section.4.3}{Metody utworzonego programu}{chapter.4}% 23
 \BOOKMARK [1][-]{section.4.4}{Wykorzystane funkcje programu Matlab}{chapter.4}% 24
 \BOOKMARK [0][-]{chapter.5}{Instrukcja obs\233ugi/Specyfikacja zewnetrzna}{}% 25
-\BOOKMARK [1][-]{section.5.1}{Okno g\233\363wne}{chapter.5}% 26
+\BOOKMARK [1][-]{section.5.1}{Okno g\233\363wne aplikacji}{chapter.5}% 26
 \BOOKMARK [2][-]{subsection.5.1.1}{Wyb\363r pacjenta}{section.5.1}% 27
 \BOOKMARK [2][-]{subsection.5.1.2}{Wyb\363r parametr\363w symulacji}{section.5.1}% 28
 \BOOKMARK [2][-]{subsection.5.1.3}{Warunki poczatkowe}{section.5.1}% 29
