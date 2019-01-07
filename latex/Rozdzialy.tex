@@ -52,7 +52,7 @@ Podwzgórze produkuje tyreoliberynê (TRH), która uwalnia wyprodukowan¹ i zmagazyn
 W chorobie Gravesa, przeciwcia³a przeciwtarczycowe TRAb imituj¹ dzia³anie hormonu TSH, pochodz¹cego z przysadki mózgowej, aktywuj¹c produkcjê hormonów tarczycowych \cite{graves1}. W efekcie powstaje nadprodukcja hormonów tarczycowych T3 i T4, przy jednoczeœnie niskim poziomie TSH. 
 
 \section{Symptomy}
-Hormony tarczycowe maj¹ wp³yw na wiele uk³adów w ca³ym organizmie, dlatego objawy i symptomy wywo³ane chorob¹ Gravesa mog¹ mieæ szeroki zakres oraz znacz¹cy wp³yw na funkcjonowanie ca³ego organizmu. Objawami mog¹ byæ \cite{mayo}:
+Hormony tarczycowe maj¹ wp³yw na wiele uk³adów w ca³ym organizmie, dlatego objawy i symptomy wywo³ane chorob¹ Gravesa mog¹ mieæ szeroki zakres oraz znacz¹cy wp³yw na funkcjonowanie ca³ego organizmu. Najczêstsze objawy to \cite{mayo}:
 \begin{itemize}
 \item niepokój i nerwowoœæ,
 \item drobne dr¿enie r¹k i palców,
@@ -319,7 +319,7 @@ Do analiz na potrzeby tej pracy, wykorzystano dane 4 pacjentów (pacjenta nr 20, 
 
 Przeanalizowano stabilnoœæ uk³adu dla nieleczonej nadczynnoœci tarczycy, spowodowanej chorob¹ Gravesa. Pos³u¿ono siê omówionym wczeœniej modelem. Do analizy u¿yto twierdzenia o stabilnoœci uk³adów, bazuj¹cego na wartoœciach w³asnych. 
 
-\subsection{Twierdzenie} 
+\subsection{Twierdzenie}  \label{sec:twierdzenie}
 Niech funkcje $f_{i}(y_{1}, y_{2}, ..., y_{n})$ maj¹ ci¹g³e pochodne cz¹stkowe pierwszego rzêdu $(\dfrac{\partial f_{i}}{\partial y_{1}})$, gdzie $1\leq i,j\leq n$, w otoczeniu punkt równowagi $P=(a_{1},a_{2}, ..., a_{n})$ uk³adu. Dodatkowo niech 
 \[
 J(a_{1},a_{2}, ..., a_{n})
@@ -352,7 +352,46 @@ Wówczas:
 \end{enumerate}
 
 \subsection{Analiza stabilnoœci modelu}
-Gdy nie podaje siê metimazolu $s(t)=0$, stan nadczynnoœci tarczycy opisuje siê jako $E_{1} = (x_{1}, y_{1}, z_{1}, w_{1})$, gdzie 
+Dla osoby zdrowej $s(t) = 0$ i uk³ad \ref{eq:uklad} przyjmuje postaæ:
+
+\begin{equation} \label{eq:uklad_stab}
+\left\lbrace 
+\arraycolsep=1.5pt\def\arraystretch{2.2}
+\begin{array}{ll}
+
+\dfrac{dx}{dt} = \dfrac{(k_{1}z)x}{k_{a} + x} - k_{2}x\\
+
+\dfrac{dy}{dt} = \dfrac{(k_{3}z)w}{k_{d} + w } - k_{4}y\\
+
+\dfrac{dz}{dt} = k_{5} (\dfrac{w}{z} - N) - k_{6}zx\\
+
+\dfrac{dw}{dt} = k_{7} - \dfrac{k_{7}x}{k_{b} + x} - k_{8}w\\
+\end{array}
+\right.
+\end{equation}
+
+Chc¹c sprawdziæ zachowanie siê modelu dla osoby zdrowej wyznaczamy punkty stacjonarne uk³adu
+
+\begin{equation} \label{eq:funkcje_wielu_zmiennych}
+\left\lbrace 
+\arraycolsep=1.5pt\def\arraystretch{2.2}
+\begin{array}{ll}
+
+f(x, y, z, w) = \dfrac{(k_{1}z)x}{k_{a} + x} - k_{2}x\\
+
+g(x, y, z, w) = \dfrac{(k_{3}z)w}{k_{d} + w } - k_{4}y\\
+
+h(x, y, z, w) = k_{5} (\dfrac{w}{z} - N) - k_{6}zx\\
+
+m(x, y, z, w) = k_{7} - \dfrac{k_{7}x}{k_{b} + x} - k_{8}w\\
+\end{array}
+\right.
+\end{equation}
+
+rozwi¹zuj¹c uk³ad równañ [ $ f(x, y, z, w) = 0 \wedge g(x, y, z, w) = 0 \wedge h(x, y, z, w) = 0 \wedge m(x, y, z, w) = 0$ ].
+
+Dla osoby zdrowej otrzymujemy dok³adnie jeden punkt stacjonarny $E_{1} = (x_{1}, y_{1}, z_{1}, w_{1})$, gdzie
+%Gdy nie podaje siê metimazolu $s(t)=0$, stan nadczynnoœci tarczycy opisuje siê jako $E_{1} = (x_{1}, y_{1}, z_{1}, w_{1})$, gdzie 
 
 \begin{equation} \label{eq:e1}
 \left\lbrace 
@@ -371,10 +410,10 @@ w_{1} = \dfrac{k_{7}}{k_{8}}
 \right.
 \end{equation}
 
-Obliczaj¹c pochodne cz¹stkowe modelu $f'(x, y, z, w)$, otrzymujemy nastêpuj¹c¹ macierz o wymiarach $4x4$. 
+Aby sprawdziæ stabilnoœæ punktu $E1$ wyznaczamy macierz Jacobiego $J(x,y,z,w)$ pochadnych cz¹stkowych funkcji f, g, h, m, tzn. macierz:
 
 \[
-J
+J((x,y,z,w))
 =
 \begin{bmatrix}
 \dfrac{-(k_{1}k_{a}z+k_{2}(x+k_{a})^2)}{(x+k_{a})^{2}} 
@@ -400,10 +439,10 @@ J
 \end{bmatrix},
 \]
 
-Podstawiaj¹c do macierzy warunki pocz¹tkowe, okreœlone w uk³adzie \ref{eq:e1}, otrzymujemy macierz
+Dla punktu $E_1$ otrzymujemy $J(E_1)$:
 
 \[
-J
+J(E_1)
 =
 \begin{bmatrix}
 -\dfrac{k_{1}k_{7}}{k_{8}Nk_{a}} - k_{2}
@@ -429,7 +468,7 @@ J
 \end{bmatrix},
 \]
 
-Wartoœci w³asne macierzy oblicza siê za pomoc¹ równania charakterystycznego macierzy w postaci $det(J - \lambda I) = 0$. Wartoœci w³asne przedstawiaj¹ siê nastêpuj¹co:
+Wartoœci w³asne macierzy oblicza siê za pomoc¹ równania charakterystycznego macierzy w postaci $det(J(E_1) - \lambda I) = 0$. Wartoœci w³asne przedstawiaj¹ siê nastêpuj¹co:
 
 \begin{equation} \label{eq:lambda}
 \left\lbrace 
@@ -448,9 +487,7 @@ Wartoœci w³asne macierzy oblicza siê za pomoc¹ równania charakterystycznego maci
 \right.
 \end{equation}
 
-Wszystkie wartoœci w³asne maj¹ znak ujemny oraz parametry je opisuj¹ce s¹ dodatnie. Wynika z tego, ¿e wszystkie wartoœci w³asne omawianej macierzy $J$ maj¹ ujemne czêœci rzeczywiste. Wed³ug twierdzenia o stabilnoœci uk³adu, uk³ad jest uk³adem asymptotycznie stabilnym.
-
-Szczegó³owe obliczenia zosta³y przedstawione w dodatku. (ref - kiedy ju¿ bêdzie dodatek)
+Wszystkie wartoœci w³asne maj¹ znak ujemny oraz parametry je opisuj¹ce s¹ dodatnie. Wynika z tego, ¿e wszystkie wartoœci w³asne macierzy $J(E_1)$ maj¹ ujemne czêœci rzeczywiste. Wed³ug twierdzenia o stabilnoœci uk³adu \ref{sec:twierdzenie}, uk³ad jest uk³adem asymptotycznie stabilnym.
 
 %\emph{Przeprowadzenie symulacji wi¹¿e siê z kilkoma etapami. }
 %
