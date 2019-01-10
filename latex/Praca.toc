@@ -26,17 +26,17 @@
 \contentsline {section}{\numberline {5.1}Okno g\IeC {\l }\'owne aplikacji}{23}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Wyb\'or pacjenta}{23}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Wyb\'or parametr\'ow symulacji}{23}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Warunki pocz\k atkowe}{23}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.3}Warunki pocz\k atkowe}{24}{subsection.5.1.3}
 \contentsline {subsection}{\numberline {5.1.4}Symulacja}{24}{subsection.5.1.4}
-\contentsline {section}{\numberline {5.2}Okno symulacji}{24}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Wykres wynik\'ow symulacji}{25}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.2}Okno wynik\'ow symulacji}{24}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Graficzne przedstawienie wynik\'ow symulacji}{25}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Portrety fazowe oraz szczeg\'o\IeC {\l }y symulacji}{26}{subsection.5.2.2}
 \contentsline {chapter}{\numberline {6.}Rezultaty}{32}{chapter.6}
 \contentsline {section}{\numberline {6.1}Wst\k epne por\'ownanie pacjent\'ow}{32}{section.6.1}
 \contentsline {section}{\numberline {6.2}Pacjent numer 20}{32}{section.6.2}
 \contentsline {section}{\numberline {6.3}Pacjent numer 31}{37}{section.6.3}
 \contentsline {section}{\numberline {6.4}Pacjent numer 55}{37}{section.6.4}
-\contentsline {section}{\numberline {6.5}Pacjent numer 70}{37}{section.6.5}
+\contentsline {section}{\numberline {6.5}Pacjent numer 70}{38}{section.6.5}
 \contentsline {section}{\numberline {6.6}Por\'ownanie zapotrzebowania na lek}{38}{section.6.6}
 \contentsline {chapter}{\numberline {7.}Podsumowanie}{40}{chapter.7}
 \contentsline {section}{\numberline {7.1}Wnioski}{40}{section.7.1}
