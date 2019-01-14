@@ -1,43 +1,45 @@
-\contentsline {chapter}{\numberline {1.}Wst\k ep}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Cel pracy}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Uk\IeC {\l }ad pracy}{1}{section.1.2}
-\contentsline {chapter}{\numberline {2.}Wprowadzenie teoretyczne}{2}{chapter.2}
-\contentsline {section}{\numberline {2.1}Funkcjonowanie uk\IeC {\l }adu hormonalnego tarczycy}{2}{section.2.1}
-\contentsline {section}{\numberline {2.2}Symptomy}{2}{section.2.2}
-\contentsline {section}{\numberline {2.3}Czynniki ryzyka}{3}{section.2.3}
-\contentsline {section}{\numberline {2.4}Diagnoza choroby}{4}{section.2.4}
-\contentsline {section}{\numberline {2.5}Leczenie}{5}{section.2.5}
-\contentsline {chapter}{\numberline {3.}Metodologia}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}Za\IeC {\l }o\.zenia modelu}{7}{section.3.1}
-\contentsline {section}{\numberline {3.2}Funkcje stanu}{7}{section.3.2}
-\contentsline {section}{\numberline {3.3}Model matematyczny}{8}{section.3.3}
-\contentsline {section}{\numberline {3.4}Parametry modelu}{9}{section.3.4}
-\contentsline {section}{\numberline {3.5}Warunki pocz\k atkowe modelu}{11}{section.3.5}
-\contentsline {section}{\numberline {3.6}Dane do symulacji}{11}{section.3.6}
-\contentsline {section}{\numberline {3.7}Stabilno\'s\'c uk\IeC {\l }adu}{12}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Twierdzenie}{12}{subsection.3.7.1}
-\contentsline {subsection}{\numberline {3.7.2}Analiza stabilno\'sci modelu}{13}{subsection.3.7.2}
-\contentsline {chapter}{\numberline {4.}Cz\k e\'s\'c konstrukcyjna/Specyfikacja wewn\k etrzna}{16}{chapter.4}
-\contentsline {section}{\numberline {4.1}Klasy aplikacji}{16}{section.4.1}
-\contentsline {section}{\numberline {4.2}Przep\IeC {\l }yw danych w aplikacji}{17}{section.4.2}
-\contentsline {section}{\numberline {4.3}Metody utworzonego programu}{17}{section.4.3}
-\contentsline {section}{\numberline {4.4}Wykorzystane funkcje programu Matlab}{20}{section.4.4}
-\contentsline {chapter}{\numberline {5.}Instrukcja obs\IeC {\l }ugi/Specyfikacja zewn\k etrzna}{23}{chapter.5}
-\contentsline {section}{\numberline {5.1}Okno g\IeC {\l }\'owne aplikacji}{23}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Wyb\'or pacjenta}{23}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Wyb\'or parametr\'ow symulacji}{23}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Warunki pocz\k atkowe}{24}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}Symulacja}{24}{subsection.5.1.4}
-\contentsline {section}{\numberline {5.2}Okno wynik\'ow symulacji}{24}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Graficzne przedstawienie wynik\'ow symulacji}{25}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Portrety fazowe oraz szczeg\'o\IeC {\l }y symulacji}{26}{subsection.5.2.2}
-\contentsline {chapter}{\numberline {6.}Rezultaty}{32}{chapter.6}
-\contentsline {section}{\numberline {6.1}Wst\k epne por\'ownanie pacjent\'ow}{32}{section.6.1}
-\contentsline {section}{\numberline {6.2}Pacjent numer 20}{32}{section.6.2}
-\contentsline {section}{\numberline {6.3}Pacjent numer 31}{37}{section.6.3}
-\contentsline {section}{\numberline {6.4}Pacjent numer 55}{37}{section.6.4}
-\contentsline {section}{\numberline {6.5}Pacjent numer 70}{38}{section.6.5}
-\contentsline {section}{\numberline {6.6}Por\'ownanie zapotrzebowania na lek}{38}{section.6.6}
-\contentsline {chapter}{\numberline {7.}Podsumowanie}{40}{chapter.7}
-\contentsline {section}{\numberline {7.1}Wnioski}{40}{section.7.1}
-\contentsline {chapter}{Bibliografia}{42}{section.7.1}
+\contentsline {chapter}{\numberline {1.}Wst\k ep}{1}
+\contentsline {section}{\numberline {1.1}Cele pracy}{1}
+\contentsline {subsection}{\numberline {1.1.1}Cel bezpo\'sredni}{1}
+\contentsline {subsection}{\numberline {1.1.2}Cele po\'srednie}{1}
+\contentsline {section}{\numberline {1.2}Uk\IeC {\l }ad pracy}{2}
+\contentsline {chapter}{\numberline {2.}Wprowadzenie teoretyczne}{3}
+\contentsline {section}{\numberline {2.1}Funkcjonowanie uk\IeC {\l }adu hormonalnego tarczycy}{3}
+\contentsline {section}{\numberline {2.2}Symptomy}{4}
+\contentsline {section}{\numberline {2.3}Czynniki ryzyka}{4}
+\contentsline {section}{\numberline {2.4}Diagnoza choroby}{5}
+\contentsline {section}{\numberline {2.5}Leczenie}{5}
+\contentsline {chapter}{\numberline {3.}Metodologia}{7}
+\contentsline {section}{\numberline {3.1}Za\IeC {\l }o\.zenia modelu}{7}
+\contentsline {section}{\numberline {3.2}Funkcje stanu}{7}
+\contentsline {section}{\numberline {3.3}Model matematyczny}{8}
+\contentsline {section}{\numberline {3.4}Parametry modelu}{9}
+\contentsline {section}{\numberline {3.5}Warunki pocz\k atkowe modelu}{11}
+\contentsline {section}{\numberline {3.6}Dane do symulacji}{11}
+\contentsline {section}{\numberline {3.7}Stabilno\'s\'c uk\IeC {\l }adu}{12}
+\contentsline {subsection}{\numberline {3.7.1}Twierdzenie}{12}
+\contentsline {subsection}{\numberline {3.7.2}Analiza stabilno\'sci modelu}{13}
+\contentsline {chapter}{\numberline {4.}Cz\k e\'s\'c konstrukcyjna/Specyfikacja wewn\k etrzna}{16}
+\contentsline {section}{\numberline {4.1}Klasy aplikacji}{16}
+\contentsline {section}{\numberline {4.2}Przep\IeC {\l }yw danych w aplikacji}{17}
+\contentsline {section}{\numberline {4.3}Metody utworzonego programu}{18}
+\contentsline {section}{\numberline {4.4}Wykorzystane funkcje programu Matlab}{21}
+\contentsline {chapter}{\numberline {5.}Instrukcja obs\IeC {\l }ugi/Specyfikacja zewn\k etrzna}{24}
+\contentsline {section}{\numberline {5.1}Okno g\IeC {\l }\'owne aplikacji}{24}
+\contentsline {subsection}{\numberline {5.1.1}Wyb\'or pacjenta}{24}
+\contentsline {subsection}{\numberline {5.1.2}Wyb\'or parametr\'ow symulacji}{24}
+\contentsline {subsection}{\numberline {5.1.3}Warunki pocz\k atkowe}{25}
+\contentsline {subsection}{\numberline {5.1.4}Symulacja}{25}
+\contentsline {section}{\numberline {5.2}Okno wynik\'ow symulacji}{25}
+\contentsline {subsection}{\numberline {5.2.1}Graficzne przedstawienie wynik\'ow symulacji}{26}
+\contentsline {subsection}{\numberline {5.2.2}Portrety fazowe oraz szczeg\'o\IeC {\l }y symulacji}{27}
+\contentsline {chapter}{\numberline {6.}Rezultaty}{33}
+\contentsline {section}{\numberline {6.1}Wst\k epne por\'ownanie pacjent\'ow}{33}
+\contentsline {section}{\numberline {6.2}Pacjent numer 20}{33}
+\contentsline {section}{\numberline {6.3}Pacjent numer 31}{38}
+\contentsline {section}{\numberline {6.4}Pacjent numer 55}{38}
+\contentsline {section}{\numberline {6.5}Pacjent numer 70}{39}
+\contentsline {section}{\numberline {6.6}Por\'ownanie zapotrzebowania na lek}{39}
+\contentsline {chapter}{\numberline {7.}Wnioski}{41}
+\contentsline {chapter}{\numberline {8.}Podsumowanie}{43}
+\contentsline {chapter}{Bibliografia}{44}
