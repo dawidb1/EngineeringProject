@@ -1,10 +1,10 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {3.1}{\ignorespaces Parametry wej\'sciowe uk\IeC {\l }adu r\'owna\'n r\'o\.zniczkowych \cite {graves1}.\relax }}{10}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Parametry modelu 3.1\hbox {} wybranych pacjent\'ow \cite {graves1}.\relax }}{12}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Parametry wej\'sciowe uk\IeC {\l }adu r\'owna\'n r\'o\.zniczkowych \cite {graves1}.\relax }}{10}{table.caption.8}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Parametry modelu \ref {eq:uklad} wybranych pacjent\'ow \cite {graves1}.\relax }}{12}{table.caption.9}
 \addvspace {10pt}
-\contentsline {table}{\numberline {4.1}{\ignorespaces Klasy aplikacji.\relax }}{16}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Klasy aplikacji.\relax }}{16}{table.caption.11}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

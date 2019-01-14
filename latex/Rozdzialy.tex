@@ -3,26 +3,23 @@
 
 \chapter{Wstêp}
 
-Choroba Gravesa jest najczêstsz¹, idiopatyczn¹ form¹ nadczynnoœci tarczycy. To choroba autoimmunologiczna, powodowana nadaktywnoœci¹ przeciwcia³ przeciwtarczycowych (TRAb). Imituj¹ one dzia³anie hormonu TSH, stymuluj¹c receptory TSH (TSHR). Efektem jest nadprodukcja hormonów tarczycy: trójjodotyroniny (T3) i tyroksyny (T4) \cite{wiki}. W konsekwencji prowadzi to do nadczynnoœci tarczycy. Przyczyna choroby nie jest znana.
+Choroba Gravesa jest najczêstsz¹, idiopatyczn¹ form¹ nadczynnoœci tarczycy. To choroba autoimmunologiczna, powodowana nadaktywnoœci¹ przeciwcia³ przeciwtarczycowych (TRAb). Imituj¹ one dzia³anie hormonu TSH, stymuluj¹c receptory TSH (TSHR). Efektem jest nadprodukcja hormonów tarczycy: trójjodotyroniny (T3) i tyroksyny (T4) \cite{wiki}, co w konsekwencji prowadzi do nadczynnoœci tarczycy. Przyczyna choroby Gravesa do tej pory nie jest znana.
 
 Standardowe leczenie choroby Gravesa obejmuje terapiê lekami przeciwtarczycowymi \textit{(antithyroid drugs - ATD)}. Jednym z nich jest metimazol (MMI), który hamuje dzia³anie enzymu, odpowiadaj¹cego za syntezê hormonów tarczycy. Taka terapia skutkuje obni¿eniem hormonów T3 i T4, jednak czêsto nie zabezpiecza przed reemisj¹ choroby.
 
 \section{Cele pracy}
 
-\subsection{Cel bezpoœredni}
-Celem bezpoœrednim pracy jest wsparcie lekarzy w leczeniu choroby autoimmunologicznej Gravesa, poprzez opracowanie spersonalizowanego leczenia, które prowadzi do zmniejszenia iloœci przyjmowanego przez pacjenta leku lub obni¿a ryzyko reemisji. 
+\subsection*{Cel bezpoœredni:}
+\begin{itemize}
+\item wparcie lekarzy w leczeniu choroby autoimmunologicznej Gravesa, poprzez opracowanie spersonalizowanego leczenia, prowadz¹cego do zmniejszenia iloœci przyjmowanego przez pacjenta leku lub obni¿enia ryzyka reemisji. 
+\end{itemize}
 
-\subsection{Cele poœrednie}
-Cele poœrednie pracy to:
+\subsection*{Cele poœrednie:}
 
 \begin{itemize}
-\item stworzenie aplikacji okienkowej, u³atwiaj¹cej dobór spersonalizowanej terapii,
-\item przeprowadzenie szeregu symulacji u¿ywaj¹c do tego celu danych z badañ prawdziwych pacjentów,
-\item wyznaczenie optymalnych terapii dla konkretnych pacjentów,
-\item zastosowanie modelu matematycznego odzwierciedlaj¹cego w³aœciwe funkcje uk³adu hormonalnego,
-\item opieranie siê na dostêpnych danych lub mo¿liwych do wykonania badaniach
-\item zaadoptowanie modelu do pacjenta, bez potrzeby obserwacji postêpów terapii,
-\item zaznajomienie siê z natur¹ problemu i potrzebami.
+\item napisanie aplikacji okienkowej w œrodowisku Matlab, implementuj¹cej model nadczynnoœci tarczycy wywo³anej chorob¹ Gravesa, u³atwiaj¹cej dobór spersonalizowanej terapii;
+\item przeprowadzenie szeregu symulacji prowadz¹cych do realizacji celu g³ównego;
+\item wyznaczenie optymalnych terapii dla wybranych pacjentów.
 
 \end{itemize}
 
@@ -30,29 +27,20 @@ Cele poœrednie pracy to:
 
 W pierwszej czêœci pracy zosta³o przedstawione wprowadzenie do uk³adu hormonalnego tarczycy. Omówiono kluczowe kwestie dotycz¹ce choroby Gravesa, takie jak: symptomy, czynniki ryzyka, diagnoza oraz leczenie, ze szczególnym uwzglêdnieniem terapii lekami przeciwtarczycowymi.
 
-Nastêpnie omówiono model matematyczny u¿yty do symulacji terapii dla pacjentów. Opisano za³o¿enia modelu, parametrów oraz funkcji stanu. Za³¹czono tabelê z danymi, u¿ytymi do symulacji. Przywo³ano twierdzenie oraz przeprowadzono analizê stabilnoœci punktu stacjonarnego uk³adu równañ ró¿niczkowych.
+Nastêpnie omówiono model matematyczny u¿yty do symulacji terapii dla pacjentów cierpi¹cych na nadczynnoœæ tarczycy wywo³an¹ chorob¹ Gravesa. Opisano za³o¿enia modelu, jego parametry oraz funkcje stanu. Przeprowadzono analizê stabilnoœci punktu stacjonarnego uk³adu równañ ró¿niczkowych.
 
-W kolejnej czêœci pracy przedstawiono specyfikacjê wewnêtrzn¹ i zewnêtrzn¹ utworzonego narzêdzia pracy jakim jest aplikacja okienkowa. Wymieniono w nim klasy aplikacji, przep³yw danych pomiêdzy modu³ami, omówiono utworzone metody oraz wykorzystane metody wbudowane w program MATLAB.
-Napisano instrukcjê obs³ugi programu wraz z wycinkami ekranów pokazuj¹cymi funkcje i okna aplikacji. Szczegó³owo omówiono mo¿liwoœci programu.
+W kolejnej czêœci pracy przedstawiono specyfikacjê wewnêtrzn¹ i zewnêtrzn¹ napisanej aplikacji okienkowej. Wyszczególniono w nim klasy aplikacji, przep³yw danych pomiêdzy modu³ami, omówiono utworzone metody oraz wykorzystane metody wbudowane w program MATLAB.
+Przedstawiono instrukcjê obs³ugi programu oraz jego mo¿liwoœci.
 
-Nastêpnie symulowano reakcjê organizmu na podanie leku. Omówiono przypadki 4 pacjentów. Przedstawiono sugerowane przez autora pracy terapie dla ka¿dego z nich oraz porównano ich zapotrzebowanie na lek.
+W dalszej czêœci pracy przedstawiono wyniki przeprowadzonych symulacji modelu dla wybranych czterech pacjentów. Dla ka¿dego z pacjentów przedstawiono sugerowane przez autora pracy schematy skutecznych terapii oraz symulowano reakcjê organizmu na podanie leku. Omówiono przypadki 4 pacjentów. Przedstawiono sugerowane przez autora pracy terapie dla ka¿dego z nich oraz porównano ich zapotrzebowanie na lek.
 
-Na ostatnich stronach znalaz³y siê wnioski, nasuwaj¹ce siê po analizie symulacji dla pacjentów oraz podsumowanie ca³ej pracy. 
+Pracê koñcz¹ spostrze¿enia po analizie wykonanych symulacji, które zapisano w postaci wniosków oraz podsumowania.
+
 
 \chapter{Wprowadzenie teoretyczne}
 
-%\textit{\begin{itemize}
-% \item Jak dzia³a tarczyca i jej uk³ad hormonalny. \textit{rysunek poprawnego dzia³ania pêtli sprzê¿enia zwrotnego uk³adu hormonalnego tarczycy}
-% \item Co to jest choroba Gravesa. \textit{Tutaj rysunek, jak TRAb emituje dzia³anie TSH.}
-% \item Jakie s¹ jej objawy. \textit{Te 3 podpunkty razem.}
-% \item U kogo wystêpuje.
-% \item Jakie jest na ni¹ lekarstwo. Dzia³anie, skutki uboczne.
-%\end{itemize}}
-
-
-
 \section{Funkcjonowanie uk³adu hormonalnego tarczycy}
-Dzia³anie gospodarki hormonalnej tarczycy opisywane jest za pomoc¹ pêtli sprzê¿enia zwrotnego \cite{mayo}. Stê¿enie hormonów tarczycowych jest sterowane przez centralny uk³ad nerwowy. 
+Dzia³anie gospodarki hormonalnej tarczycy opisywane jest za pomoc¹ pêtli sprzê¿enia zwrotnego \cite{mayo} (Rys.~\ref{feedback-loop_img}). Stê¿enie hormonów tarczycowych jest sterowane przez centralny uk³ad nerwowy.  
 
 \begin{figure}[H]
 	\centering
@@ -60,12 +48,10 @@ Dzia³anie gospodarki hormonalnej tarczycy opisywane jest za pomoc¹ pêtli sprzê¿e
 	\caption{Pêtla sprzê¿enia zwrotnego, poprawnie dzia³aj¹cej gospodarki hormonalnej tarczycy \cite{graves1}.}\label{feedback-loop_img}
 \end{figure}
 
-Podwzgórze produkuje tyreoliberynê (TRH), która uwalnia wyprodukowan¹ i zmagazynowan¹ w przysadce mózgowej tyreotropinê (TSH). Jest ona wydzielana do gruczo³ów dokrewnych, w tym do gruczo³u tarczycy, w którym powoduje wytwarzanie hormonów tarczycowych trójjodotyroniny (T3) i tyroksyny (T4). Wysoki poziom T3 i~T4 hamuje wytwarzanie TSH, wykazuj¹c ujemne sprzê¿enie zwrotne (Rys.~\ref{feedback-loop_img}).
-
+Podwzgórze produkuje tyreoliberynê (TRH), która uwalnia wyprodukowan¹ i zmagazynowan¹ w przysadce mózgowej tyreotropinê (TSH). Jest ona wydzielana do gruczo³ów dokrewnych, w tym do gruczo³u tarczycy, w którym powoduje wytwarzanie hormonów tarczycowych trójjodotyroniny (T3) i tyroksyny (T4). Wysoki poziom T3 i~T4 hamuje wytwarzanie TSH, wykazuj¹c ujemne sprzê¿enie zwrotne.
 
 
 W chorobie Gravesa, przeciwcia³a przeciwtarczycowe TRAb imituj¹ dzia³anie hormonu TSH, pochodz¹cego z przysadki mózgowej, aktywuj¹c produkcjê hormonów tarczycowych \cite{graves1}. W efekcie powstaje nadprodukcja hormonów tarczycowych T3 i T4, przy jednoczeœnie niskim poziomie TSH. 
-
 
 
 \section{Symptomy}
@@ -99,7 +85,7 @@ Choroba Gravesa mo¿e wyst¹piæ u ka¿dego cz³owieka, jednak niektóre czynniki zwiê
 \section{Diagnoza choroby}
 Istnieje kilka sposobów diagnozowania nadczynnoœci tarczycy oraz jej specyficznej odmiany, jak¹ jest choroba Gravesa. Najczêœciej stosowane to:
 \item \textit{Test fizyczny.} Lekarz sprawdza, czy oczy s¹ podra¿nione i wystaj¹ce, a gruczo³ tarczycowy jest powiêkszony. Choroba Gravesa zwiêksza metabolizm, dlatego lekarz bada puls i ciœnienie krwi.
-\item \textit{Badanie krwi.} Badanie maj¹ce na celu ustalenie poziomu TSH w krwi oraz hormonów tarczycowych. Prawid³owy poziom TSH koreluj¹cy z wysokim poziomem T4 w formie wolnej (FT4), mo¿e œwiadczyæ o nadczynnoœci tarczycy. Dodatkowe badanie iloœci przeciwcia³ przeciwtarczycowych TRAb, pozwala zdiagnozowaæ chorobê Gravesa. Wysoki poziom TRAb i FT4 œwiadcz¹ o pod³o¿u autoimmunologicznym choroby, czyli chorobie Gravesa \cite{graves1}. 
+\item \textit{Badanie krwi.} Badanie maj¹ce na celu ustalenie poziomu TSH w krwi oraz hormonów tarczycowych. Prawid³owy poziom TSH koreluj¹cy z wysokim poziomem T4 w formie wolnej (FT4), mo¿e œwiadczyæ o nadczynnoœci tarczycy. Dodatkowe badanie iloœci przeciwcia³ przeciwtarczycowych TRAb, pozwala zdiagnozowaæ chorobê Gravesa. Wysoki poziom TRAb i FT4 œwiadczy o pod³o¿u autoimmunologicznym choroby, czyli chorobie Gravesa \cite{graves1}. 
 \item \textit{Badanie przyswajalnoœci radioaktywnego jodu.} Organizm potrzebuje jodu, do produkcji hormonów tarczycowych. Podanie ma³ej dawki radioaktywnego jodu oraz póŸniejszy pomiar iloœci hormonów tarczycowych, pozwala ustaliæ przyswajalnoœæ jodu przez tarczycê. Dostarcza to informacji czy nadczynnoœæ tarczycy jest wywo³ana chorob¹ Gravesa. 
 \item \textit{Badanie USG.} Dziêki ultradŸwiêkom, mo¿emy ustaliæ czy gruczo³ tarczycowy jest powiêkszony. Jest to bezpieczne badanie, które mo¿e byæ stosowane podczas ci¹¿y.
 \end{itemize}
@@ -132,7 +118,7 @@ Dobór odpowiedniej dawki leku jest mo¿liwy, poprzez symulacjê zachowania siê org
 W napisanej przez Autora niniejszej pracy aplikacji okienkowej w œrodowisku MATLAB, zaimplementowano model matematyczny, przedstawiony w pracy Balamurugan Pandiyan i Stephen J. Merrill \cite{graves1}. Wszelkie za³o¿enia i dane, zaczerpniêto z ich pracy.
 
 \section{Za³o¿enia modelu}
-Zaimplementowany model matematyczny pozwala obserwowaæ poziom hormonu T3 w formie wolnej, przeciwcia³ TRAb, metimazolu (MMI) we krwi pacjenta oraz rozmiar gruczo³u tarczycy w czasie. Poni¿ej zosta³y wyszczególnione za³o¿enia modelu.
+Zaimplementowany model matematyczny pozwala obserwowaæ poziom hormonu T3 w formie wolnej, przeciwcia³ TRAb, metimazolu (MMI) we krwi pacjenta oraz zmianê rozmiaru gruczo³u tarczycy w czasie. Poni¿ej zosta³y wyszczególnione za³o¿enia modelu \cite{graves1}.
 
 \begin{enumerate}
 \item Przeciwcia³a tarczycowe TRAb imituj¹ dzia³anie TSH i stymuluj¹ komórki tarczycowe do wzrostu, produkcji i wydzielania hormonów tarczycy.
@@ -206,7 +192,7 @@ Równanie \ref{eq:dzdt} opisuje zmiany funkcjonalnego rozmiaru gruczo³u tarczycy.
 \dfrac{dw}{dt} = k_{7} - \dfrac{k_{7}x}{k_{b} + x} - k_{8}w
 \end{equation}
 
-Równanie \ref{eq:dwdt} opisuje tempo zmian stê¿enia przeciwcia³ przeciwtarczycowych. Parametr $k_{7}$ reprezentuje maksymaln¹ produkcjê przeciwcia³ TRAb, spowodowan¹ odpowiedzi¹ autoimmunologiczn¹, zaœ wyra¿enie $\dfrac{k_{7}x}{k_{b} + x}$, uwzglêdnia mechanizm hamowania odpowiedzi immunologicznej, spowodowany podaniem metimazolu. Ostatnie wyra¿enie $k_{8}w$, odnosi siê do eliminacji TRAb spowodowanego leczeniem.
+Równanie \ref{eq:dwdt} opisuje tempo zmian stê¿enia przeciwcia³ przeciwtarczycowych. Parametr $k_{7}$ reprezentuje maksymaln¹ produkcjê przeciwcia³ TRAb, spowodowan¹ odpowiedzi¹ autoimmunologiczn¹, zaœ wyra¿enie $\dfrac{k_{7}x}{k_{b} + x}$, uwzglêdnia mechanizm hamowania odpowiedzi immunologicznej, uruchomiony podaniem metimazolu. Ostatnie wyra¿enie $k_{8}w$, odnosi siê do eliminacji przeciwcia³ TRAb spowodowanej leczeniem.
 \\
 
 \section{Parametry modelu} \label{sec:params}
@@ -218,7 +204,7 @@ Na podstawie literatury \cite{graves1} przyjêto wartoœci parametrów modelu, zebr
 \begin{tabular}{|l|l|l|l|}
 \hline
 \textbf{Parametr} & \textbf{Opis}                                                                                                    & \textbf{Wartoœæ}              & \textbf{Jednostka}            \\ \hline
-$k_{1}$                & \begin{tabular}[c]{@{}l@{}}Wzglêdne maksymalne tempo \\ wykorzystania MMI.\end{tabular}                                  & $8,374\cdot 10^{3}$ & mg/($ml\cdot l\text{dzieñ}$)                  \\ \hline
+$k_{1}$                & \begin{tabular}[c]{@{}l@{}}Wzglêdne maksymalne tempo \\ wykorzystania MMI.\end{tabular}                                  & $8,374\cdot 10^{-3}$ & mg/($ml\cdot l \cdot \text{dzieñ}$)                  \\ \hline
 $k_{2}$              & WskaŸnik tempa eliminacji MMI.                                                                                         & 3,3271                        & 1/\text{dzieñ}                         \\ \hline
 $k_{a}$                & \begin{tabular}[c]{@{}l@{}}Sta³a Michealisa-Mentena po³owicznego \\ maksymalnego wykorzystania MMI.\end{tabular} & 0,358068                      & mg/l                          \\ \hline
 $k_{3}$                & \begin{tabular}[c]{@{}l@{}}Wzglêdne maksymalne tempo \\ sekrecji FT4.                                                                                 \end{tabular} & Indywidualne                         & $pg/((ml)^{2}\cdot\text{dzieñ})$                   \\ \hline
@@ -232,63 +218,50 @@ N
 Maksymalny wspó³czynnik tempa \\ wzrostu objêtoœci aktywnych \\ komórek tarczycy.\end{tabular}                             & Indywidualne                         & $U/(ml)^{2}$     \\ \hline
 $k_{6}$                
 & \begin{tabular}[c]{@{}l@{}}
-Sta³y wspó³czynnik tempa dezaktywacji komórek \\ tarczycy.\end{tabular}                           & 0,001                         & $ml/(mg\cdot\text{dzieñ})$                   \\ \hline
+Sta³y wspó³czynnik tempa dezaktywacji \\ komórek tarczycy.\end{tabular}                           & 0,001                         & $ml/(mg\cdot\text{dzieñ})$                   \\ \hline
 $k_{7}$                & \begin{tabular}[c]{@{}l@{}}Maksymalny wspó³czynnik tempa \\ produkcji przeciwcia³ TRAb.\end{tabular}                    & Indywidualne & $U/(ml\cdot\text{dzieñ})$                    \\ \hline
 $k_{b}$                & \begin{tabular}[c]{@{}l@{}}Wspó³czynnik hamowania tempa \\ produkcji  przeciwcia³.\end{tabular}                         & Indywidualne                           & mg/l                      \\ \hline
 $k_{8}$                & WskaŸnik tempa eliminacji TRAb.                                                                                        & 0,035                         & 1/\text{dzieñ}                         \\ \hline
 \end{tabular}
 \end{table}
 
-Maksymalna szybkoœæ przyswajania MMI wzrasta wraz ze zwiêkszaniem dawki leku, przy czym powy¿ej 15 mg/dzieñ, wzrost ten mo¿na pomin¹æ, zatem mo¿na przyj¹æ, i¿ maksymalne wch³anianie leku nastêpuje dla dawki 15 mg/dzieñ. Zak³adaj¹c, ¿e standardowa objêtoœæ funkcjonalna gruczo³u tarczycy podczas nadczynnoœci wynosi 30 ml, a standardowa objêtoœæ organizmu  to 59,71 l, estymujemy parametr $k_{1} = \dfrac{15}{30\cdot 59,71} = 8,374 \cdot 10^{-3} mg/(ml\cdot \text{\textit{ldzieñ}})$.
+Maksymalna szybkoœæ przyswajania MMI wzrasta wraz ze zwiêkszaniem dawki leku, przy czym powy¿ej 15 mg/dzieñ, wzrost ten mo¿na pomin¹æ, zatem mo¿na przyj¹æ, i¿ maksymalne wch³anianie leku nastêpuje dla dawki 15 mg/dzieñ. Zak³adaj¹c, ¿e standardowa objêtoœæ funkcjonalna gruczo³u tarczycy podczas nadczynnoœci wynosi 30 ml, a standardowa objêtoœæ organizmu  to 59,71 l, estymujemy parametr $k_{1} = \dfrac{15}{30\cdot 59,71} = 8,374 \cdot 10^{-3} mg/(ml\cdot l\cdot \text{\textit{dzieñ}})$.
 
-Zak³adaj¹c, ¿e stê¿enie leku we krwi jest malej¹c¹ funkcj¹ wyk³adnicz¹ wyznaczamy mechanizm wydalania MMI ($k_2$) z zale¿noœci $k_{2} = \dfrac{ln(2)}{5h} = 3,43711/\text{\textit{dzieñ}}$.
+Zak³adaj¹c, ¿e stê¿enie leku we krwi jest malej¹c¹ funkcj¹ wyk³adnicz¹ wyznaczamy wskaŸnik wydalania MMI ($k_2$) z zale¿noœci $k_{2} = \dfrac{ln(2)}{5h} = 3,43711/\text{\textit{dzieñ}}$.
 
 Metimazol jest metabolizowany w w¹trobie \cite{tapazole-liver}, która maksimum wydajnoœci osi¹ga w trakcie aktywnoœci cz³owieka, kiedy jest najedzony \cite{liver}. Najwiêksze wydalanie metimazolu, wystêpuje oko³o godziny 12 dla maksymalnej przyjêtej dawki 15 mg/dzieñ \cite{graves1}. Ta informacja pozwala okreœliæ wartoœæ parametru $k_{a} = 0.358068\: mg/l$ w drodze symulacji korzystaj¹c z równania dynamicznego Michealisa-Mentena. 
 
-Posiadaj¹c informacje z badañ pacjentów podczas ich pierwszej wizyty, korzystaj¹c z równania \ref{eq:dydt}, mo¿emy obliczyæ wartoœæ parametru $k_3$ z zale¿noœci
+Na podstawie informacji z badañ pacjentów podczas ich pierwszej wizyty, korzystaj¹c z równania \ref{eq:dydt}, mo¿emy obliczyæ wartoœæ parametru $k_3$ z zale¿noœci
 $k_{3} = \dfrac{k_{4}y_{0}(k_{d}+w_{0})}{z_{0}w_{0}}$.
 
-Parametr $k_{d}$ zosta³ estymowany w programie Matlab, u¿ywaj¹c procedury optymalizacyjnej \textbf{fmincon} z doln¹ granic¹ wynosz¹c¹ 0.05 i górn¹ granic¹ 0.1. 
+Parametr $k_{d}$ zosta³ estymowany w programie Matlab, za pomoc¹ procedury optymalizacyjnej \textbf{fmincon} z doln¹ granic¹ wynosz¹c¹ 0.05 i górn¹ granic¹ 0.1. 
 
-Wspó³czynnik $k_4$ szybkoœci eliminacji FT4 z organizmu mo¿na wyznaczyæ z analogicznej zale¿noœci jak parametr k2. DLa FT4 zale¿noœæ ta przyjmuje postaæ  $k_{4} = \dfrac{ln(2)}{7 dni} = 0.099021 \text{\textit{ l/dzieñ}}$.
+Wspó³czynnik $k_4$ szybkoœci eliminacji FT4 z organizmu mo¿na wyznaczyæ z analogicznej zale¿noœci jak parametr $k_2$. Dla FT4 zale¿noœæ ta przyjmuje postaæ
 
-Znaj¹c parametry $k_4, k_d, y_0$, zgodnie z równaniem \ref{eq:dydt} przyjmuj¹c dla warunków pocz¹tkowych $w_0, z_0$ $\dfrac{dy}{dt}=0$,  otrzymujemy zale¿noœæ okreœlaj¹c¹ wzglêdne maksymalne tempo sekrecji FT4, czyli parametr  $k_{3}$ ze wzoru $k_{3} = \dfrac{k_{4}y_{0}(k_{d}+w_{0})}{z_{0}w_{0}}$.
+\noindent \mbox{$k_{4} = \dfrac{ln(2)}{7 dni} = 0.099021 \text{\textit{ l/dzieñ}}$}.
+
+Znaj¹c parametry $k_4, k_d, y_0$, zgodnie z równaniem \ref{eq:dydt}, przyjmuj¹c $\dfrac{dy}{dt}=0$ dla warunków pocz¹tkowych $w_0, z_0$,  otrzymujemy zale¿noœæ okreœlaj¹c¹ wzglêdne maksymalne tempo sekrecji FT4 ze wzoru $k_{3} = \dfrac{k_{4}y_{0}(k_{d}+w_{0})}{z_{0}w_{0}}$, czyli parametr $k_{3}$.
 
 Parametry $k_{5}$ oraz $k_{6}$ zosta³y wyznaczone w drodze symulacji, poprzez dopasowanie symulacji do danych pacjentów z ca³ego okresu leczenia, minimalizuj¹c b³¹d œredniokwadratowy.
 
-Parametr N, zosta³ wyliczony bazuj¹c na danych TRAb i FT4 pacjenta z pierwszej wizyty $N = \dfrac{w_{0}}{z_{0}}$.
+Parametr N, zosta³ wyliczony na podstawie danych o stê¿eniu TRAb oraz obliczonego funkcjonalnego rozmiaru tarczycy pacjenta z pierwszej wizyty $N = \dfrac{w_{0}}{z_{0}}$.
 
-Parametr $k_{8}$ jako wskaŸnik eliminacji przeciwcia³ podobnie jak parametry $k_2$ i $k_4$ wyznaczono z zale¿noœci $k8 = \dfrac{ln(2)}{20dni} = 0.035 \text{\textit{ l/dzieñ}}$ i wykorzystano do estymowania parametru $k_{7}$ jako 
+Parametr $k_{8}$ jako wskaŸnik eliminacji przeciwcia³ podobnie jak parametry $k_2$ i $k_4$ wyznaczono z zale¿noœci $k_8 = \dfrac{ln(2)}{20dni} = 0.035 \text{\textit{ l/dzieñ}}$ i wykorzystano do estymowania parametru $k_{7}$ ze wzoru 
 $k_{7} = k_{8} \cdot w_{0}$.
 
-Wspó³czynnik hamowania tempa produkcji przeciwcia³ TRAb $k_{b}$, estymujemy za pomoc¹ procedury Matlaba \textbf{fmincon} z doln¹ granic¹ 3 i górn¹ 12.
-
-%\begin{equation} 
-%\end{equation}
-%
-%\begin{equation} \label{eq2}
-%\dfrac{dy}{dt} = \dfrac{(k_{3}z)w}{k_{d} + w } - k_{4}y, \quad y(t0) = y0
-%\end{equation}
-%
-%\begin{equation} \label{eq3}
-%\dfrac{dz}{dt} = k_{5} (\dfrac{w}{z} - N) - k_{6}zx, \quad z(t0) = z0
-%\end{equation}
-%
-%\begin{equation} \label{eq4}
-%\dfrac{dw}{dt} = k_{7} - \dfrac{k_{7}x}{k_{b} + x} - k_{8}w, \quad w(t0) = w0 
-%\end{equation}
+Wspó³czynnik $k_{b}$ hamowania tempa produkcji przeciwcia³ TRAb, estymujemy za pomoc¹ procedury Matlaba \textbf{fmincon} z doln¹ granic¹ 3 i górn¹ 12.
 
 \section{Warunki pocz¹tkowe modelu}
 
-Warunki pocz¹tkowe modelu $E_{0} = (x_{0}, y_{0}, z_{0}, w_{0})$, zosta³y ustalone w sposób nastêpuj¹cy:
+Warunki pocz¹tkowe modelu $E_{0} = (x_{0}, y_{0}, z_{0}, w_{0})$, zosta³y ustalone zgodnie z literatur¹ \cite{graves1} w sposób nastêpuj¹cy:
 
 Stê¿enie pocz¹tkowe FT4 $(y_{0})$ oraz przeciwcia³ TRAb $(w_{0})$ pochodzi z badañ podczas pierwszej wizyty pacjenta. 
 
-Pocz¹tkowe stê¿enie MMI $(x_{0})$ w surowicy krwi wyliczono zgodnie ze wzorem \ref{eq:x0} na podstawie przyjêtej dawki leku w hipotetycznej objêtoœci p³ynów ustrojowych równej 3 litry. 
+Pocz¹tkowe stê¿enie MMI $(x_{0})$ w stosunku do objêtoœci dystrybucji (hipotetycznej objêtoœci p³ynów ustrojowych), w tym przypadku objêtoœci surowicy krwi równej 3 litry, wyliczono zgodnie ze wzorem \ref{eq:x0} na podstawie przyjêtej dawki leku.
 
 \begin{equation}
 \label{eq:x0}
-x_{0} = \dfrac{\text{Dawka leku}}{\text{Objêtoœæ dystrybucji leku}}
+x_{0} = \dfrac{\text{Dawka leku}}{\text{Objêtoœæ dystrybucji}}
 \end{equation}
 
 
@@ -317,7 +290,7 @@ Do analiz na potrzeby tej pracy, wykorzystano dane czterech pacjentów, zachowuj¹
 \begin{tabular}{|l|l|l|l|l|}
 \hline
 \textbf{Parametr} & \textbf{Pacjent nr 20} & \textbf{Pacjent nr 31} & \textbf{Pacjent nr 55} & \textbf{Pacjant nr 70} \\ \hline
-$k_{1}$                & $8,374 \cdot 10^{3}$   & $8,374 \cdot 10^{3}$   & $8,374 \cdot 10^{3}$   & $8,374 \cdot 10^{3}$   \\ \hline
+$k_{1}$                & $8,374 \cdot 10^{-3}$   & $8,374 \cdot 10^{-3}$   & $8,374 \cdot 10^{-3}$   & $8,374 \cdot 10^{-3}$   \\ \hline
 $k_{2}$                & 3,3271                 & 3,3272                 & 3,3273                 & 3,3274                 \\ \hline
 $k_{a}$                & 0,358068               & 0,358068               & 0,358068               & 0,358068               \\ \hline
 $k_{3}$                & 0,085                  & 0,08975                & 0,08992                & 0,11784                \\ \hline
@@ -334,9 +307,9 @@ $k_{8}$                & 0,035                  & 0,035                  & 0,035
 
 \section{Stabilnoœæ uk³adu}
 
-Dla nieleczonej nadczynnoœci tarczycy, spowodowanej chorob¹ Gravesa zbadano stabilnoœæ punktów stacjonarnych modelu \ref{eq:uklad}. Analizê przeprowadzono w oparciu o twierdzenie o stabilnoœci punktów stacjonarnych uk³adu równañ ró¿niczkowych.
+Dla nieleczonej nadczynnoœci tarczycy, spowodowanej chorob¹ Gravesa zbadano stabilnoœæ punktów stacjonarnych modelu (\ref{eq:uklad}). Analizê przeprowadzono w oparciu o~twierdzenie o~stabilnoœci punktów stacjonarnych uk³adu równañ ró¿niczkowych.
 
-\subsection{Twierdzenie}  \label{sec:twierdzenie}
+\subsection*{Twierdzenie \cite{twierdzenie} }  \label{sec:twierdzenie}
 Niech funkcje $f_{i}(y_{1}, y_{2}, ..., y_{n})$ maj¹ ci¹g³e pochodne cz¹stkowe pierwszego rzêdu $(\dfrac{\partial f_{i}}{\partial y_{1}})$, gdzie $1\leq i,j\leq n$, w otoczeniu punkt równowagi $P=(a_{1},a_{2}, ..., a_{n})$ uk³adu. Dodatkowo niech 
 \[
 J(a_{1},a_{2}, ..., a_{n})
@@ -487,7 +460,7 @@ J(E_1)
 \end{bmatrix},
 \end{equation}
 
-Wartoœci w³asne ($\lambda$) macierzy $J(E_1)$ wyznaczamy na podstawie jej równania charakterystycznego $det(J(E_1) - \lambda I) = 0$. Macierz J(E1) ma cztery wartoœci w³asne (\ref{eq:matrix}) wyra¿one za pomoca parametrów modelu. Wartoœci w³asne przedstawiaj¹ siê nastêpuj¹co:
+Wartoœci w³asne ($\lambda$) macierzy $J(E_1)$ wyznaczamy na podstawie jej równania charakterystycznego $det(J(E_1) - \lambda I) = 0$. Macierz J(E1) ma cztery wartoœci w³asne (\ref{eq:lambda}) wyra¿one za pomoca parametrów modelu. Wartoœci w³asne przedstawiaj¹ siê nastêpuj¹co:
 
 \begin{equation} \label{eq:lambda}
 \left\lbrace 
@@ -585,7 +558,7 @@ Do przekazania danych pomiêdzy widokami aplikacji, s³u¿¹ g³ównie trzy klasy. S¹ 
 	\caption{Klasa SimulationResult.}\label{simulation_result_img}
 \end{figure}
 
-\section{Metody utworzonego programu}\label{sec:methods}
+\section{Metody aplikacji}\label{sec:methods}
 
 \subsubsection*{Simulate}
 Metoda \textit{Simulate} zajmuje siê wszystkimi obliczeniami zwi¹zanymi z symulacj¹. Przyjmuje obiekt typu Simulation (Rys. \ref{i-simulation_img}) i zwraca SimulationResult (Rys. \ref{simulation_result_img}).
@@ -680,7 +653,7 @@ Do rozwi¹zywania uk³adu równañ ró¿niczkowych \ref{eq:uklad} u¿yto wbudowanej fun
 [t,y] = ode45(odefun(t,y,A,B),tspan,y0)
 \end{lstlisting}
 
-\clearpage Parametry funkcji:
+Parametry funkcji:
 \begin{itemize}
 \item odefun - funkcja zwracaj¹ca równania ró¿niczkowe w chwili t \ref{sec:methods},
 \item tspan - przedzia³ czasowy symulacji,
@@ -769,7 +742,7 @@ W pierwszej czêœci symulacji (Rys.~\ref{choose-patient_img}), u¿ytkownik wybiera
 \subsection{Wybór parametrów symulacji}
 Ta czêœæ s³u¿y do wyboru parametrów symulacji (Rys. \ref{conf:simulation_img}): czasu, leczenia i dawki metimazolu. W pierszym polu u¿ytkowanik wpisuje czas symulacji wyra¿ony w dniach. U¿ywaj¹c w³¹cznika wybieramy leczenie lub jego brak. W³¹czenie terapii aktywuje pole dawki leku, w którym wybieramy iloœæ metimazolu, jak¹ codziennie przyjmuje pacjent.
 
-Terapie mog¹ byæ bardzo skomplikowane, dlatego istnieje mo¿liwoœæ utworzenia schematu leczenia. Wystarczy wpisaæ we wskazane pola kilka wartoœci po przecinku. Dla u³atwienia wprowadzania dawek, poni¿ej umieszczono trzy dodatkowe przyciski (Rys. \ref{conf:simulation_img}). Pierwsze dwa: \textit{Simple Dose} i \textit{Advanced Dose}, automatycznie wpisuj¹ w pole \textit{Dose} domyœlne, przyk³adowe terapie. Trzeci przycisk \textit{Info} informuje, jak wype³niaæ pola zaawansowanej dawki. Na rysunku (Rys. \ref{adv-treatment_img}) pokazano wprowadzenie przyk³adowego zaawansowanego schematu terapii.
+Terapie mog¹ byæ bardzo skomplikowane, dlatego istnieje mo¿liwoœæ utworzenia schematu leczenia. Wystarczy wpisaæ we wskazane pola kilka wartoœci po przecinku. Dla u³atwienia wprowadzania dawek, poni¿ej umieszczono trzy dodatkowe przyciski (Rys. \ref{conf:simulation_img}). Pierwsze dwa: \textit{Simple Dose} i \textit{Advanced Dose}, automatycznie wpisuj¹ w pole \textit{Dose} domyœlne, przyk³adowe terapie. Trzeci przycisk \textit{Info} informuje, jak wype³niaæ pola zaawansowanej dawki. Rys. \ref{adv-treatment_img} przedstawia wprowadzenie przyk³adowy zaawansowany schemat terapii.
 
 \begin{figure}
 	\centering
@@ -785,7 +758,7 @@ Terapie mog¹ byæ bardzo skomplikowane, dlatego istnieje mo¿liwoœæ utworzenia sch
 
 \subsection{Warunki pocz¹tkowe}
 
-Wprowadzenie warunków pocz¹tkowych odbywa siê automatycznie, po wyborze pacjenta (Rys. \ref{initial_img}). Poziom FT4, przeciwcia³ i objetoœci funkcjonalnej tarczycy ustalaj¹ siê po wyborze pacjenta, zaœ pole MMI ustawia siê po wybraniu dawki. 
+Wprowadzenie warunków pocz¹tkowych odbywa siê automatycznie, po wyborze pacjenta (Rys. \ref{initial_img}). Poziom FT4, przeciwcia³ i objêtoœæ funkcjonalna tarczycy ustalaj¹ siê po wyborze pacjenta, zaœ pole MMI ustawia siê po wybraniu dawki. 
 
 \begin{figure}
 	\centering
@@ -811,7 +784,7 @@ Okno wyników symulacji (Rys. \ref{window2_img}) pojawia siê po wykonaniu oblicze
 \end{figure}
 
 \subsection{Graficzne przedstawienie wyników symulacji}
-Przyk³adow¹ symulacjê leczenia pacjenta przedstawia rys. \ref{w2-simulation_img}. Wykres zawiera obszerny tytu³ z istotnymi informacjami dotycz¹cymi terapii pacjenta. Ka¿da z funkcji stanu, jest narysowana odmiennym kolorem. Dla u³atwienia rozpoznania stadium choroby, przerywanymi poziomymi liniami zosta³y zaznaczone graniczne wartoœci normy FT4 dla osoby zdrowej. Wykresy funkcji opisane s¹ legend¹.
+Przyk³adow¹ symulacjê leczenia pacjenta przedstawia Rys. \ref{w2-simulation_img}. Pole wykresu zawiera obszerny tytu³ z istotnymi informacjami dotycz¹cymi terapii pacjenta. Wykres ka¿dej z funkcji stanu, jest narysowany odmiennym kolorem. Dla u³atwienia rozpoznania stadium choroby, przerywanymi poziomymi liniami zosta³y zaznaczone graniczne wartoœci normy FT4 dla osoby zdrowej. Wykresy funkcji opisane s¹ legend¹.
 
 \begin{figure}
 	\centering
@@ -965,14 +938,16 @@ W niniejszym paragrafie przeanalizowano zapotrzebowanie na lek omawianych w prac
 
 \chapter{Wnioski}
 \begin{itemize}
-\item Przedstawiony model nadczynnoœci tarczycy spowodowanej chorob¹ Gravesa pozwala symulowaæ terapie, jednak wyznaczenie parametrów $k_5$, $k_6$ polega na minimalizacji b³êdu œredniokwadratowego wzglêdem poprzednich terapii pacjenta \ref{sec:params}. W zwi¹zku z tym, niemo¿liwe jest stosowanie symulacji, dla pacjentów podczas ich pierwszej wizyty, a iloœæ wczeœniejszych terapii zwiêksza dok³adnoœæ modelu. Jest to istotny problem, który mo¿na próbowaæ rozwi¹zaæ, poprzez terapiê wstêpn¹, która mia³aby na celu przybli¿enie parametrów. Wymaga to dalszych badañ.
+
+\item Symulacja przebiegów czasowych pozwala na w³aœciwy dobór dawek leczenia, sprawiaj¹c, ¿e gospodarka hormonalna uk³adu tarczycowego bêdzie funkcjonowa³a tak, jak u cz³owieka zdrowego \ref{sec:result}. Znacz¹co zmniejsza siê ryzyko przedawkowania leku, które mo¿e doprowadziæ do niedoczynnoœci tarczycy lub zwiêkszenia efektów ubocznych przyjmowania metimazolu. Wp³ywa na zdrowie i komfort ¿ycia pacjenta.
 
 \item Utworzona aplikacja okienkowa znacz¹co u³atwia wykonanie symulacji. Umo¿liwia zaawansowane sterowanie terapi¹ i ³atwe prze³¹czanie siê pomiêdzy pacjentami. Rozwi¹zania s¹ okreœlone w dziedzinie czasu, co jest intuicyjne i sprzyja analizie. Na ich podstawie mo¿liwy jest dobór optymalnej terapii dla pacjenta.
 
 \item Zastosowanie modelu powinno znacz¹co podnieœæ efektywnoœæ terapii, poprzez dobór optymalnej œcie¿ki leczenia, dawek oraz pozwoliæ efektywnie zaplanowaæ kolejne wizyty, zmniejszaj¹c tym samym iloœæ badañ oraz orzekaæ o reemisji lub wyleczeniu z wiêkszym prawdopodobieñstwem \ref{sec:result}.
 
-\item Symulacja przebiegów czasowych pozwala na w³aœciwy dobór dawek leczenia, sprawiaj¹c, ¿e gospodarka hormonalna uk³adu tarczycowego bêdzie funkcjonowa³a tak, jak u cz³owieka zdrowego \ref{sec:result}. Znacz¹co zmniejsza siê ryzyko przedawkowania leku, które mo¿e doprowadziæ do niedoczynnoœci tarczycy lub zwiêkszenia efektów ubocznych przyjmowania metimazolu. Wp³ywa na zdrowie i komfort ¿ycia pacjenta.
+\item Przedstawiony model nadczynnoœci tarczycy spowodowanej chorob¹ Gravesa pozwala symulowaæ terapie, jednak wyznaczenie parametrów $k_5$, $k_6$ polega na minimalizacji b³êdu œredniokwadratowego wzglêdem poprzednich terapii pacjenta \ref{sec:params}. W zwi¹zku z tym, niemo¿liwe jest stosowanie symulacji, dla pacjentów podczas ich pierwszej wizyty, a iloœæ wczeœniejszych terapii zwiêksza dok³adnoœæ modelu. Jest to istotny problem, który mo¿na próbowaæ rozwi¹zaæ, poprzez terapiê wstêpn¹, która mia³aby na celu przybli¿enie parametrów. Wymaga to dalszych badañ.
 
+****************** wypisaæ z tego do podsumowania i usun¹æ
 \item W porównaniu do modelu skonstruowanego przez Langensteinam \cite{old-model} model zastosowany w pracy Pandiyan \cite{graves1}, który bazuje na pracy poprzednika, pozwala obserwowaæ przebieg czasowy metimazolu w krwi. Wprowadza to wiele niedomówieñ oraz symulacje, które dotycz¹ ró¿nych d³ugoœci terapii nie s¹ zbie¿ne. Nieintuicyjnym lub niemo¿liwym jest te¿  wyznaczenie prawdopodobieñstwa reemisji, dla symulowanej terapii. Symulacja przebiegów czasowych nie jest czynnikiem, który bezpoœrednio wp³ywa na efektywnoœæ terapii pacjenta. Wa¿niejszym jest wyznaczenie prawdopodobieñstwa reemisji wzglêdem terapii. W leczeniu choroby Gravesa, dobór w³aœciwych dawek i oscylacja miêdzy prawid³owymi poziomami FT4 mo¿e pozytywnie wp³ywaæ na ca³kowite wyleczenie, jednak hipoteza ta musi zostaæ przebadana w przysz³oœci.
 
 \item Optymalizacja kodu, poprzez stosowanie w³aœciwych metod, mo¿e znacz¹co zwiêkszyæ wydajnoœæ aplikacji i zmniejszyæ zu¿ycie zasobów. Zastosowanie przeci¹¿enia metody, pozwoli³o zmniejszyæ zapotrzebowanie na pamiêæ RAM czterokrotnie i znacz¹co skróci³o obliczenia \ref{sec:functions}. Pozwoli³o to na wykonanie wiêkszej liczby symulacji. 
