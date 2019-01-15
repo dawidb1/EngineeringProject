@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.29)  14 JAN 2019 23:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.29)  15 JAN 2019 11:06
 entering extended mode
 **./Praca.tex
 (Praca.tex
@@ -982,37 +982,19 @@ e 933.
 _treatment.png (PNG copy)> <./rysunki/excel/pacjenci_mmi.png>]
 Rozdzia\PlPrIeC {\l } 7.
 
-Overfull \hbox (2.11848pt too wide) in paragraph at lines 953--954
+Overfull \hbox (2.11848pt too wide) in paragraph at lines 951--952
 []\OT4/cmr/m/n/12 Optymalizacja ko-du, po-przez sto-so-wa-nie wªa-±ci-wych me-t
 od, mo-»e zna-cz¡-co zwi¦k-
  []
 
 [40
 
-] [41]
+]
 Rozdzia\PlPrIeC {\l } 8.
-) [42
+) [41
 
 ] (Praca.bbl
-Underfull \hbox (badness 2134) in paragraph at lines 31--37
-[]\OT4/cmr/m/sc/12 Majewska, M.  \OT4/cmr/m/n/12 Prze-ciw-cia-ªa prze-ciw-tar-c
-zy-co-we trab - nor-my i wy-ni-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--37
-\OT4/cmr/m/n/12 ki ba-da-nia.  [][]$\OT4/cmtt/m/n/12 https : / / www . poradnik
-zdrowie . pl / sprawdz-[]sie / badania /
- []
-
-
-Overfull \hbox (63.61003pt too wide) in paragraph at lines 31--37
-\OT4/cmtt/m/n/12 przeciwciala-[]przeciwtarczycowe-[]trab-[]normy-[]i-[]wyniki-[
-]badania-[]aa-[]cAaA-[]89ri-[]hwkg .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--48
+Underfull \hbox (badness 10000) in paragraph at lines 37--41
 []\OT4/cmr/m/sc/12 Pharma, A.  \OT4/cmr/m/n/12 Ta-pa-zo-le (me-thi-ma-zo-le).  
 [][]$\OT4/cmtt/m/n/12 https : / / www . rxlist . com /
  []
@@ -1023,7 +1005,7 @@ Package caption Warning: Unused \captionsetup[subfigure] on input line 148.
 See the caption package documentation for explanation.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
-[43
+[42
 
 
 ]
@@ -1036,13 +1018,13 @@ Package rerunfilecheck Info: File `Praca.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  ) 
 Here is how much of TeX's memory you used:
- 10560 strings out of 493312
- 156467 string characters out of 3138899
+ 10557 strings out of 493312
+ 156435 string characters out of 3138899
  277909 words of memory out of 3000000
- 13641 multiletter control sequences out of 15000+200000
+ 13640 multiletter control sequences out of 15000+200000
  16456 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,14n,42p,871b,2219s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,14n,42p,740b,2219s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plsc.enc}{C:/Program Files/Mi
 KTeX 2.9/fonts/enc/dvips/pl/pltt.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvi
 ps/pl/plmi.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.enc}{C:/Pro
@@ -1060,9 +1042,9 @@ m Files/MiKTeX 2.9/fonts/type1/public/pl/plsy10.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/pl/plsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/pl/plti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/pltt10.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/pltt12.pfb>
-Output written on Praca.pdf (49 pages, 1409671 bytes).
+Output written on Praca.pdf (48 pages, 1406819 bytes).
 PDF statistics:
- 860 PDF objects out of 1000 (max. 8388607)
- 228 named destinations out of 1000 (max. 500000)
+ 848 PDF objects out of 1000 (max. 8388607)
+ 226 named destinations out of 1000 (max. 500000)
  482 words of extra memory for PDF output out of 10000 (max. 10000000)
 

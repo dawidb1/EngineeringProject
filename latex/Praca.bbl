@@ -15,30 +15,23 @@ Math. graphics. programming.
 \newblock A patient-specific treatment model for graves’ hyperthyroidism.
 \newblock {\em Theoretical Biology and Medical Modelling\/} (2018).
 
-\bibitem{old-model}
-{\sc C.~Langenstein, D.~S.}
-\newblock Relapse prediction in graves disease: Towards mathematical modeling
-  of clinical, immune and genetic markers. rev endocr metab disord.
-\newblock {\em PubMed\/} (2016).
-
 \bibitem{liver}
 {\sc F.~Sinturel, A.~G.}
 \newblock Diurnal oscillations in liver mass and cell size accompany ribosome
   assembly cycles.
 \newblock {\em Cell\/} (2017).
 
-\bibitem{trab}
-{\sc Majewska, M.}
-\newblock Przeciwcia³a przeciwtarczycowe trab - normy i wyniki badania.
-\newblock
-  \url{https://www.poradnikzdrowie.pl/sprawdz-sie/badania/przeciwciala-przeciwtarczycowe-trab-normy-i-wyniki-badania-aa-cAaA-89ri-hwkg.html},
-  2016.
-\newblock [Online; dostêp 19.16.2018].
-
 \bibitem{twierdzenie}
 {\sc M.Gewert, Z.}
 \newblock {\em {Równania rózniczkowe zwyczajne}}.
 \newblock Oficyna Wydawnicza GiS, 2007.
+
+\bibitem{trab}
+{\sc Online, L.~T.}
+\newblock Przeciwcia³a przeciwtarczycowe.
+\newblock
+  \url{http://www.labtestsonline.pl/tests/ThyroidAntibodies.html?tab=3}, 2012.
+\newblock [Online; dostêp 19.12.2018].
 
 \bibitem{tapazole-liver}
 {\sc Pharma, A.}

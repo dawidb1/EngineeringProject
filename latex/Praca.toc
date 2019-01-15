@@ -38,5 +38,5 @@
 \contentsline {section}{\numberline {6.5}Pacjent numer 70}{38}{section.6.5}
 \contentsline {section}{\numberline {6.6}Por\'ownanie zapotrzebowania na lek}{38}{section.6.6}
 \contentsline {chapter}{\numberline {7.}Wnioski}{40}{chapter.7}
-\contentsline {chapter}{\numberline {8.}Podsumowanie}{42}{chapter.8}
-\contentsline {chapter}{Bibliografia}{43}{chapter.8}
+\contentsline {chapter}{\numberline {8.}Podsumowanie}{41}{chapter.8}
+\contentsline {chapter}{Bibliografia}{42}{chapter.8}
