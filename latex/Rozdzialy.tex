@@ -83,7 +83,7 @@ Choroba Gravesa mo¿e wyst¹piæ u ka¿dego cz³owieka, jednak niektóre czynniki zwiê
 \item palenie papierosów, które mo¿e wp³ywaæ na uk³ad autoimmunologiczny.
 
 \section{Diagnoza choroby}
-Istnieje kilka sposobów diagnozowania nadczynnoœci tarczycy oraz jej specyficznej odmiany, jak¹ jest choroba Gravesa. Najczêœciej stosowane to:
+Istnieje kilka sposobów diagnozowania nadczynnoœci tarczycy oraz jej specyficznej odmiany, jak¹ jest choroba Gravesa. Najczêœciej stosowane to \cite{mayo}:
 \item \textit{Test fizyczny.} Lekarz sprawdza, czy oczy s¹ podra¿nione i wystaj¹ce, a gruczo³ tarczycowy jest powiêkszony. Choroba Gravesa zwiêksza metabolizm, dlatego lekarz bada puls i ciœnienie krwi.
 \item \textit{Badanie krwi.} Badanie maj¹ce na celu ustalenie poziomu TSH w krwi oraz hormonów tarczycowych. Prawid³owy poziom TSH koreluj¹cy z wysokim poziomem T4 w formie wolnej (FT4), mo¿e œwiadczyæ o nadczynnoœci tarczycy. Dodatkowe badanie iloœci przeciwcia³ przeciwtarczycowych TRAb, pozwala zdiagnozowaæ chorobê Gravesa. Wysoki poziom TRAb i FT4 œwiadczy o pod³o¿u autoimmunologicznym choroby, czyli chorobie Gravesa \cite{graves1}. 
 \item \textit{Badanie przyswajalnoœci radioaktywnego jodu.} Organizm potrzebuje jodu, do produkcji hormonów tarczycowych. Podanie ma³ej dawki radioaktywnego jodu oraz póŸniejszy pomiar iloœci hormonów tarczycowych, pozwala ustaliæ przyswajalnoœæ jodu przez tarczycê. Dostarcza to informacji czy nadczynnoœæ tarczycy jest wywo³ana chorob¹ Gravesa. 
@@ -124,7 +124,7 @@ Zaimplementowany model matematyczny pozwala obserwowaæ poziom hormonu T3 w formi
 \item Przeciwcia³a tarczycowe TRAb imituj¹ dzia³anie TSH i stymuluj¹ komórki tarczycowe do wzrostu, produkcji i wydzielania hormonów tarczycy.
 \item Po za¿yciu doustnie leku w postaci metimazolu (MMI), jest on szybko i~kompletnie absorbowany do surowicy krwi. Jego przyswajalnoœæ, jest estymowana i~wynosi œrednio 93\%.
 \item Tarczyca przyswaja MMI z krwi, który dezaktywuje funkcjonalny wzrost gruczo³u. 
-\item Dawka leku wch³ania siê z krwi po jego spo¿yciu.
+\item Dawka leku wch³ania siê z krwi po jej spo¿yciu.
 \item Rozmiar gruczo³u tarczycy jest ukrytym kompartmentem w modelu.
 \item Po doustnym podaniu leku, stê¿enie MMI w surowicy krwi wykazuje tak¹ sam¹ dynamikê, jak stê¿enie wewn¹trz tarczycy.
 \end{enumerate}
@@ -225,7 +225,7 @@ $k_{8}$                & WskaŸnik tempa eliminacji TRAb.                        
 \end{tabular}
 \end{table}
 
-Maksymalna szybkoœæ przyswajania MMI wzrasta wraz ze zwiêkszaniem dawki leku, przy czym powy¿ej 15 mg/dzieñ, wzrost ten mo¿na pomin¹æ, zatem mo¿na przyj¹æ, i¿ maksymalne wch³anianie leku nastêpuje dla dawki 15 mg/dzieñ. Zak³adaj¹c, ¿e standardowa objêtoœæ funkcjonalna gruczo³u tarczycy podczas nadczynnoœci wynosi 30 ml, a standardowa objêtoœæ organizmu  to 59,71 l, estymujemy parametr $k_{1} = \dfrac{15}{30\cdot 59,71} = 8,374 \cdot 10^{-3} mg/(ml\cdot l\cdot \text{\textit{dzieñ}})$.
+Maksymalna szybkoœæ przyswajania MMI wzrasta wraz ze zwiêkszaniem dawki leku, przy czym powy¿ej 15 mg/dzieñ, wzrost ten mo¿na pomin¹æ. Mo¿na zatem przyj¹æ, i¿ maksymalne wch³anianie leku nastêpuje dla dawki 15 mg/dzieñ. Zak³adaj¹c, ¿e standardowa objêtoœæ funkcjonalna gruczo³u tarczycy podczas nadczynnoœci wynosi 30 ml, a standardowa objêtoœæ organizmu  to 59,71 l, estymujemy parametr $k_{1} = \dfrac{15}{30\cdot 59,71} = 8,374 \cdot 10^{-3}\: mg/(ml\cdot l\cdot \text{\textit{dzieñ}})$.
 
 Zak³adaj¹c, ¿e stê¿enie leku we krwi jest malej¹c¹ funkcj¹ wyk³adnicz¹ wyznaczamy wskaŸnik wydalania MMI ($k_2$) z zale¿noœci $k_{2} = \dfrac{ln(2)}{5h} = 3,43711/\text{\textit{dzieñ}}$.
 
@@ -282,7 +282,7 @@ Pe³na pula badañ obejmowa³a ponad 70 chorych, przy czym do analizy wybrano tych 
 
 W przeprowadzonych symulacjach wykorzystano jedynie dane z pierwszej wizyty pacjenta. Pomiary w trakcie leczenia zosta³y u¿yte do weryfikacji poprawnoœci dzia³ania modelu.
 
-Do analiz na potrzeby tej pracy, wykorzystano dane czterech pacjentów, zachowuj¹c ich oryginalne oznaczenia (pacjent nr 20, 31, 55, 70). Parametry dla wybranych pacjentów zosta³y przedstawione w tabeli (Tab. \ref{tab:pacjenci}).
+Do analiz na potrzeby tej pracy, wykorzystano dane czterech pacjentów, zachowuj¹c ich oryginalne oznaczenia (pacjent nr 20, 31, 55, 70). Parametry opisuj¹ce wybranych pacjentów zosta³y przedstawione w tabeli (Tab. \ref{tab:pacjenci}).
 
 \begin{table}[H]
 \caption{Parametry modelu \ref{eq:uklad} wybranych pacjentów \cite{graves1}.}
@@ -307,7 +307,7 @@ $k_{8}$                & 0,035                  & 0,035                  & 0,035
 
 \section{Stabilnoœæ uk³adu} \label{cha:twierdzenie}
 
-Dla nieleczonej nadczynnoœci tarczycy, spowodowanej chorob¹ Gravesa zbadano stabilnoœæ punktów stacjonarnych modelu (\ref{eq:uklad}). Analizê przeprowadzono w oparciu o~twierdzenie o~stabilnoœci punktów stacjonarnych uk³adu równañ ró¿niczkowych.
+Zbadano stabilnoœæ punktów stacjonarnych modelu (\ref{eq:uklad}) dla nieleczonej nadczynnoœci tarczycy, spowodowanej chorob¹ Gravesa. Analizê przeprowadzono w oparciu o~twierdzenie o~stabilnoœci punktów stacjonarnych uk³adu równañ ró¿niczkowych.
 
 \subsection*{Twierdzenie \cite{twierdzenie} }
 Niech funkcje $f_{i}(y_{1}, y_{2}, ..., y_{n})$ maj¹ ci¹g³e pochodne cz¹stkowe pierwszego rzêdu $(\dfrac{\partial f_{i}}{\partial y_{1}})$, gdzie $1\leq i,j\leq n$, w otoczeniu punkt równowagi $P=(a_{1},a_{2}, ..., a_{n})$ uk³adu. Dodatkowo niech 
@@ -460,7 +460,9 @@ J(E_1)
 \end{bmatrix},
 \end{equation}
 
-Wartoœci w³asne ($\lambda$) macierzy $J(E_1)$ wyznaczamy na podstawie jej równania charakterystycznego $det(J(E_1) - \lambda I) = 0$. Macierz J(E1) ma cztery wartoœci w³asne (\ref{eq:lambda}) wyra¿one za pomoca parametrów modelu. Wartoœci w³asne przedstawiaj¹ siê nastêpuj¹co:
+Wartoœci w³asne ($\lambda$) macierzy $J(E_1)$ wyznaczamy na podstawie jej równania charakterystycznego $det(J(E_1) - \lambda I) = 0$. Macierz J(E1) ma cztery wartoœci w³asne (\ref{eq:lambda}) wyra¿one za pomoca parametrów modelu.
+
+Wartoœci w³asne przedstawiaj¹ siê nastêpuj¹co:
 
 \begin{equation} \label{eq:lambda}
 \left\lbrace 
@@ -479,7 +481,7 @@ Wartoœci w³asne ($\lambda$) macierzy $J(E_1)$ wyznaczamy na podstawie jej równan
 \right.
 \end{equation}
 
-Wszystkie wartoœci w³asne maj¹ znak ujemny, poniewa¿ parametry je opisuj¹ce s¹ liczbami dodatnimi, a zatem wszystkie wartoœci w³asne macierzy $J(E_1)$ maj¹ ujemne czêœci rzeczywiste. Zgodnie z twierdzeniem o stabilnoœci uk³adu (\ref{sec:twierdzenie}), rozwa¿any punkt stacjonarny $E_1$ jest asymptotycznie stabilny.
+Wszystkie wartoœci w³asne maj¹ znak ujemny, poniewa¿ parametry je opisuj¹ce s¹ liczbami dodatnimi, a zatem wszystkie wartoœci w³asne macierzy $J(E_1)$ maj¹ ujemne czêœci rzeczywiste. Zgodnie z twierdzeniem o stabilnoœci uk³adu (\ref{cha:twierdzenie}), rozwa¿any punkt stacjonarny $E_1$ jest asymptotycznie stabilny.
 
 %\emph{Przeprowadzenie symulacji wi¹¿e siê z kilkoma etapami. }
 %
@@ -871,7 +873,7 @@ Po podawaniu 30 mg leku przez 120 dni, stan gospodarki hormonalnej tarczycy pacj
 	\caption{Symulacja dla pacjenta nr 20 podczas leczenia i po odstawieniu leku.}\label{p20_dose30_d75_dose0_d45_img}
 \end{figure}
   
-Zgodnie z wynikami przedstawionymi na Rys.~\ref{p20_dose30_d75_dose0_d45_img} przy podawaniu dawki 30 mg MMI przez 75 dni i nastêpnie odstawieniu leku, pacjent powróci³ do stanu nadczynnoœci tarczycy, ktory trwa³ do koñca symulacji tj. 35 dni.  Taki scenariusz terapii, okaza³ siê nieskuteczny co oznacza, ¿e pacjent wymaga dalszego leczenia.
+Zgodnie z wynikami przedstawionymi na Rys.~\ref{p20_dose30_d75_dose0_d45_img} przy podawaniu dawki 30 mg MMI przez 75 dni i nastêpnie odstawieniu leku, pacjent powróci³ do stanu nadczynnoœci tarczycy w 110 dniu symulacji.  Taki scenariusz terapii, okaza³ siê nieskuteczny co oznacza, ¿e pacjent wymaga dalszego leczenia.
 
 \begin{figure}[H]
 	\centering
@@ -893,7 +895,7 @@ Stosuj¹c siê do zaleceñ zawartych w artykule \cite{mmi}  opracowano terapiê (Rys
 
 \section{Pacjent numer 31}
 
-Pacjent numer 31 jest odmiennym przypadkiem w porównaniu do innych pacjentów, gdy¿ poziom jego przeciwcia³ jest niski przy podobnym stê¿eniu FT4. Symulacje wykaza³y (Rys. ~\ref{p31_treatment_img}), ¿e jest ma³o wra¿liwy na leczenie metimazolem, poniewa¿ po jego podaniu du¿ych dawek MMI, poziom FT4 spada bardzo powoli. Dla tego pacjenta, warto rozpatrywaæ alternatywne metody leczenia. Opracowana terapia obejmuje zwiêkszenie dawki leku (Rys.~\ref{p31_treatment_img}). Podawane s¹ dawki 40 mg MMI przez pierwsze 3 miesi¹ce, nastêpnie 30 mg przez 4 miesi¹ce, 20 mg przez 5 miesiêcy i 10 mg przez ostatnie 6 miesiêcy. Leczenie trwa 18 miesiêcy, przy czym ostatnie 6 miesiêcy, pacjent pobiera dawkê 10 mg MMI jako dawkê podtrzymuj¹c¹. Wed³ug symulacji terapia metimazolem, pozwala regulowaæ gospodarkê hormonaln¹ tego pacjenta, jednak do tego celu potrzeba czasu oraz du¿ej iloœci MMI.
+Pacjent numer 31 jest odmiennym przypadkiem w porównaniu do innych pacjentów, gdy¿ poziom jego przeciwcia³ jest niski przy podobnym stê¿eniu FT4. Symulacje wykaza³y (Rys.~\ref{p31_treatment_img}), ¿e jest ma³o wra¿liwy na leczenie metimazolem, poniewa¿ po podaniu du¿ych dawek MMI, poziom FT4 spada bardzo powoli. Dla tego pacjenta, warto rozpatrywaæ alternatywne metody leczenia. Opracowana terapia obejmuje wiêksze w porównaniu do pozosta³ych pacjentów dawki leku (Rys.~\ref{p31_treatment_img}). Podawane s¹ dawki 40 mg MMI przez pierwsze 3 miesi¹ce, nastêpnie 30 mg przez 4 miesi¹ce, 20 mg przez 5 miesiêcy i 10 mg przez ostatnie 6 miesiêcy. Leczenie trwa 18 miesiêcy, przy czym ostatnie 6 miesiêcy, pacjent pobiera dawkê 10 mg MMI jako dawkê podtrzymuj¹c¹. Wed³ug symulacji terapia metimazolem, pozwala regulowaæ gospodarkê hormonaln¹ tego pacjenta, jednak do tego celu potrzeba wiele czasu (18 miesiêcy) oraz du¿ej iloœci MMI.
 
 \begin{figure}[H]
 	\centering
@@ -926,7 +928,7 @@ Pacjent nr 70 ma najwy¿szy pocz¹tkowy poziom hormonu FT4. Proponowana terapia tr
 
 W niniejszym paragrafie przeanalizowano zapotrzebowanie na lek omawianych w pracy pacjentów. Zsumowano iloœæ przyjêtego leku, podczas sugerowanego leczenia, przez okres pierwszych 360 dni. Dla pacjentów nr 20 oraz 31 jest to koniec terapii. Wyniki zobrazowano na Rys.~\ref{pacjenci_mmi_img}. 3/4 pacjentów przyjmie oko³o 5 g leku przez 12 miesiêcy. Pacjent numer 31 musi przyj¹æ 10 g leku przez 12 miesiêcy oraz bêdzie kontynuowa³ leczenie przez kolejnych 6 miesiêcy.
 
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{excel/pacjenci_mmi}
 	\caption{Porównanie zapotrzebowania na lek pacjentów.}\label{pacjenci_mmi_img}
@@ -953,4 +955,4 @@ W niniejszym paragrafie przeanalizowano zapotrzebowanie na lek omawianych w prac
 
 Wszystkie cele projektu zosta³y zrealizowane. Spersonalizowana symulacja dla pacjenta pozwala prognozowaæ reakcjê jego organizmu i dobraæ optymaln¹ dawkê. W leczeniu choroby Gravesa, dobór w³aœciwych dawek i oscylacja miêdzy prawid³owymi poziomami FT4 mo¿e pozytywnie wp³ywaæ na ca³kowite wyleczenie, jednak hipoteza ta musi zostaæ przebadana w przysz³oœci. 
 
-Narzêdzie nie jest jeszcze na tyle zautomatyzowane, aby mo¿na by³o je wprowadziæ do u¿ytku w gabinecie lekarskim, poniewa¿ nie jest mo¿liwe obliczanie parametrów pacjenta. Istniej¹ jednak przes³anki, by s¹dziæ, ¿e bêdzie to mo¿liwe w niedalekiej przysz³oœci. Jedn¹ z mo¿liwoœci mo¿e byæ zastosowanie terapii pocz¹tkowej, w celu okreœlenia parametrów $k_5$ i $k_6$, czyli w du¿ym przybli¿eniu odpowiedzi pacjenta na lek. Stosowanie tego narzêdzia mo¿e mieæ realny wp³yw na zdrowie i komfort ¿ycia pacjenta.
+Narzêdzie nie jest jeszcze na tyle zautomatyzowane, aby mo¿na by³o je wprowadziæ do u¿ytku w gabinecie lekarskim, poniewa¿ nie jest mo¿liwe obliczanie parametrów pacjenta. Istniej¹ jednak przes³anki, by s¹dziæ, ¿e bêdzie to mo¿liwe w niedalekiej przysz³oœci. Jedn¹ z mo¿liwoœci mo¿e byæ zastosowanie terapii wstêpnej, w celu okreœlenia parametrów $k_5$ i $k_6$, czyli w du¿ym przybli¿eniu odpowiedzi pacjenta na lek. Stosowanie tego narzêdzia mo¿e mieæ realny wp³yw na zdrowie i komfort ¿ycia pacjenta oraz obni¿enie kosztów leczenia.
