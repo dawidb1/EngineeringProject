@@ -34,9 +34,9 @@
 \contentsline {section}{\numberline {6.1}Wst\k epne por\'ownanie pacjent\'ow}{32}{section.6.1}
 \contentsline {section}{\numberline {6.2}Pacjent numer 20}{32}{section.6.2}
 \contentsline {section}{\numberline {6.3}Pacjent numer 31}{37}{section.6.3}
-\contentsline {section}{\numberline {6.4}Pacjent numer 55}{37}{section.6.4}
+\contentsline {section}{\numberline {6.4}Pacjent numer 55}{38}{section.6.4}
 \contentsline {section}{\numberline {6.5}Pacjent numer 70}{38}{section.6.5}
-\contentsline {section}{\numberline {6.6}Por\'ownanie zapotrzebowania na lek}{38}{section.6.6}
-\contentsline {chapter}{\numberline {7.}Wnioski}{40}{chapter.7}
-\contentsline {chapter}{\numberline {8.}Podsumowanie}{41}{chapter.8}
-\contentsline {chapter}{Bibliografia}{42}{chapter.8}
+\contentsline {section}{\numberline {6.6}Por\'ownanie zapotrzebowania na lek}{40}{section.6.6}
+\contentsline {chapter}{\numberline {7.}Wnioski}{41}{chapter.7}
+\contentsline {chapter}{\numberline {8.}Podsumowanie}{42}{chapter.8}
+\contentsline {chapter}{Bibliografia}{43}{chapter.8}
